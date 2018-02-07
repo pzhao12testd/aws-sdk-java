@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -48,8 +48,9 @@ public class ModifyTargetGroupAttributesRequestMarshaller implements
             request.addParameter("TargetGroupArn", StringUtils.fromString(modifyTargetGroupAttributesRequest.getTargetGroupArn()));
         }
 
-        if (modifyTargetGroupAttributesRequest.getAttributes() != null) {
-            java.util.List<TargetGroupAttribute> attributesList = modifyTargetGroupAttributesRequest.getAttributes();
+        java.util.List<TargetGroupAttribute> attributesList = modifyTargetGroupAttributesRequest.getAttributes();
+
+        if (attributesList != null) {
             if (attributesList.isEmpty()) {
                 request.addParameter("Attributes", "");
             } else {

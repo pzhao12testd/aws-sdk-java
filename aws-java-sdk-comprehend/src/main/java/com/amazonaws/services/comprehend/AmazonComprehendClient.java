@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -174,7 +174,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                         .beforeMarshalling(batchDetectDominantLanguageRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -239,7 +238,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                 request = new BatchDetectEntitiesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(batchDetectEntitiesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -302,7 +300,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                 request = new BatchDetectKeyPhrasesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(batchDetectKeyPhrasesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -367,7 +364,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                 request = new BatchDetectSentimentRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(batchDetectSentimentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -426,7 +422,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                         .beforeMarshalling(describeTopicsDetectionJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -484,7 +479,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                 request = new DetectDominantLanguageRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectDominantLanguageRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -546,7 +540,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                 request = new DetectEntitiesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectEntitiesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -606,7 +599,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                 request = new DetectKeyPhrasesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectKeyPhrasesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -667,7 +659,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                 request = new DetectSentimentRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectSentimentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -726,7 +717,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                         .beforeMarshalling(listTopicsDetectionJobsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -784,7 +774,6 @@ public class AmazonComprehendClient extends AmazonWebServiceClient implements Am
                         .beforeMarshalling(startTopicsDetectionJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

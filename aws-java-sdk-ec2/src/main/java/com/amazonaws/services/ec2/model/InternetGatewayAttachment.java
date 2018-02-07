@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -28,8 +28,7 @@ public class InternetGatewayAttachment implements Serializable, Cloneable {
 
     /**
      * <p>
-     * The current state of the attachment. For an Internet gateway, the state is <code>available</code> when attached
-     * to a VPC; otherwise, this value is not returned.
+     * The current state of the attachment.
      * </p>
      */
     private String state;
@@ -42,13 +41,11 @@ public class InternetGatewayAttachment implements Serializable, Cloneable {
 
     /**
      * <p>
-     * The current state of the attachment. For an Internet gateway, the state is <code>available</code> when attached
-     * to a VPC; otherwise, this value is not returned.
+     * The current state of the attachment.
      * </p>
      * 
      * @param state
-     *        The current state of the attachment. For an Internet gateway, the state is <code>available</code> when
-     *        attached to a VPC; otherwise, this value is not returned.
+     *        The current state of the attachment.
      * @see AttachmentStatus
      */
 
@@ -58,12 +55,10 @@ public class InternetGatewayAttachment implements Serializable, Cloneable {
 
     /**
      * <p>
-     * The current state of the attachment. For an Internet gateway, the state is <code>available</code> when attached
-     * to a VPC; otherwise, this value is not returned.
+     * The current state of the attachment.
      * </p>
      * 
-     * @return The current state of the attachment. For an Internet gateway, the state is <code>available</code> when
-     *         attached to a VPC; otherwise, this value is not returned.
+     * @return The current state of the attachment.
      * @see AttachmentStatus
      */
 
@@ -73,13 +68,11 @@ public class InternetGatewayAttachment implements Serializable, Cloneable {
 
     /**
      * <p>
-     * The current state of the attachment. For an Internet gateway, the state is <code>available</code> when attached
-     * to a VPC; otherwise, this value is not returned.
+     * The current state of the attachment.
      * </p>
      * 
      * @param state
-     *        The current state of the attachment. For an Internet gateway, the state is <code>available</code> when
-     *        attached to a VPC; otherwise, this value is not returned.
+     *        The current state of the attachment.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see AttachmentStatus
      */
@@ -91,13 +84,11 @@ public class InternetGatewayAttachment implements Serializable, Cloneable {
 
     /**
      * <p>
-     * The current state of the attachment. For an Internet gateway, the state is <code>available</code> when attached
-     * to a VPC; otherwise, this value is not returned.
+     * The current state of the attachment.
      * </p>
      * 
      * @param state
-     *        The current state of the attachment. For an Internet gateway, the state is <code>available</code> when
-     *        attached to a VPC; otherwise, this value is not returned.
+     *        The current state of the attachment.
      * @see AttachmentStatus
      */
 
@@ -107,13 +98,11 @@ public class InternetGatewayAttachment implements Serializable, Cloneable {
 
     /**
      * <p>
-     * The current state of the attachment. For an Internet gateway, the state is <code>available</code> when attached
-     * to a VPC; otherwise, this value is not returned.
+     * The current state of the attachment.
      * </p>
      * 
      * @param state
-     *        The current state of the attachment. For an Internet gateway, the state is <code>available</code> when
-     *        attached to a VPC; otherwise, this value is not returned.
+     *        The current state of the attachment.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see AttachmentStatus
      */

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -62,11 +62,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      * <p>
      * <code>IN</code>: When you specify <code>IN</code> for the condition, you can choose to list public namespaces,
      * private namespaces, or both.
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * <code>BETWEEN</code>: Not applicable
      * </p>
      * </li>
      * </ul>
@@ -256,11 +251,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      * private namespaces, or both.
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>BETWEEN</code>: Not applicable
-     * </p>
-     * </li>
      * </ul>
      * 
      * @param condition
@@ -278,11 +268,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      *        <p>
      *        <code>IN</code>: When you specify <code>IN</code> for the condition, you can choose to list public
      *        namespaces, private namespaces, or both.
-     *        </p>
-     *        </li>
-     *        <li>
-     *        <p>
-     *        <code>BETWEEN</code>: Not applicable
      *        </p>
      *        </li>
      * @see FilterCondition
@@ -310,11 +295,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      * private namespaces, or both.
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>BETWEEN</code>: Not applicable
-     * </p>
-     * </li>
      * </ul>
      * 
      * @return The operator that you want to use to determine whether <code>ListNamespaces</code> returns a namespace.
@@ -331,11 +311,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      *         <p>
      *         <code>IN</code>: When you specify <code>IN</code> for the condition, you can choose to list public
      *         namespaces, private namespaces, or both.
-     *         </p>
-     *         </li>
-     *         <li>
-     *         <p>
-     *         <code>BETWEEN</code>: Not applicable
      *         </p>
      *         </li>
      * @see FilterCondition
@@ -363,11 +338,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      * private namespaces, or both.
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>BETWEEN</code>: Not applicable
-     * </p>
-     * </li>
      * </ul>
      * 
      * @param condition
@@ -385,11 +355,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      *        <p>
      *        <code>IN</code>: When you specify <code>IN</code> for the condition, you can choose to list public
      *        namespaces, private namespaces, or both.
-     *        </p>
-     *        </li>
-     *        <li>
-     *        <p>
-     *        <code>BETWEEN</code>: Not applicable
      *        </p>
      *        </li>
      * @return Returns a reference to this object so that method calls can be chained together.
@@ -419,11 +384,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      * private namespaces, or both.
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>BETWEEN</code>: Not applicable
-     * </p>
-     * </li>
      * </ul>
      * 
      * @param condition
@@ -441,11 +401,6 @@ public class NamespaceFilter implements Serializable, Cloneable, StructuredPojo 
      *        <p>
      *        <code>IN</code>: When you specify <code>IN</code> for the condition, you can choose to list public
      *        namespaces, private namespaces, or both.
-     *        </p>
-     *        </li>
-     *        <li>
-     *        <p>
-     *        <code>BETWEEN</code>: Not applicable
      *        </p>
      *        </li>
      * @return Returns a reference to this object so that method calls can be chained together.

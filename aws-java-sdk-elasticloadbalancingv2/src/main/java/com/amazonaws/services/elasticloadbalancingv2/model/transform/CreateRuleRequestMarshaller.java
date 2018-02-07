@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -46,8 +46,9 @@ public class CreateRuleRequestMarshaller implements Marshaller<Request<CreateRul
             request.addParameter("ListenerArn", StringUtils.fromString(createRuleRequest.getListenerArn()));
         }
 
-        if (createRuleRequest.getConditions() != null) {
-            java.util.List<RuleCondition> conditionsList = createRuleRequest.getConditions();
+        java.util.List<RuleCondition> conditionsList = createRuleRequest.getConditions();
+
+        if (conditionsList != null) {
             if (conditionsList.isEmpty()) {
                 request.addParameter("Conditions", "");
             } else {
@@ -59,8 +60,9 @@ public class CreateRuleRequestMarshaller implements Marshaller<Request<CreateRul
                         request.addParameter("Conditions.member." + conditionsListIndex + ".Field", StringUtils.fromString(conditionsListValue.getField()));
                     }
 
-                    if (conditionsListValue.getValues() != null) {
-                        java.util.List<String> valuesList = conditionsListValue.getValues();
+                    java.util.List<String> valuesList = conditionsListValue.getValues();
+
+                    if (valuesList != null) {
                         if (valuesList.isEmpty()) {
                             request.addParameter("Conditions.member." + conditionsListIndex + ".Values", "");
                         } else {
@@ -84,8 +86,9 @@ public class CreateRuleRequestMarshaller implements Marshaller<Request<CreateRul
             request.addParameter("Priority", StringUtils.fromInteger(createRuleRequest.getPriority()));
         }
 
-        if (createRuleRequest.getActions() != null) {
-            java.util.List<Action> actionsList = createRuleRequest.getActions();
+        java.util.List<Action> actionsList = createRuleRequest.getActions();
+
+        if (actionsList != null) {
             if (actionsList.isEmpty()) {
                 request.addParameter("Actions", "");
             } else {

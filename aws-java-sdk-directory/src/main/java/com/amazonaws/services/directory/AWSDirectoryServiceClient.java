@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -371,7 +371,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new AddIpRoutesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(addIpRoutesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -431,7 +430,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new AddTagsToResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(addTagsToResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -489,7 +487,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new CancelSchemaExtensionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(cancelSchemaExtensionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -556,7 +553,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new ConnectDirectoryRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(connectDirectoryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -623,7 +619,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new CreateAliasRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createAliasRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -689,7 +684,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new CreateComputerRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createComputerRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -757,7 +751,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(createConditionalForwarderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -824,7 +817,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new CreateDirectoryRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createDirectoryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -892,7 +884,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new CreateMicrosoftADRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createMicrosoftADRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -958,7 +949,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new CreateSnapshotRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createSnapshotRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1033,7 +1023,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new CreateTrustRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createTrustRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1096,7 +1085,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(deleteConditionalForwarderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1160,7 +1148,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DeleteDirectoryRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteDirectoryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1218,7 +1205,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DeleteSnapshotRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteSnapshotRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1279,7 +1265,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DeleteTrustRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteTrustRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1337,7 +1322,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DeregisterEventTopicRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deregisterEventTopicRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1404,7 +1388,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeConditionalForwardersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1477,7 +1460,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DescribeDirectoriesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeDirectoriesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1544,7 +1526,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeDomainControllersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1607,7 +1588,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DescribeEventTopicsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeEventTopicsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1675,7 +1655,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DescribeSnapshotsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeSnapshotsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1747,7 +1726,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DescribeTrustsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeTrustsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1804,7 +1782,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DisableRadiusRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(disableRadiusRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1864,7 +1841,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new DisableSsoRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(disableSsoRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1925,7 +1901,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new EnableRadiusRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(enableRadiusRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1985,7 +1960,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new EnableSsoRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(enableSsoRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2041,7 +2015,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new GetDirectoryLimitsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getDirectoryLimitsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2102,7 +2075,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new GetSnapshotLimitsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSnapshotLimitsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2161,7 +2133,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new ListIpRoutesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listIpRoutesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2218,7 +2189,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new ListSchemaExtensionsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listSchemaExtensionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2277,7 +2247,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new ListTagsForResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTagsForResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2338,7 +2307,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new RegisterEventTopicRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(registerEventTopicRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2397,7 +2365,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new RemoveIpRoutesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(removeIpRoutesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2454,7 +2421,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new RemoveTagsFromResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(removeTagsFromResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2522,7 +2488,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new RestoreFromSnapshotRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(restoreFromSnapshotRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2584,7 +2549,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new StartSchemaExtensionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startSchemaExtensionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2647,7 +2611,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(updateConditionalForwarderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2717,7 +2680,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(updateNumberOfDomainControllersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2776,7 +2738,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new UpdateRadiusRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateRadiusRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2840,7 +2801,6 @@ public class AWSDirectoryServiceClient extends AmazonWebServiceClient implements
                 request = new VerifyTrustRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(verifyTrustRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

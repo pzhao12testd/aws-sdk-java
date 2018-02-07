@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -73,8 +73,8 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     /** Parameters that control interactions with the CDN. */
     private HlsCdnSettings hlsCdnSettings;
     /**
-     * If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less than
-     * or equal to keepSegments. If mode is "vod", this parameter has no effect.
+     * Number of segments to keep in the playlist (.m3u8) file. mode must be "vod" for this setting to have an effect,
+     * and this number should be less than or equal to keepSegments.
      */
     private Integer indexNSegments;
     /** Parameter that control output group behavior on input loss. */
@@ -92,8 +92,8 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
      */
     private String ivSource;
     /**
-     * If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod", this
-     * parameter has no effect.
+     * Number of segments to retain in the destination directory. mode must be "live" for this setting to have an
+     * effect.
      */
     private Integer keepSegments;
     /**
@@ -115,12 +115,8 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
      */
     private Integer minSegmentLength;
     /**
-     * If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only the
-     * number segments specified in keepSegments and indexNSegments are kept; newer segments replace older segments,
-     * which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     * VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     * manifest on completion of the stream.
+     * If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments will
+     * age out and only the last keepSegments number of segments will be retained.
      */
     private String mode;
     /**
@@ -827,12 +823,12 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less than
-     * or equal to keepSegments. If mode is "vod", this parameter has no effect.
+     * Number of segments to keep in the playlist (.m3u8) file. mode must be "vod" for this setting to have an effect,
+     * and this number should be less than or equal to keepSegments.
      * 
      * @param indexNSegments
-     *        If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less
-     *        than or equal to keepSegments. If mode is "vod", this parameter has no effect.
+     *        Number of segments to keep in the playlist (.m3u8) file. mode must be "vod" for this setting to have an
+     *        effect, and this number should be less than or equal to keepSegments.
      */
 
     public void setIndexNSegments(Integer indexNSegments) {
@@ -840,11 +836,11 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less than
-     * or equal to keepSegments. If mode is "vod", this parameter has no effect.
+     * Number of segments to keep in the playlist (.m3u8) file. mode must be "vod" for this setting to have an effect,
+     * and this number should be less than or equal to keepSegments.
      * 
-     * @return If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be
-     *         less than or equal to keepSegments. If mode is "vod", this parameter has no effect.
+     * @return Number of segments to keep in the playlist (.m3u8) file. mode must be "vod" for this setting to have an
+     *         effect, and this number should be less than or equal to keepSegments.
      */
 
     public Integer getIndexNSegments() {
@@ -852,12 +848,12 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less than
-     * or equal to keepSegments. If mode is "vod", this parameter has no effect.
+     * Number of segments to keep in the playlist (.m3u8) file. mode must be "vod" for this setting to have an effect,
+     * and this number should be less than or equal to keepSegments.
      * 
      * @param indexNSegments
-     *        If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less
-     *        than or equal to keepSegments. If mode is "vod", this parameter has no effect.
+     *        Number of segments to keep in the playlist (.m3u8) file. mode must be "vod" for this setting to have an
+     *        effect, and this number should be less than or equal to keepSegments.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -1056,12 +1052,12 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod", this
-     * parameter has no effect.
+     * Number of segments to retain in the destination directory. mode must be "live" for this setting to have an
+     * effect.
      * 
      * @param keepSegments
-     *        If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod",
-     *        this parameter has no effect.
+     *        Number of segments to retain in the destination directory. mode must be "live" for this setting to have an
+     *        effect.
      */
 
     public void setKeepSegments(Integer keepSegments) {
@@ -1069,11 +1065,11 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod", this
-     * parameter has no effect.
+     * Number of segments to retain in the destination directory. mode must be "live" for this setting to have an
+     * effect.
      * 
-     * @return If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod",
-     *         this parameter has no effect.
+     * @return Number of segments to retain in the destination directory. mode must be "live" for this setting to have
+     *         an effect.
      */
 
     public Integer getKeepSegments() {
@@ -1081,12 +1077,12 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod", this
-     * parameter has no effect.
+     * Number of segments to retain in the destination directory. mode must be "live" for this setting to have an
+     * effect.
      * 
      * @param keepSegments
-     *        If mode is "live", the number of TS segments to retain in the destination directory. If mode is "vod",
-     *        this parameter has no effect.
+     *        Number of segments to retain in the destination directory. mode must be "live" for this setting to have an
+     *        effect.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -1346,20 +1342,12 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only the
-     * number segments specified in keepSegments and indexNSegments are kept; newer segments replace older segments,
-     * which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     * VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     * manifest on completion of the stream.
+     * If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments will
+     * age out and only the last keepSegments number of segments will be retained.
      * 
      * @param mode
-     *        If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only
-     *        the number segments specified in keepSegments and indexNSegments are kept; newer segments replace older
-     *        segments, which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     *        VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     *        manifest on completion of the stream.
+     *        If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments
+     *        will age out and only the last keepSegments number of segments will be retained.
      * @see HlsMode
      */
 
@@ -1368,19 +1356,11 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only the
-     * number segments specified in keepSegments and indexNSegments are kept; newer segments replace older segments,
-     * which may prevent players from rewinding all the way to the beginning of the event.
+     * If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments will
+     * age out and only the last keepSegments number of segments will be retained.
      * 
-     * VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     * manifest on completion of the stream.
-     * 
-     * @return If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only
-     *         the number segments specified in keepSegments and indexNSegments are kept; newer segments replace older
-     *         segments, which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     *         VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD"
-     *         type manifest on completion of the stream.
+     * @return If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live"
+     *         segments will age out and only the last keepSegments number of segments will be retained.
      * @see HlsMode
      */
 
@@ -1389,20 +1369,12 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only the
-     * number segments specified in keepSegments and indexNSegments are kept; newer segments replace older segments,
-     * which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     * VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     * manifest on completion of the stream.
+     * If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments will
+     * age out and only the last keepSegments number of segments will be retained.
      * 
      * @param mode
-     *        If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only
-     *        the number segments specified in keepSegments and indexNSegments are kept; newer segments replace older
-     *        segments, which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     *        VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     *        manifest on completion of the stream.
+     *        If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments
+     *        will age out and only the last keepSegments number of segments will be retained.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see HlsMode
      */
@@ -1413,20 +1385,12 @@ public class HlsGroupSettings implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only the
-     * number segments specified in keepSegments and indexNSegments are kept; newer segments replace older segments,
-     * which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     * VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     * manifest on completion of the stream.
+     * If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments will
+     * age out and only the last keepSegments number of segments will be retained.
      * 
      * @param mode
-     *        If "vod", all segments are indexed and kept permanently in the destination and manifest. If "live", only
-     *        the number segments specified in keepSegments and indexNSegments are kept; newer segments replace older
-     *        segments, which may prevent players from rewinding all the way to the beginning of the event.
-     * 
-     *        VOD mode uses HLS EXT-X-PLAYLIST-TYPE of EVENT while the channel is running, converting it to a "VOD" type
-     *        manifest on completion of the stream.
+     *        If set to "vod", keeps and indexes all segments starting with the first segment. If set to "live" segments
+     *        will age out and only the last keepSegments number of segments will be retained.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see HlsMode
      */

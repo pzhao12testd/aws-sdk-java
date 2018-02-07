@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -368,7 +368,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new CreateActivityRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createActivityRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -433,7 +432,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new CreateStateMachineRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createStateMachineRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -484,7 +482,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new DeleteActivityRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteActivityRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -542,7 +539,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new DeleteStateMachineRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteStateMachineRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -595,7 +591,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new DescribeActivityRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeActivityRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -648,7 +643,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new DescribeExecutionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeExecutionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -701,7 +695,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new DescribeStateMachineRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeStateMachineRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -756,7 +749,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(describeStateMachineForExecutionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -822,7 +814,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new GetActivityTaskRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getActivityTaskRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -884,7 +875,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new GetExecutionHistoryRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getExecutionHistoryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -940,7 +930,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new ListActivitiesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listActivitiesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1000,7 +989,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new ListExecutionsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listExecutionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1056,7 +1044,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new ListStateMachinesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listStateMachinesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1109,7 +1096,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new SendTaskFailureRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(sendTaskFailureRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1176,7 +1162,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new SendTaskHeartbeatRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(sendTaskHeartbeatRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1231,7 +1216,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new SendTaskSuccessRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(sendTaskSuccessRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1299,7 +1283,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new StartExecutionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startExecutionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1352,7 +1335,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new StopExecutionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(stopExecutionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1422,7 +1404,6 @@ public class AWSStepFunctionsClient extends AmazonWebServiceClient implements AW
                 request = new UpdateStateMachineRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateStateMachineRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

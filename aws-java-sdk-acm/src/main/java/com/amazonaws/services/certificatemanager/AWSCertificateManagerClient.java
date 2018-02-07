@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -344,7 +344,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new AddTagsToCertificateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(addTagsToCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -409,7 +408,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new DeleteCertificateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -463,7 +461,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new DescribeCertificateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -483,7 +480,7 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
     /**
      * <p>
      * Retrieves a certificate specified by an ARN and its certificate chain . The chain is an ordered list of
-     * certificates that contains the end entity certificate, intermediate certificates of subordinate CAs, and the root
+     * certificates that contains the end entity ertificate, intermediate certificates of subordinate CAs, and the root
      * certificate in that order. The certificate and certificate chain are base64 encoded. If you want to decode the
      * certificate to see the individual fields, you can use OpenSSL.
      * </p>
@@ -522,7 +519,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new GetCertificateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -541,13 +537,9 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
 
     /**
      * <p>
-     * Imports a certificate into AWS Certificate Manager (ACM) to use with services that are integrated with ACM. Note
-     * that <a href="http://docs.aws.amazon.com/acm/latest/userguide/acm-services.html">integrated services</a> allow
-     * only certificate types and keys they support to be associated with their resources. Further, their support
-     * differs depending on whether the certificate is imported into IAM or into ACM. For more information, see the
-     * documentation for each service. For more information about importing certificates into ACM, see <a
-     * href="http://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html">Importing Certificates</a> in the
-     * <i>AWS Certificate Manager User Guide</i>.
+     * Imports a certificate into AWS Certificate Manager (ACM) to use with services that are integrated with ACM. For
+     * more information, see <a href="http://docs.aws.amazon.com/acm/latest/userguide/acm-services.html">Integrated
+     * Services</a>.
      * </p>
      * <note>
      * <p>
@@ -556,7 +548,15 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
      * </p>
      * </note>
      * <p>
-     * Note the following guidelines when importing third party certificates:
+     * For more information about importing certificates into ACM, including the differences between certificates that
+     * you import and those that ACM provides, see <a
+     * href="http://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html">Importing Certificates</a> in the
+     * <i>AWS Certificate Manager User Guide</i>.
+     * </p>
+     * <p>
+     * In general, you can import almost any valid certificate. However, services integrated with ACM allow only
+     * certificate types they support to be associated with their resources. The following guidelines are also
+     * important:
      * </p>
      * <ul>
      * <li>
@@ -597,22 +597,21 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
      * </li>
      * <li>
      * <p>
-     * The OCSP authority URL, if present, must not exceed 1000 characters.
+     * The OCSP authority URL must not exceed 1000 characters.
      * </p>
      * </li>
      * <li>
      * <p>
-     * To import a new certificate, omit the <code>CertificateArn</code> argument. Include this argument only when you
-     * want to replace a previously imported certificate.
+     * To import a new certificate, omit the <code>CertificateArn</code> field. Include this field only when you want to
+     * replace a previously imported certificate.
      * </p>
      * </li>
      * <li>
      * <p>
-     * When you import a certificate by using the CLI or one of the SDKs, you must specify the certificate, the
-     * certificate chain, and the private key by their file names preceded by <code>file://</code>. For example, you can
-     * specify a certificate saved in the <code>C:\temp</code> folder as
-     * <code>file://C:\temp\certificate_to_import.pem</code>. If you are making an HTTP or HTTPS Query request, include
-     * these arguments as BLOBs.
+     * When you import a certificate by using the CLI or one of the SDKs, you must specify the certificate, certificate
+     * chain, and private key parameters as file names preceded by <code>file://</code>. For example, you can specify a
+     * certificate saved in the <code>C:\temp</code> folder as <code>C:\temp\certificate_to_import.pem</code>. If you
+     * are making an HTTP or HTTPS Query request, include these parameters as BLOBs.
      * </p>
      * </li>
      * </ul>
@@ -657,7 +656,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new ImportCertificateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(importCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -707,7 +705,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new ListCertificatesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listCertificatesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -763,7 +760,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new ListTagsForCertificateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTagsForCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -828,7 +824,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                         .beforeMarshalling(removeTagsFromCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -899,7 +894,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new RequestCertificateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(requestCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -966,7 +960,6 @@ public class AWSCertificateManagerClient extends AmazonWebServiceClient implemen
                 request = new ResendValidationEmailRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(resendValidationEmailRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -25,8 +25,7 @@ public class ListKeyPoliciesResult extends com.amazonaws.AmazonWebServiceResult<
 
     /**
      * <p>
-     * A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     * <code>default</code>.
+     * A list of policy names. Currently, there is only one policy and it is named "Default".
      * </p>
      */
     private com.amazonaws.internal.SdkInternalList<String> policyNames;
@@ -48,12 +47,10 @@ public class ListKeyPoliciesResult extends com.amazonaws.AmazonWebServiceResult<
 
     /**
      * <p>
-     * A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     * <code>default</code>.
+     * A list of policy names. Currently, there is only one policy and it is named "Default".
      * </p>
      * 
-     * @return A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     *         <code>default</code>.
+     * @return A list of policy names. Currently, there is only one policy and it is named "Default".
      */
 
     public java.util.List<String> getPolicyNames() {
@@ -65,13 +62,11 @@ public class ListKeyPoliciesResult extends com.amazonaws.AmazonWebServiceResult<
 
     /**
      * <p>
-     * A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     * <code>default</code>.
+     * A list of policy names. Currently, there is only one policy and it is named "Default".
      * </p>
      * 
      * @param policyNames
-     *        A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     *        <code>default</code>.
+     *        A list of policy names. Currently, there is only one policy and it is named "Default".
      */
 
     public void setPolicyNames(java.util.Collection<String> policyNames) {
@@ -85,8 +80,7 @@ public class ListKeyPoliciesResult extends com.amazonaws.AmazonWebServiceResult<
 
     /**
      * <p>
-     * A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     * <code>default</code>.
+     * A list of policy names. Currently, there is only one policy and it is named "Default".
      * </p>
      * <p>
      * <b>NOTE:</b> This method appends the values to the existing list (if any). Use
@@ -95,8 +89,7 @@ public class ListKeyPoliciesResult extends com.amazonaws.AmazonWebServiceResult<
      * </p>
      * 
      * @param policyNames
-     *        A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     *        <code>default</code>.
+     *        A list of policy names. Currently, there is only one policy and it is named "Default".
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -112,13 +105,11 @@ public class ListKeyPoliciesResult extends com.amazonaws.AmazonWebServiceResult<
 
     /**
      * <p>
-     * A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     * <code>default</code>.
+     * A list of policy names. Currently, there is only one policy and it is named "Default".
      * </p>
      * 
      * @param policyNames
-     *        A list of key policy names. Currently, there is only one key policy per CMK and it is always named
-     *        <code>default</code>.
+     *        A list of policy names. Currently, there is only one policy and it is named "Default".
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

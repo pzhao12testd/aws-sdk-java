@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -33,14 +33,13 @@ public class DeleteTableRequest extends com.amazonaws.AmazonWebServiceRequest im
     private String catalogId;
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      */
     private String databaseName;
     /**
      * <p>
-     * The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
+     * The name of the table to be deleted.
      * </p>
      */
     private String name;
@@ -90,13 +89,11 @@ public class DeleteTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      * 
      * @param databaseName
-     *        The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     *        lowercase.
+     *        The name of the catalog database in which the table resides.
      */
 
     public void setDatabaseName(String databaseName) {
@@ -105,12 +102,10 @@ public class DeleteTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      * 
-     * @return The name of the catalog database in which the table resides. For Hive compatibility, this name is
-     *         entirely lowercase.
+     * @return The name of the catalog database in which the table resides.
      */
 
     public String getDatabaseName() {
@@ -119,13 +114,11 @@ public class DeleteTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      * 
      * @param databaseName
-     *        The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     *        lowercase.
+     *        The name of the catalog database in which the table resides.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -136,11 +129,11 @@ public class DeleteTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
+     * The name of the table to be deleted.
      * </p>
      * 
      * @param name
-     *        The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
+     *        The name of the table to be deleted.
      */
 
     public void setName(String name) {
@@ -149,10 +142,10 @@ public class DeleteTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
+     * The name of the table to be deleted.
      * </p>
      * 
-     * @return The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
+     * @return The name of the table to be deleted.
      */
 
     public String getName() {
@@ -161,11 +154,11 @@ public class DeleteTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
+     * The name of the table to be deleted.
      * </p>
      * 
      * @param name
-     *        The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
+     *        The name of the table to be deleted.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

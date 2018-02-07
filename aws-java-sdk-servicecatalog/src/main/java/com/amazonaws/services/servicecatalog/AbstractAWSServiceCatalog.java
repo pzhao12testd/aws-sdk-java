@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -83,11 +83,6 @@ public class AbstractAWSServiceCatalog implements AWSServiceCatalog {
     }
 
     @Override
-    public CreateProvisionedProductPlanResult createProvisionedProductPlan(CreateProvisionedProductPlanRequest request) {
-        throw new java.lang.UnsupportedOperationException();
-    }
-
-    @Override
     public CreateProvisioningArtifactResult createProvisioningArtifact(CreateProvisioningArtifactRequest request) {
         throw new java.lang.UnsupportedOperationException();
     }
@@ -114,11 +109,6 @@ public class AbstractAWSServiceCatalog implements AWSServiceCatalog {
 
     @Override
     public DeleteProductResult deleteProduct(DeleteProductRequest request) {
-        throw new java.lang.UnsupportedOperationException();
-    }
-
-    @Override
-    public DeleteProvisionedProductPlanResult deleteProvisionedProductPlan(DeleteProvisionedProductPlanRequest request) {
         throw new java.lang.UnsupportedOperationException();
     }
 
@@ -163,11 +153,6 @@ public class AbstractAWSServiceCatalog implements AWSServiceCatalog {
     }
 
     @Override
-    public DescribeProvisionedProductPlanResult describeProvisionedProductPlan(DescribeProvisionedProductPlanRequest request) {
-        throw new java.lang.UnsupportedOperationException();
-    }
-
-    @Override
     public DescribeProvisioningArtifactResult describeProvisioningArtifact(DescribeProvisioningArtifactRequest request) {
         throw new java.lang.UnsupportedOperationException();
     }
@@ -203,11 +188,6 @@ public class AbstractAWSServiceCatalog implements AWSServiceCatalog {
     }
 
     @Override
-    public ExecuteProvisionedProductPlanResult executeProvisionedProductPlan(ExecuteProvisionedProductPlanRequest request) {
-        throw new java.lang.UnsupportedOperationException();
-    }
-
-    @Override
     public ListAcceptedPortfolioSharesResult listAcceptedPortfolioShares(ListAcceptedPortfolioSharesRequest request) {
         throw new java.lang.UnsupportedOperationException();
     }
@@ -239,11 +219,6 @@ public class AbstractAWSServiceCatalog implements AWSServiceCatalog {
 
     @Override
     public ListPrincipalsForPortfolioResult listPrincipalsForPortfolio(ListPrincipalsForPortfolioRequest request) {
-        throw new java.lang.UnsupportedOperationException();
-    }
-
-    @Override
-    public ListProvisionedProductPlansResult listProvisionedProductPlans(ListProvisionedProductPlansRequest request) {
         throw new java.lang.UnsupportedOperationException();
     }
 
@@ -289,11 +264,6 @@ public class AbstractAWSServiceCatalog implements AWSServiceCatalog {
 
     @Override
     public SearchProductsAsAdminResult searchProductsAsAdmin(SearchProductsAsAdminRequest request) {
-        throw new java.lang.UnsupportedOperationException();
-    }
-
-    @Override
-    public SearchProvisionedProductsResult searchProvisionedProducts(SearchProvisionedProductsRequest request) {
         throw new java.lang.UnsupportedOperationException();
     }
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -37,12 +37,6 @@ public class CreateScriptRequest extends com.amazonaws.AmazonWebServiceRequest i
      * </p>
      */
     private java.util.List<CodeGenEdge> dagEdges;
-    /**
-     * <p>
-     * The programming language of the resulting code from the DAG.
-     * </p>
-     */
-    private String language;
 
     /**
      * <p>
@@ -185,65 +179,6 @@ public class CreateScriptRequest extends com.amazonaws.AmazonWebServiceRequest i
     }
 
     /**
-     * <p>
-     * The programming language of the resulting code from the DAG.
-     * </p>
-     * 
-     * @param language
-     *        The programming language of the resulting code from the DAG.
-     * @see Language
-     */
-
-    public void setLanguage(String language) {
-        this.language = language;
-    }
-
-    /**
-     * <p>
-     * The programming language of the resulting code from the DAG.
-     * </p>
-     * 
-     * @return The programming language of the resulting code from the DAG.
-     * @see Language
-     */
-
-    public String getLanguage() {
-        return this.language;
-    }
-
-    /**
-     * <p>
-     * The programming language of the resulting code from the DAG.
-     * </p>
-     * 
-     * @param language
-     *        The programming language of the resulting code from the DAG.
-     * @return Returns a reference to this object so that method calls can be chained together.
-     * @see Language
-     */
-
-    public CreateScriptRequest withLanguage(String language) {
-        setLanguage(language);
-        return this;
-    }
-
-    /**
-     * <p>
-     * The programming language of the resulting code from the DAG.
-     * </p>
-     * 
-     * @param language
-     *        The programming language of the resulting code from the DAG.
-     * @return Returns a reference to this object so that method calls can be chained together.
-     * @see Language
-     */
-
-    public CreateScriptRequest withLanguage(Language language) {
-        this.language = language.toString();
-        return this;
-    }
-
-    /**
      * Returns a string representation of this object; useful for testing and debugging.
      *
      * @return A string representation of this object.
@@ -257,9 +192,7 @@ public class CreateScriptRequest extends com.amazonaws.AmazonWebServiceRequest i
         if (getDagNodes() != null)
             sb.append("DagNodes: ").append(getDagNodes()).append(",");
         if (getDagEdges() != null)
-            sb.append("DagEdges: ").append(getDagEdges()).append(",");
-        if (getLanguage() != null)
-            sb.append("Language: ").append(getLanguage());
+            sb.append("DagEdges: ").append(getDagEdges());
         sb.append("}");
         return sb.toString();
     }
@@ -282,10 +215,6 @@ public class CreateScriptRequest extends com.amazonaws.AmazonWebServiceRequest i
             return false;
         if (other.getDagEdges() != null && other.getDagEdges().equals(this.getDagEdges()) == false)
             return false;
-        if (other.getLanguage() == null ^ this.getLanguage() == null)
-            return false;
-        if (other.getLanguage() != null && other.getLanguage().equals(this.getLanguage()) == false)
-            return false;
         return true;
     }
 
@@ -296,7 +225,6 @@ public class CreateScriptRequest extends com.amazonaws.AmazonWebServiceRequest i
 
         hashCode = prime * hashCode + ((getDagNodes() == null) ? 0 : getDagNodes().hashCode());
         hashCode = prime * hashCode + ((getDagEdges() == null) ? 0 : getDagEdges().hashCode());
-        hashCode = prime * hashCode + ((getLanguage() == null) ? 0 : getLanguage().hashCode());
         return hashCode;
     }
 

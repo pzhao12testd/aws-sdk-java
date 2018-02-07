@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -18,7 +18,7 @@ import com.amazonaws.protocol.StructuredPojo;
 import com.amazonaws.protocol.ProtocolMarshaller;
 
 /**
- * The settings for a PUSH type input.
+ * Settings for a PUSH type input
  * 
  * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/InputDestination" target="_top">AWS API
  *      Documentation</a>
@@ -27,10 +27,10 @@ import com.amazonaws.protocol.ProtocolMarshaller;
 public class InputDestination implements Serializable, Cloneable, StructuredPojo {
 
     /**
-     * The system-generated static IP address of endpoint. It remains fixed for the lifetime of the input.
+     * system-generated static IP address of endpoint. Remains fixed for the lifetime of the input
      */
     private String ip;
-    /** The port number for the input. */
+    /** port for input */
     private String port;
     /**
      * This represents the endpoint that the customer stream will be pushed to.
@@ -38,10 +38,10 @@ public class InputDestination implements Serializable, Cloneable, StructuredPojo
     private String url;
 
     /**
-     * The system-generated static IP address of endpoint. It remains fixed for the lifetime of the input.
+     * system-generated static IP address of endpoint. Remains fixed for the lifetime of the input
      * 
      * @param ip
-     *        The system-generated static IP address of endpoint. It remains fixed for the lifetime of the input.
+     *        system-generated static IP address of endpoint. Remains fixed for the lifetime of the input
      */
 
     public void setIp(String ip) {
@@ -49,9 +49,9 @@ public class InputDestination implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * The system-generated static IP address of endpoint. It remains fixed for the lifetime of the input.
+     * system-generated static IP address of endpoint. Remains fixed for the lifetime of the input
      * 
-     * @return The system-generated static IP address of endpoint. It remains fixed for the lifetime of the input.
+     * @return system-generated static IP address of endpoint. Remains fixed for the lifetime of the input
      */
 
     public String getIp() {
@@ -59,10 +59,10 @@ public class InputDestination implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * The system-generated static IP address of endpoint. It remains fixed for the lifetime of the input.
+     * system-generated static IP address of endpoint. Remains fixed for the lifetime of the input
      * 
      * @param ip
-     *        The system-generated static IP address of endpoint. It remains fixed for the lifetime of the input.
+     *        system-generated static IP address of endpoint. Remains fixed for the lifetime of the input
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -72,10 +72,10 @@ public class InputDestination implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * The port number for the input.
+     * port for input
      * 
      * @param port
-     *        The port number for the input.
+     *        port for input
      */
 
     public void setPort(String port) {
@@ -83,9 +83,9 @@ public class InputDestination implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * The port number for the input.
+     * port for input
      * 
-     * @return The port number for the input.
+     * @return port for input
      */
 
     public String getPort() {
@@ -93,10 +93,10 @@ public class InputDestination implements Serializable, Cloneable, StructuredPojo
     }
 
     /**
-     * The port number for the input.
+     * port for input
      * 
      * @param port
-     *        The port number for the input.
+     *        port for input
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -32,17 +32,10 @@ public class ListNamespacesResult extends com.amazonaws.AmazonWebServiceResult<c
     private java.util.List<NamespaceSummary> namespaces;
     /**
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      */
     private String nextToken;
 
@@ -126,28 +119,15 @@ public class ListNamespacesResult extends com.amazonaws.AmazonWebServiceResult<c
 
     /**
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      * 
      * @param nextToken
-     *        If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get
-     *        the next group of results. Specify the value of <code>NextToken</code> from the previous response in the
-     *        next request.</p> <note>
-     *        <p>
-     *        Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria.
-     *        It's possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified
-     *        criteria but that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match
-     *        the criteria.
-     *        </p>
+     *        If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     *        <code>ListNamespaces</code> request to get the next group of results. Specify the value of
+     *        <code>NextToken</code> from the previous response in the next request.
      */
 
     public void setNextToken(String nextToken) {
@@ -156,27 +136,14 @@ public class ListNamespacesResult extends com.amazonaws.AmazonWebServiceResult<c
 
     /**
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      * 
-     * @return If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to
-     *         get the next group of results. Specify the value of <code>NextToken</code> from the previous response in
-     *         the next request.</p> <note>
-     *         <p>
-     *         Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria.
-     *         It's possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified
-     *         criteria but that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that
-     *         match the criteria.
-     *         </p>
+     * @return If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     *         <code>ListNamespaces</code> request to get the next group of results. Specify the value of
+     *         <code>NextToken</code> from the previous response in the next request.
      */
 
     public String getNextToken() {
@@ -185,28 +152,15 @@ public class ListNamespacesResult extends com.amazonaws.AmazonWebServiceResult<c
 
     /**
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      * 
      * @param nextToken
-     *        If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get
-     *        the next group of results. Specify the value of <code>NextToken</code> from the previous response in the
-     *        next request.</p> <note>
-     *        <p>
-     *        Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria.
-     *        It's possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified
-     *        criteria but that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match
-     *        the criteria.
-     *        </p>
+     *        If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     *        <code>ListNamespaces</code> request to get the next group of results. Specify the value of
+     *        <code>NextToken</code> from the previous response in the next request.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

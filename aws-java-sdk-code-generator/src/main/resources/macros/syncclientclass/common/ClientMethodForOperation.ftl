@@ -34,7 +34,6 @@
                     super.beforeMarshalling(${operationModel.input.variableName}));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                   awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

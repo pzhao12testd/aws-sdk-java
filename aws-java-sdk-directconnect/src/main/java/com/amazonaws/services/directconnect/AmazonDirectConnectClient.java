@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -329,7 +329,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(allocateConnectionOnInterconnectRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -396,7 +395,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(allocateHostedConnectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -460,7 +458,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(allocatePrivateVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -531,7 +528,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(allocatePublicVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -603,7 +599,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(associateConnectionWithLagRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -669,7 +664,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(associateHostedConnectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -738,7 +732,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(associateVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -799,7 +792,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new ConfirmConnectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(confirmConnectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -860,7 +852,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(confirmPrivateVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -922,7 +913,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(confirmPublicVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -992,7 +982,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new CreateBGPPeerRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createBGPPeerRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1064,7 +1053,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new CreateConnectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createConnectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1125,7 +1113,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(createDirectConnectGatewayRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1186,7 +1173,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(createDirectConnectGatewayAssociationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1267,7 +1253,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new CreateInterconnectRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createInterconnectRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1346,7 +1331,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new CreateLagRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createLagRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1404,7 +1388,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(createPrivateVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1468,7 +1451,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(createPublicVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1526,7 +1508,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DeleteBGPPeerRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteBGPPeerRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1587,7 +1568,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DeleteConnectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteConnectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1646,7 +1626,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(deleteDirectConnectGatewayRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1706,7 +1685,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(deleteDirectConnectGatewayAssociationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1768,7 +1746,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DeleteInterconnectRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteInterconnectRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1825,7 +1802,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DeleteLagRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteLagRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1881,7 +1857,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DeleteVirtualInterfaceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteVirtualInterfaceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1948,7 +1923,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DescribeConnectionLoaRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeConnectionLoaRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2008,7 +1982,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DescribeConnectionsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeConnectionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2080,7 +2053,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeConnectionsOnInterconnectRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2144,7 +2116,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeDirectConnectGatewayAssociationsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2208,7 +2179,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeDirectConnectGatewayAttachmentsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2269,7 +2239,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeDirectConnectGatewaysRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2333,7 +2302,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeHostedConnectionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2401,7 +2369,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeInterconnectLoaRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2461,7 +2428,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DescribeInterconnectsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeInterconnectsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2526,7 +2492,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DescribeLagsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeLagsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2588,7 +2553,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DescribeLoaRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeLoaRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2644,7 +2608,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DescribeLocationsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeLocationsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2705,7 +2668,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new DescribeTagsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeTagsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2767,7 +2729,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeVirtualGatewaysRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2836,7 +2797,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(describeVirtualInterfacesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2908,7 +2868,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                         .beforeMarshalling(disassociateConnectionFromLagRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2974,7 +2933,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new TagResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(tagResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3030,7 +2988,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new UntagResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(untagResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3108,7 +3065,6 @@ public class AmazonDirectConnectClient extends AmazonWebServiceClient implements
                 request = new UpdateLagRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateLagRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
