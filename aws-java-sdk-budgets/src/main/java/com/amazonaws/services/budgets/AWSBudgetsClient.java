@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -313,7 +313,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new CreateBudgetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createBudgetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -372,7 +371,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new CreateNotificationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createNotificationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -431,7 +429,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new CreateSubscriberRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createSubscriberRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -485,7 +482,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new DeleteBudgetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteBudgetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -539,7 +535,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new DeleteNotificationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteNotificationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -593,7 +588,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new DeleteSubscriberRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteSubscriberRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -647,7 +641,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new DescribeBudgetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeBudgetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -706,7 +699,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new DescribeBudgetsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeBudgetsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -766,7 +758,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                         .beforeMarshalling(describeNotificationsForBudgetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -828,7 +819,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                         .beforeMarshalling(describeSubscribersForNotificationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -883,7 +873,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new UpdateBudgetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateBudgetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -939,7 +928,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new UpdateNotificationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateNotificationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -995,7 +983,6 @@ public class AWSBudgetsClient extends AmazonWebServiceClient implements AWSBudge
                 request = new UpdateSubscriberRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateSubscriberRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

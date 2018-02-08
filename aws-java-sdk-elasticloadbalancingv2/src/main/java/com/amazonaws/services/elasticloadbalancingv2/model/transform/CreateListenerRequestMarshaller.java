@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -58,8 +58,9 @@ public class CreateListenerRequestMarshaller implements Marshaller<Request<Creat
             request.addParameter("SslPolicy", StringUtils.fromString(createListenerRequest.getSslPolicy()));
         }
 
-        if (createListenerRequest.getCertificates() != null) {
-            java.util.List<Certificate> certificatesList = createListenerRequest.getCertificates();
+        java.util.List<Certificate> certificatesList = createListenerRequest.getCertificates();
+
+        if (certificatesList != null) {
             if (certificatesList.isEmpty()) {
                 request.addParameter("Certificates", "");
             } else {
@@ -81,8 +82,9 @@ public class CreateListenerRequestMarshaller implements Marshaller<Request<Creat
             }
         }
 
-        if (createListenerRequest.getDefaultActions() != null) {
-            java.util.List<Action> defaultActionsList = createListenerRequest.getDefaultActions();
+        java.util.List<Action> defaultActionsList = createListenerRequest.getDefaultActions();
+
+        if (defaultActionsList != null) {
             if (defaultActionsList.isEmpty()) {
                 request.addParameter("DefaultActions", "");
             } else {

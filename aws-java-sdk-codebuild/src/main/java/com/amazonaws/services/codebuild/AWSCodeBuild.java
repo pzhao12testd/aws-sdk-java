@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -262,7 +262,7 @@ public interface AWSCodeBuild {
      * if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild
      * console, clear the Webhook box. For more information, see step 9 in <a
      * href="http://docs.aws.amazon.com/codebuild/latest/userguide/change-project.html#change-project-console">Change a
-     * Build Project's Settings</a>.
+     * Build Project’s Settings</a>.
      * </p>
      * </important>
      * 

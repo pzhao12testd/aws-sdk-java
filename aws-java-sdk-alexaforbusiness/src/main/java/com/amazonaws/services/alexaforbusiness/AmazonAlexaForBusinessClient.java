@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -163,7 +163,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                         .beforeMarshalling(associateDeviceWithRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -215,7 +214,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                         .beforeMarshalling(associateSkillGroupWithRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -269,7 +267,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new CreateProfileRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -322,7 +319,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new CreateRoomRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -375,7 +371,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new CreateSkillGroupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createSkillGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -428,7 +423,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new CreateUserRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createUserRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -479,7 +473,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new DeleteProfileRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -530,7 +523,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new DeleteRoomRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -580,7 +572,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                         .beforeMarshalling(deleteRoomSkillParameterRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -632,7 +623,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new DeleteSkillGroupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteSkillGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -683,7 +673,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new DeleteUserRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteUserRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -734,7 +723,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                         .beforeMarshalling(disassociateDeviceFromRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -786,7 +774,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                         .beforeMarshalling(disassociateSkillGroupFromRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -838,7 +825,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new GetDeviceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getDeviceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -889,7 +875,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new GetProfileRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -940,7 +925,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new GetRoomRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -991,7 +975,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new GetRoomSkillParameterRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getRoomSkillParameterRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1043,7 +1026,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new GetSkillGroupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSkillGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1092,7 +1074,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new ListSkillsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listSkillsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1143,7 +1124,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new ListTagsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTagsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1193,7 +1173,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new PutRoomSkillParameterRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(putRoomSkillParameterRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1246,7 +1225,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new ResolveRoomRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(resolveRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1297,7 +1275,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new RevokeInvitationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(revokeInvitationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1346,7 +1323,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new SearchDevicesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchDevicesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1395,7 +1371,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new SearchProfilesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchProfilesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1444,7 +1419,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new SearchRoomsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchRoomsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1493,7 +1467,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new SearchSkillGroupsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchSkillGroupsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1542,7 +1515,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new SearchUsersRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchUsersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1596,7 +1568,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new SendInvitationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(sendInvitationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1646,7 +1617,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new StartDeviceSyncRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startDeviceSyncRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1697,7 +1667,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new TagResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(tagResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1748,7 +1717,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new UntagResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(untagResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1799,7 +1767,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new UpdateDeviceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateDeviceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1852,7 +1819,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new UpdateProfileRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1905,7 +1871,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new UpdateRoomRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateRoomRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1958,7 +1923,6 @@ public class AmazonAlexaForBusinessClient extends AmazonWebServiceClient impleme
                 request = new UpdateSkillGroupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateSkillGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

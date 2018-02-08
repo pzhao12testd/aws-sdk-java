@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -303,7 +303,6 @@ public class AWSCostAndUsageReportClient extends AmazonWebServiceClient implemen
                 request = new DeleteReportDefinitionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteReportDefinitionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -355,7 +354,6 @@ public class AWSCostAndUsageReportClient extends AmazonWebServiceClient implemen
                         .beforeMarshalling(describeReportDefinitionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -413,7 +411,6 @@ public class AWSCostAndUsageReportClient extends AmazonWebServiceClient implemen
                 request = new PutReportDefinitionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(putReportDefinitionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

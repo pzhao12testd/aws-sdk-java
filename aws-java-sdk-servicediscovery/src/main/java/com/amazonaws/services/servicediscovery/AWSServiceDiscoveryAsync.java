@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -26,10 +26,10 @@ import com.amazonaws.services.servicediscovery.model.*;
  * </p>
  * <p>
  * <p>
- * Amazon Route 53 auto naming lets you configure public or private namespaces that your microservice applications run
- * in. When instances of the service become available, you can call the auto naming API to register the instance, and
- * Route 53 automatically creates up to five DNS records and an optional health check. Clients that submit DNS queries
- * for the service receive an answer that contains up to eight healthy records.
+ * Amazon Route 53 autonaming lets you configure public or private namespaces that your microservice applications run
+ * in. When instances of the service become available, you can call the autonaming API to register the instance, and
+ * Amazon Route 53 automatically creates up to five DNS records and an optional health check. Clients that submit DNS
+ * queries for the service receive an answer that contains up to eight healthy records.
  * </p>
  */
 @Generated("com.amazonaws:aws-java-sdk-code-generator")
@@ -113,12 +113,12 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Creates a service, which defines the configuration for the following entities:
+     * Creates a service, which defines a template for the following entities:
      * </p>
      * <ul>
      * <li>
      * <p>
-     * Up to three records (A, AAAA, and SRV) or one CNAME record
+     * One to five resource record sets
      * </p>
      * </li>
      * <li>
@@ -129,7 +129,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
      * </ul>
      * <p>
      * After you create the service, you can submit a <a>RegisterInstance</a> request, and Amazon Route 53 uses the
-     * values in the configuration to create the specified entities.
+     * values in the template to create the specified entities.
      * </p>
      * 
      * @param createServiceRequest
@@ -142,12 +142,12 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Creates a service, which defines the configuration for the following entities:
+     * Creates a service, which defines a template for the following entities:
      * </p>
      * <ul>
      * <li>
      * <p>
-     * Up to three records (A, AAAA, and SRV) or one CNAME record
+     * One to five resource record sets
      * </p>
      * </li>
      * <li>
@@ -158,7 +158,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
      * </ul>
      * <p>
      * After you create the service, you can submit a <a>RegisterInstance</a> request, and Amazon Route 53 uses the
-     * values in the configuration to create the specified entities.
+     * values in the template to create the specified entities.
      * </p>
      * 
      * @param createServiceRequest
@@ -240,7 +240,8 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Deletes the records and the health check, if any, that Amazon Route 53 created for the specified instance.
+     * Deletes the resource record sets and the health check, if any, that Amazon Route 53 created for the specified
+     * instance.
      * </p>
      * 
      * @param deregisterInstanceRequest
@@ -253,7 +254,8 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Deletes the records and the health check, if any, that Amazon Route 53 created for the specified instance.
+     * Deletes the resource record sets and the health check, if any, that Amazon Route 53 created for the specified
+     * instance.
      * </p>
      * 
      * @param deregisterInstanceRequest
@@ -305,12 +307,6 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
      * Gets the current health status (<code>Healthy</code>, <code>Unhealthy</code>, or <code>Unknown</code>) of one or
      * more instances that are associated with a specified service.
      * </p>
-     * <note>
-     * <p>
-     * There is a brief delay between when you register an instance and when the health status for the instance is
-     * available.
-     * </p>
-     * </note>
      * 
      * @param getInstancesHealthStatusRequest
      * @return A Java Future containing the result of the GetInstancesHealthStatus operation returned by the service.
@@ -325,12 +321,6 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
      * Gets the current health status (<code>Healthy</code>, <code>Unhealthy</code>, or <code>Unknown</code>) of one or
      * more instances that are associated with a specified service.
      * </p>
-     * <note>
-     * <p>
-     * There is a brief delay between when you register an instance and when the health status for the instance is
-     * available.
-     * </p>
-     * </note>
      * 
      * @param getInstancesHealthStatusRequest
      * @param asyncHandler
@@ -379,13 +369,9 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
     /**
      * <p>
      * Gets information about any operation that returns an operation ID in the response, such as a
-     * <code>CreateService</code> request.
+     * <code>CreateService</code> request. To get a list of operations that match specified criteria, see
+     * <a>ListOperations</a>.
      * </p>
-     * <note>
-     * <p>
-     * To get a list of operations that match specified criteria, see <a>ListOperations</a>.
-     * </p>
-     * </note>
      * 
      * @param getOperationRequest
      * @return A Java Future containing the result of the GetOperation operation returned by the service.
@@ -398,13 +384,9 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
     /**
      * <p>
      * Gets information about any operation that returns an operation ID in the response, such as a
-     * <code>CreateService</code> request.
+     * <code>CreateService</code> request. To get a list of operations that match specified criteria, see
+     * <a>ListOperations</a>.
      * </p>
-     * <note>
-     * <p>
-     * To get a list of operations that match specified criteria, see <a>ListOperations</a>.
-     * </p>
-     * </note>
      * 
      * @param getOperationRequest
      * @param asyncHandler
@@ -452,7 +434,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Lists summary information about the instances that you registered by using a specified service.
+     * Gets summary information about the instances that you created by using a specified service.
      * </p>
      * 
      * @param listInstancesRequest
@@ -465,7 +447,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Lists summary information about the instances that you registered by using a specified service.
+     * Gets summary information about the instances that you created by using a specified service.
      * </p>
      * 
      * @param listInstancesRequest
@@ -483,7 +465,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Lists summary information about the namespaces that were created by the current AWS account.
+     * Gets information about the namespaces that were created by the current AWS account.
      * </p>
      * 
      * @param listNamespacesRequest
@@ -496,7 +478,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Lists summary information about the namespaces that were created by the current AWS account.
+     * Gets information about the namespaces that were created by the current AWS account.
      * </p>
      * 
      * @param listNamespacesRequest
@@ -545,7 +527,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Lists summary information for all the services that are associated with one or more specified namespaces.
+     * Gets settings for all the services that are associated with one or more specified namespaces.
      * </p>
      * 
      * @param listServicesRequest
@@ -558,7 +540,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Lists summary information for all the services that are associated with one or more specified namespaces.
+     * Gets settings for all the services that are associated with one or more specified namespaces.
      * </p>
      * 
      * @param listServicesRequest
@@ -576,44 +558,42 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Creates or updates one or more records and optionally a health check based on the settings in a specified
+     * Creates one or more resource record sets and optionally a health check based on the settings in a specified
      * service. When you submit a <code>RegisterInstance</code> request, Amazon Route 53 does the following:
      * </p>
      * <ul>
      * <li>
      * <p>
-     * For each DNS record that you define in the service specified by <code>ServiceId</code>, creates or updates a
-     * record in the hosted zone that is associated with the corresponding namespace
+     * Creates a resource record set for each resource record set template in the service
      * </p>
      * </li>
      * <li>
      * <p>
-     * Creates or updates a health check based on the settings in the health check configuration, if any, for the
-     * service
+     * Creates a health check based on the settings in the health check template in the service, if any
      * </p>
      * </li>
      * <li>
      * <p>
-     * Associates the health check, if any, with each of the records
+     * Associates the health check, if any, with each of the resource record sets
      * </p>
      * </li>
      * </ul>
      * <important>
      * <p>
      * One <code>RegisterInstance</code> request must complete before you can submit another request and specify the
-     * same service ID and instance ID.
+     * same service and instance ID.
      * </p>
      * </important>
      * <p>
      * For more information, see <a>CreateService</a>.
      * </p>
      * <p>
-     * When Route 53 receives a DNS query for the specified DNS name, it returns the applicable value:
+     * When Amazon Route 53 receives a DNS query for the specified DNS name, it returns the applicable value:
      * </p>
      * <ul>
      * <li>
      * <p>
-     * <b>If the health check is healthy</b>: returns all the records
+     * <b>If the health check is healthy</b>: returns all the resource record sets
      * </p>
      * </li>
      * <li>
@@ -623,7 +603,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
      * </li>
      * <li>
      * <p>
-     * <b>If you didn't specify a health check configuration</b>: returns all the records
+     * <b>If you didn't specify a health check template</b>: returns all the resource record sets
      * </p>
      * </li>
      * </ul>
@@ -638,44 +618,42 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Creates or updates one or more records and optionally a health check based on the settings in a specified
+     * Creates one or more resource record sets and optionally a health check based on the settings in a specified
      * service. When you submit a <code>RegisterInstance</code> request, Amazon Route 53 does the following:
      * </p>
      * <ul>
      * <li>
      * <p>
-     * For each DNS record that you define in the service specified by <code>ServiceId</code>, creates or updates a
-     * record in the hosted zone that is associated with the corresponding namespace
+     * Creates a resource record set for each resource record set template in the service
      * </p>
      * </li>
      * <li>
      * <p>
-     * Creates or updates a health check based on the settings in the health check configuration, if any, for the
-     * service
+     * Creates a health check based on the settings in the health check template in the service, if any
      * </p>
      * </li>
      * <li>
      * <p>
-     * Associates the health check, if any, with each of the records
+     * Associates the health check, if any, with each of the resource record sets
      * </p>
      * </li>
      * </ul>
      * <important>
      * <p>
      * One <code>RegisterInstance</code> request must complete before you can submit another request and specify the
-     * same service ID and instance ID.
+     * same service and instance ID.
      * </p>
      * </important>
      * <p>
      * For more information, see <a>CreateService</a>.
      * </p>
      * <p>
-     * When Route 53 receives a DNS query for the specified DNS name, it returns the applicable value:
+     * When Amazon Route 53 receives a DNS query for the specified DNS name, it returns the applicable value:
      * </p>
      * <ul>
      * <li>
      * <p>
-     * <b>If the health check is healthy</b>: returns all the records
+     * <b>If the health check is healthy</b>: returns all the resource record sets
      * </p>
      * </li>
      * <li>
@@ -685,7 +663,7 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
      * </li>
      * <li>
      * <p>
-     * <b>If you didn't specify a health check configuration</b>: returns all the records
+     * <b>If you didn't specify a health check template</b>: returns all the resource record sets
      * </p>
      * </li>
      * </ul>
@@ -705,35 +683,13 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Submits a request to perform the following operations:
-     * </p>
-     * <ul>
-     * <li>
-     * <p>
-     * Add or delete <code>DnsRecords</code> configurations
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * Update the TTL setting for existing <code>DnsRecords</code> configurations
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * Add, update, or delete <code>HealthCheckConfig</code> for a specified service
-     * </p>
-     * </li>
-     * <li>
-     * <p/></li>
-     * </ul>
-     * <p>
-     * You must specify all <code>DnsRecords</code> configurations (and, optionally, <code>HealthCheckConfig</code>)
-     * that you want to appear in the updated service. Any current configurations that don't appear in an
-     * <code>UpdateService</code> request are deleted.
+     * Updates the TTL setting for a specified service. You must specify all the resource record set templates (and,
+     * optionally, a health check template) that you want to appear in the updated service. Any current resource record
+     * set templates (or health check template) that don't appear in an <code>UpdateService</code> request are deleted.
      * </p>
      * <p>
      * When you update the TTL setting for a service, Amazon Route 53 also updates the corresponding settings in all the
-     * records and health checks that were created by using the specified service.
+     * resource record sets and health checks that were created by using the specified service.
      * </p>
      * 
      * @param updateServiceRequest
@@ -746,35 +702,13 @@ public interface AWSServiceDiscoveryAsync extends AWSServiceDiscovery {
 
     /**
      * <p>
-     * Submits a request to perform the following operations:
-     * </p>
-     * <ul>
-     * <li>
-     * <p>
-     * Add or delete <code>DnsRecords</code> configurations
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * Update the TTL setting for existing <code>DnsRecords</code> configurations
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * Add, update, or delete <code>HealthCheckConfig</code> for a specified service
-     * </p>
-     * </li>
-     * <li>
-     * <p/></li>
-     * </ul>
-     * <p>
-     * You must specify all <code>DnsRecords</code> configurations (and, optionally, <code>HealthCheckConfig</code>)
-     * that you want to appear in the updated service. Any current configurations that don't appear in an
-     * <code>UpdateService</code> request are deleted.
+     * Updates the TTL setting for a specified service. You must specify all the resource record set templates (and,
+     * optionally, a health check template) that you want to appear in the updated service. Any current resource record
+     * set templates (or health check template) that don't appear in an <code>UpdateService</code> request are deleted.
      * </p>
      * <p>
      * When you update the TTL setting for a service, Amazon Route 53 also updates the corresponding settings in all the
-     * records and health checks that were created by using the specified service.
+     * resource record sets and health checks that were created by using the specified service.
      * </p>
      * 
      * @param updateServiceRequest

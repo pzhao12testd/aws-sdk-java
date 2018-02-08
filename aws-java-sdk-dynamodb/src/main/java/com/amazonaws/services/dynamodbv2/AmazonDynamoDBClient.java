@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -431,7 +431,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new BatchGetItemRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(batchGetItemRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -597,7 +596,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new BatchWriteItemRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(batchWriteItemRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -719,7 +717,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateBackupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createBackupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -809,7 +806,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateGlobalTableRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createGlobalTableRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -889,7 +885,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateTableRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createTableRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -964,7 +959,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteBackupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteBackupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1043,7 +1037,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteItemRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteItemRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1141,7 +1134,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteTableRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteTableRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1202,7 +1194,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DescribeBackupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeBackupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1260,7 +1251,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                         .beforeMarshalling(describeContinuousBackupsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1314,7 +1304,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DescribeGlobalTableRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeGlobalTableRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1454,7 +1443,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DescribeLimitsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeLimitsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1518,7 +1506,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DescribeTableRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeTableRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1577,7 +1564,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DescribeTimeToLiveRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeTimeToLiveRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1645,7 +1631,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new GetItemRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getItemRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1715,7 +1700,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new ListBackupsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listBackupsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1767,7 +1751,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new ListGlobalTablesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listGlobalTablesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1820,7 +1803,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new ListTablesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTablesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1900,7 +1882,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new ListTagsOfResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTagsOfResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2053,7 +2034,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new PutItemRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(putItemRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2177,7 +2157,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new QueryRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(queryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2280,7 +2259,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new RestoreTableFromBackupRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(restoreTableFromBackupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2371,7 +2349,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new ScanRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(scanRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2459,7 +2436,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new TagResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(tagResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2531,7 +2507,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new UntagResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(untagResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2591,7 +2566,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateGlobalTableRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateGlobalTableRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2664,7 +2638,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateItemRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateItemRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2775,7 +2748,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateTableRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateTableRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2879,7 +2851,6 @@ public class AmazonDynamoDBClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateTimeToLiveRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateTimeToLiveRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

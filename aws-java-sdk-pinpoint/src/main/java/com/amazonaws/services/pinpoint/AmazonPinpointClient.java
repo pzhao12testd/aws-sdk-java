@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -314,7 +314,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateAppRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createAppRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -373,7 +372,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateCampaignRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createCampaignRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -432,7 +430,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateImportJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createImportJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -491,7 +488,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateSegmentRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createSegmentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -550,7 +546,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteAdmChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteAdmChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -609,7 +604,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteApnsChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteApnsChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -669,7 +663,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                         .beforeMarshalling(deleteApnsSandboxChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -729,7 +722,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteApnsVoipChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteApnsVoipChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -790,7 +782,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                         .beforeMarshalling(deleteApnsVoipSandboxChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -850,7 +841,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteAppRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteAppRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -909,7 +899,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteBaiduChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteBaiduChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -968,7 +957,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteCampaignRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteCampaignRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1027,7 +1015,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteEmailChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteEmailChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1087,7 +1074,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteEventStreamRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteEventStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1146,7 +1132,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteGcmChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteGcmChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1205,7 +1190,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteSegmentRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteSegmentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1264,7 +1248,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteSmsChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteSmsChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1323,7 +1306,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetAdmChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getAdmChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1382,7 +1364,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetApnsChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getApnsChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1441,7 +1422,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetApnsSandboxChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getApnsSandboxChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1501,7 +1481,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetApnsVoipChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getApnsVoipChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1561,7 +1540,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                         .beforeMarshalling(getApnsVoipSandboxChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1621,7 +1599,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetAppRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getAppRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1680,7 +1657,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetApplicationSettingsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getApplicationSettingsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1740,7 +1716,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetAppsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getAppsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1799,7 +1774,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetBaiduChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getBaiduChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1858,7 +1832,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetCampaignRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getCampaignRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1917,7 +1890,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetCampaignActivitiesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getCampaignActivitiesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1977,7 +1949,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetCampaignVersionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getCampaignVersionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2036,7 +2007,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetCampaignVersionsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getCampaignVersionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2095,7 +2065,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetCampaignsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getCampaignsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2154,7 +2123,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetEmailChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getEmailChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2213,7 +2181,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetEndpointRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getEndpointRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2273,7 +2240,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetEventStreamRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getEventStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2332,7 +2298,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetGcmChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getGcmChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2391,7 +2356,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetImportJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getImportJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2450,7 +2414,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetImportJobsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getImportJobsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2509,7 +2472,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetSegmentRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSegmentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2568,7 +2530,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetSegmentImportJobsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSegmentImportJobsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2627,7 +2588,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetSegmentVersionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSegmentVersionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2686,7 +2646,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetSegmentVersionsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSegmentVersionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2745,7 +2704,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetSegmentsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSegmentsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2804,7 +2762,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new GetSmsChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getSmsChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2863,7 +2820,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new PutEventStreamRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(putEventStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2922,7 +2878,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new SendMessagesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(sendMessagesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2981,7 +2936,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new SendUsersMessagesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(sendUsersMessagesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3040,7 +2994,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateAdmChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateAdmChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3099,7 +3052,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateApnsChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateApnsChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3159,7 +3111,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                         .beforeMarshalling(updateApnsSandboxChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3219,7 +3170,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateApnsVoipChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateApnsVoipChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3280,7 +3230,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                         .beforeMarshalling(updateApnsVoipSandboxChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3341,7 +3290,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                         .beforeMarshalling(updateApplicationSettingsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3401,7 +3349,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateBaiduChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateBaiduChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3460,7 +3407,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateCampaignRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateCampaignRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3519,7 +3465,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateEmailChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateEmailChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3578,7 +3523,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateEndpointRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateEndpointRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3637,7 +3581,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateEndpointsBatchRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateEndpointsBatchRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3696,7 +3639,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateGcmChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateGcmChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3755,7 +3697,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateSegmentRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateSegmentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3814,7 +3755,6 @@ public class AmazonPinpointClient extends AmazonWebServiceClient implements Amaz
                 request = new UpdateSmsChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateSmsChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

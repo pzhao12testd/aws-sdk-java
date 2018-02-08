@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -29,14 +29,13 @@ public class Table implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Name of the table. For Hive compatibility, this must be entirely lowercase.
+     * Name of the table.
      * </p>
      */
     private String name;
     /**
      * <p>
-     * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all
-     * lowercase.
+     * Name of the metadata database where the table metadata resides.
      * </p>
      */
     private String databaseName;
@@ -127,11 +126,11 @@ public class Table implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Name of the table. For Hive compatibility, this must be entirely lowercase.
+     * Name of the table.
      * </p>
      * 
      * @param name
-     *        Name of the table. For Hive compatibility, this must be entirely lowercase.
+     *        Name of the table.
      */
 
     public void setName(String name) {
@@ -140,10 +139,10 @@ public class Table implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Name of the table. For Hive compatibility, this must be entirely lowercase.
+     * Name of the table.
      * </p>
      * 
-     * @return Name of the table. For Hive compatibility, this must be entirely lowercase.
+     * @return Name of the table.
      */
 
     public String getName() {
@@ -152,11 +151,11 @@ public class Table implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Name of the table. For Hive compatibility, this must be entirely lowercase.
+     * Name of the table.
      * </p>
      * 
      * @param name
-     *        Name of the table. For Hive compatibility, this must be entirely lowercase.
+     *        Name of the table.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -167,13 +166,11 @@ public class Table implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all
-     * lowercase.
+     * Name of the metadata database where the table metadata resides.
      * </p>
      * 
      * @param databaseName
-     *        Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all
-     *        lowercase.
+     *        Name of the metadata database where the table metadata resides.
      */
 
     public void setDatabaseName(String databaseName) {
@@ -182,12 +179,10 @@ public class Table implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all
-     * lowercase.
+     * Name of the metadata database where the table metadata resides.
      * </p>
      * 
-     * @return Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all
-     *         lowercase.
+     * @return Name of the metadata database where the table metadata resides.
      */
 
     public String getDatabaseName() {
@@ -196,13 +191,11 @@ public class Table implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all
-     * lowercase.
+     * Name of the metadata database where the table metadata resides.
      * </p>
      * 
      * @param databaseName
-     *        Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all
-     *        lowercase.
+     *        Name of the metadata database where the table metadata resides.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

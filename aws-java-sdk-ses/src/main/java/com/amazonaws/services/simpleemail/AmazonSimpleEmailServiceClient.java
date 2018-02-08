@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -355,7 +355,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new CloneReceiptRuleSetRequestMarshaller().marshall(super.beforeMarshalling(cloneReceiptRuleSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -424,7 +423,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new CreateConfigurationSetRequestMarshaller().marshall(super.beforeMarshalling(createConfigurationSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -511,7 +509,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(createConfigurationSetEventDestinationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -589,7 +586,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(createConfigurationSetTrackingOptionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -660,7 +656,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(createCustomVerificationEmailTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -727,7 +722,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new CreateReceiptFilterRequestMarshaller().marshall(super.beforeMarshalling(createReceiptFilterRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -814,7 +808,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new CreateReceiptRuleRequestMarshaller().marshall(super.beforeMarshalling(createReceiptRuleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -881,7 +874,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new CreateReceiptRuleSetRequestMarshaller().marshall(super.beforeMarshalling(createReceiptRuleSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -947,7 +939,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new CreateTemplateRequestMarshaller().marshall(super.beforeMarshalling(createTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1008,7 +999,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteConfigurationSetRequestMarshaller().marshall(super.beforeMarshalling(deleteConfigurationSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1074,7 +1064,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(deleteConfigurationSetEventDestinationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1144,7 +1133,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(deleteConfigurationSetTrackingOptionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1204,7 +1192,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(deleteCustomVerificationEmailTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1257,7 +1244,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteIdentityRequestMarshaller().marshall(super.beforeMarshalling(deleteIdentityRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1325,7 +1311,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteIdentityPolicyRequestMarshaller().marshall(super.beforeMarshalling(deleteIdentityPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1386,7 +1371,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteReceiptFilterRequestMarshaller().marshall(super.beforeMarshalling(deleteReceiptFilterRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1449,7 +1433,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteReceiptRuleRequestMarshaller().marshall(super.beforeMarshalling(deleteReceiptRuleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1517,7 +1500,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteReceiptRuleSetRequestMarshaller().marshall(super.beforeMarshalling(deleteReceiptRuleSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1572,7 +1554,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteTemplateRequestMarshaller().marshall(super.beforeMarshalling(deleteTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1623,7 +1604,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DeleteVerifiedEmailAddressRequestMarshaller().marshall(super.beforeMarshalling(deleteVerifiedEmailAddressRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1684,7 +1664,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DescribeActiveReceiptRuleSetRequestMarshaller().marshall(super.beforeMarshalling(describeActiveReceiptRuleSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1744,7 +1723,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DescribeConfigurationSetRequestMarshaller().marshall(super.beforeMarshalling(describeConfigurationSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1809,7 +1787,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DescribeReceiptRuleRequestMarshaller().marshall(super.beforeMarshalling(describeReceiptRuleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1872,7 +1849,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new DescribeReceiptRuleSetRequestMarshaller().marshall(super.beforeMarshalling(describeReceiptRuleSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1924,7 +1900,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetAccountSendingEnabledRequestMarshaller().marshall(super.beforeMarshalling(getAccountSendingEnabledRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1986,7 +1961,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .marshall(super.beforeMarshalling(getCustomVerificationEmailTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2073,7 +2047,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetIdentityDkimAttributesRequestMarshaller().marshall(super.beforeMarshalling(getIdentityDkimAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2131,7 +2104,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(getIdentityMailFromDomainAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2194,7 +2166,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetIdentityNotificationAttributesRequestMarshaller().marshall(super.beforeMarshalling(getIdentityNotificationAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2264,7 +2235,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetIdentityPoliciesRequestMarshaller().marshall(super.beforeMarshalling(getIdentityPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2338,7 +2308,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetIdentityVerificationAttributesRequestMarshaller().marshall(super.beforeMarshalling(getIdentityVerificationAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2390,7 +2359,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetSendQuotaRequestMarshaller().marshall(super.beforeMarshalling(getSendQuotaRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2448,7 +2416,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetSendStatisticsRequestMarshaller().marshall(super.beforeMarshalling(getSendStatisticsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2508,7 +2475,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new GetTemplateRequestMarshaller().marshall(super.beforeMarshalling(getTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2570,7 +2536,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ListConfigurationSetsRequestMarshaller().marshall(super.beforeMarshalling(listConfigurationSetsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2634,7 +2599,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(listCustomVerificationEmailTemplatesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2689,7 +2653,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ListIdentitiesRequestMarshaller().marshall(super.beforeMarshalling(listIdentitiesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2764,7 +2727,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ListIdentityPoliciesRequestMarshaller().marshall(super.beforeMarshalling(listIdentityPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2825,7 +2787,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ListReceiptFiltersRequestMarshaller().marshall(super.beforeMarshalling(listReceiptFiltersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2888,7 +2849,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ListReceiptRuleSetsRequestMarshaller().marshall(super.beforeMarshalling(listReceiptRuleSetsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2940,7 +2900,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ListTemplatesRequestMarshaller().marshall(super.beforeMarshalling(listTemplatesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2989,7 +2948,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ListVerifiedEmailAddressesRequestMarshaller().marshall(super.beforeMarshalling(listVerifiedEmailAddressesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3065,7 +3023,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new PutIdentityPolicyRequestMarshaller().marshall(super.beforeMarshalling(putIdentityPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3136,7 +3093,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new ReorderReceiptRuleSetRequestMarshaller().marshall(super.beforeMarshalling(reorderReceiptRuleSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3202,7 +3158,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SendBounceRequestMarshaller().marshall(super.beforeMarshalling(sendBounceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3316,7 +3271,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SendBulkTemplatedEmailRequestMarshaller().marshall(super.beforeMarshalling(sendBulkTemplatedEmailRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3388,7 +3342,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SendCustomVerificationEmailRequestMarshaller().marshall(super.beforeMarshalling(sendCustomVerificationEmailRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3508,7 +3461,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SendEmailRequestMarshaller().marshall(super.beforeMarshalling(sendEmailRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3683,7 +3635,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SendRawEmailRequestMarshaller().marshall(super.beforeMarshalling(sendRawEmailRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3803,7 +3754,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SendTemplatedEmailRequestMarshaller().marshall(super.beforeMarshalling(sendTemplatedEmailRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3872,7 +3822,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SetActiveReceiptRuleSetRequestMarshaller().marshall(super.beforeMarshalling(setActiveReceiptRuleSetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3950,7 +3899,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SetIdentityDkimEnabledRequestMarshaller().marshall(super.beforeMarshalling(setIdentityDkimEnabledRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4020,7 +3968,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(setIdentityFeedbackForwardingEnabledRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4083,7 +4030,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(setIdentityHeadersInNotificationsEnabledRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4146,7 +4092,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SetIdentityMailFromDomainRequestMarshaller().marshall(super.beforeMarshalling(setIdentityMailFromDomainRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4215,7 +4160,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SetIdentityNotificationTopicRequestMarshaller().marshall(super.beforeMarshalling(setIdentityNotificationTopicRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4280,7 +4224,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new SetReceiptRulePositionRequestMarshaller().marshall(super.beforeMarshalling(setReceiptRulePositionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4341,7 +4284,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new TestRenderTemplateRequestMarshaller().marshall(super.beforeMarshalling(testRenderTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4397,7 +4339,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new UpdateAccountSendingEnabledRequestMarshaller().marshall(super.beforeMarshalling(updateAccountSendingEnabledRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4476,7 +4417,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(updateConfigurationSetEventDestinationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4537,7 +4477,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(updateConfigurationSetReputationMetricsEnabledRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4597,7 +4536,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(updateConfigurationSetSendingEnabledRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4675,7 +4613,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(updateConfigurationSetTrackingOptionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4742,7 +4679,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(updateCustomVerificationEmailTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4827,7 +4763,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new UpdateReceiptRuleRequestMarshaller().marshall(super.beforeMarshalling(updateReceiptRuleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4886,7 +4821,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new UpdateTemplateRequestMarshaller().marshall(super.beforeMarshalling(updateTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4953,7 +4887,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new VerifyDomainDkimRequestMarshaller().marshall(super.beforeMarshalling(verifyDomainDkimRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5013,7 +4946,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new VerifyDomainIdentityRequestMarshaller().marshall(super.beforeMarshalling(verifyDomainIdentityRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5066,7 +4998,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new VerifyEmailAddressRequestMarshaller().marshall(super.beforeMarshalling(verifyEmailAddressRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5123,7 +5054,6 @@ public class AmazonSimpleEmailServiceClient extends AmazonWebServiceClient imple
                 request = new VerifyEmailIdentityRequestMarshaller().marshall(super.beforeMarshalling(verifyEmailIdentityRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

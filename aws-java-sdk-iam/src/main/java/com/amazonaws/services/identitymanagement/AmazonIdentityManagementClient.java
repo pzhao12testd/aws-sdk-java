@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -394,7 +394,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                         .marshall(super.beforeMarshalling(addClientIDToOpenIDConnectProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -470,7 +469,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new AddRoleToInstanceProfileRequestMarshaller().marshall(super.beforeMarshalling(addRoleToInstanceProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -527,7 +525,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new AddUserToGroupRequestMarshaller().marshall(super.beforeMarshalling(addUserToGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -598,7 +595,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new AttachGroupPolicyRequestMarshaller().marshall(super.beforeMarshalling(attachGroupPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -677,7 +673,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new AttachRolePolicyRequestMarshaller().marshall(super.beforeMarshalling(attachRolePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -748,7 +743,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new AttachUserPolicyRequestMarshaller().marshall(super.beforeMarshalling(attachUserPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -820,7 +814,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ChangePasswordRequestMarshaller().marshall(super.beforeMarshalling(changePasswordRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -895,7 +888,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateAccessKeyRequestMarshaller().marshall(super.beforeMarshalling(createAccessKeyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -958,7 +950,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateAccountAliasRequestMarshaller().marshall(super.beforeMarshalling(createAccountAliasRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1022,7 +1013,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateGroupRequestMarshaller().marshall(super.beforeMarshalling(createGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1083,7 +1073,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateInstanceProfileRequestMarshaller().marshall(super.beforeMarshalling(createInstanceProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1148,7 +1137,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateLoginProfileRequestMarshaller().marshall(super.beforeMarshalling(createLoginProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1223,7 +1211,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateOpenIDConnectProviderRequestMarshaller().marshall(super.beforeMarshalling(createOpenIDConnectProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1295,7 +1282,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreatePolicyRequestMarshaller().marshall(super.beforeMarshalling(createPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1367,7 +1353,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreatePolicyVersionRequestMarshaller().marshall(super.beforeMarshalling(createPolicyVersionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1432,7 +1417,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateRoleRequestMarshaller().marshall(super.beforeMarshalling(createRoleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1514,7 +1498,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateSAMLProviderRequestMarshaller().marshall(super.beforeMarshalling(createSAMLProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1585,7 +1568,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateServiceLinkedRoleRequestMarshaller().marshall(super.beforeMarshalling(createServiceLinkedRoleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1658,7 +1640,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateServiceSpecificCredentialRequestMarshaller().marshall(super.beforeMarshalling(createServiceSpecificCredentialRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1722,7 +1703,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateUserRequestMarshaller().marshall(super.beforeMarshalling(createUserRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1792,7 +1772,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new CreateVirtualMFADeviceRequestMarshaller().marshall(super.beforeMarshalling(createVirtualMFADeviceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1859,7 +1838,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeactivateMFADeviceRequestMarshaller().marshall(super.beforeMarshalling(deactivateMFADeviceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1921,7 +1899,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteAccessKeyRequestMarshaller().marshall(super.beforeMarshalling(deleteAccessKeyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1980,7 +1957,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteAccountAliasRequestMarshaller().marshall(super.beforeMarshalling(deleteAccountAliasRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2037,7 +2013,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteAccountPasswordPolicyRequestMarshaller().marshall(super.beforeMarshalling(deleteAccountPasswordPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2102,7 +2077,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteGroupRequestMarshaller().marshall(super.beforeMarshalling(deleteGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2164,7 +2138,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteGroupPolicyRequestMarshaller().marshall(super.beforeMarshalling(deleteGroupPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2235,7 +2208,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteInstanceProfileRequestMarshaller().marshall(super.beforeMarshalling(deleteInstanceProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2304,7 +2276,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteLoginProfileRequestMarshaller().marshall(super.beforeMarshalling(deleteLoginProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2368,7 +2339,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteOpenIDConnectProviderRequestMarshaller().marshall(super.beforeMarshalling(deleteOpenIDConnectProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2461,7 +2431,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeletePolicyRequestMarshaller().marshall(super.beforeMarshalling(deletePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2532,7 +2501,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeletePolicyVersionRequestMarshaller().marshall(super.beforeMarshalling(deletePolicyVersionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2604,7 +2572,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteRoleRequestMarshaller().marshall(super.beforeMarshalling(deleteRoleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2670,7 +2637,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteRolePolicyRequestMarshaller().marshall(super.beforeMarshalling(deleteRolePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2740,7 +2706,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteSAMLProviderRequestMarshaller().marshall(super.beforeMarshalling(deleteSAMLProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2798,7 +2763,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteSSHPublicKeyRequestMarshaller().marshall(super.beforeMarshalling(deleteSSHPublicKeyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2875,7 +2839,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteServerCertificateRequestMarshaller().marshall(super.beforeMarshalling(deleteServerCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2949,7 +2912,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteServiceLinkedRoleRequestMarshaller().marshall(super.beforeMarshalling(deleteServiceLinkedRoleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3002,7 +2964,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteServiceSpecificCredentialRequestMarshaller().marshall(super.beforeMarshalling(deleteServiceSpecificCredentialRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3064,7 +3025,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteSigningCertificateRequestMarshaller().marshall(super.beforeMarshalling(deleteSigningCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3125,7 +3085,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteUserRequestMarshaller().marshall(super.beforeMarshalling(deleteUserRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3187,7 +3146,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteUserPolicyRequestMarshaller().marshall(super.beforeMarshalling(deleteUserPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3253,7 +3211,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DeleteVirtualMFADeviceRequestMarshaller().marshall(super.beforeMarshalling(deleteVirtualMFADeviceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3318,7 +3275,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DetachGroupPolicyRequestMarshaller().marshall(super.beforeMarshalling(detachGroupPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3387,7 +3343,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DetachRolePolicyRequestMarshaller().marshall(super.beforeMarshalling(detachRolePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3452,7 +3407,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new DetachUserPolicyRequestMarshaller().marshall(super.beforeMarshalling(detachUserPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3519,7 +3473,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new EnableMFADeviceRequestMarshaller().marshall(super.beforeMarshalling(enableMFADeviceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3575,7 +3528,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GenerateCredentialReportRequestMarshaller().marshall(super.beforeMarshalling(generateCredentialReportRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3634,7 +3586,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetAccessKeyLastUsedRequestMarshaller().marshall(super.beforeMarshalling(getAccessKeyLastUsedRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3691,7 +3642,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetAccountAuthorizationDetailsRequestMarshaller().marshall(super.beforeMarshalling(getAccountAuthorizationDetailsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3752,7 +3702,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetAccountPasswordPolicyRequestMarshaller().marshall(super.beforeMarshalling(getAccountPasswordPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3813,7 +3762,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetAccountSummaryRequestMarshaller().marshall(super.beforeMarshalling(getAccountSummaryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3878,7 +3826,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetContextKeysForCustomPolicyRequestMarshaller().marshall(super.beforeMarshalling(getContextKeysForCustomPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3950,7 +3897,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetContextKeysForPrincipalPolicyRequestMarshaller().marshall(super.beforeMarshalling(getContextKeysForPrincipalPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4013,7 +3959,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetCredentialReportRequestMarshaller().marshall(super.beforeMarshalling(getCredentialReportRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4073,7 +4018,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetGroupRequestMarshaller().marshall(super.beforeMarshalling(getGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4144,7 +4088,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetGroupPolicyRequestMarshaller().marshall(super.beforeMarshalling(getGroupPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4201,7 +4144,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetInstanceProfileRequestMarshaller().marshall(super.beforeMarshalling(getInstanceProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4256,7 +4198,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetLoginProfileRequestMarshaller().marshall(super.beforeMarshalling(getLoginProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4312,7 +4253,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetOpenIDConnectProviderRequestMarshaller().marshall(super.beforeMarshalling(getOpenIDConnectProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4382,7 +4322,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetPolicyRequestMarshaller().marshall(super.beforeMarshalling(getPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4463,7 +4402,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetPolicyVersionRequestMarshaller().marshall(super.beforeMarshalling(getPolicyVersionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4527,7 +4465,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetRoleRequestMarshaller().marshall(super.beforeMarshalling(getRoleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4603,7 +4540,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetRolePolicyRequestMarshaller().marshall(super.beforeMarshalling(getRolePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4665,7 +4601,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetSAMLProviderRequestMarshaller().marshall(super.beforeMarshalling(getSAMLProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4725,7 +4660,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetSSHPublicKeyRequestMarshaller().marshall(super.beforeMarshalling(getSSHPublicKeyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4785,7 +4719,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetServerCertificateRequestMarshaller().marshall(super.beforeMarshalling(getServerCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4846,7 +4779,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                         .marshall(super.beforeMarshalling(getServiceLinkedRoleDeletionStatusRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4904,7 +4836,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetUserRequestMarshaller().marshall(super.beforeMarshalling(getUserRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4980,7 +4911,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new GetUserPolicyRequestMarshaller().marshall(super.beforeMarshalling(getUserPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5049,7 +4979,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListAccessKeysRequestMarshaller().marshall(super.beforeMarshalling(listAccessKeysRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5107,7 +5036,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListAccountAliasesRequestMarshaller().marshall(super.beforeMarshalling(listAccountAliasesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5180,7 +5108,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListAttachedGroupPoliciesRequestMarshaller().marshall(super.beforeMarshalling(listAttachedGroupPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5248,7 +5175,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListAttachedRolePoliciesRequestMarshaller().marshall(super.beforeMarshalling(listAttachedRolePoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5316,7 +5242,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListAttachedUserPoliciesRequestMarshaller().marshall(super.beforeMarshalling(listAttachedUserPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5380,7 +5305,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListEntitiesForPolicyRequestMarshaller().marshall(super.beforeMarshalling(listEntitiesForPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5444,7 +5368,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListGroupPoliciesRequestMarshaller().marshall(super.beforeMarshalling(listGroupPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5498,7 +5421,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListGroupsRequestMarshaller().marshall(super.beforeMarshalling(listGroupsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5559,7 +5481,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListGroupsForUserRequestMarshaller().marshall(super.beforeMarshalling(listGroupsForUserRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5615,7 +5536,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListInstanceProfilesRequestMarshaller().marshall(super.beforeMarshalling(listInstanceProfilesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5679,7 +5599,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListInstanceProfilesForRoleRequestMarshaller().marshall(super.beforeMarshalling(listInstanceProfilesForRoleRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5738,7 +5657,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListMFADevicesRequestMarshaller().marshall(super.beforeMarshalling(listMFADevicesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5794,7 +5712,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListOpenIDConnectProvidersRequestMarshaller().marshall(super.beforeMarshalling(listOpenIDConnectProvidersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5865,7 +5782,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListPoliciesRequestMarshaller().marshall(super.beforeMarshalling(listPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5931,7 +5847,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListPolicyVersionsRequestMarshaller().marshall(super.beforeMarshalling(listPolicyVersionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5995,7 +5910,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListRolePoliciesRequestMarshaller().marshall(super.beforeMarshalling(listRolePoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6051,7 +5965,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListRolesRequestMarshaller().marshall(super.beforeMarshalling(listRolesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6112,7 +6025,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListSAMLProvidersRequestMarshaller().marshall(super.beforeMarshalling(listSAMLProvidersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6180,7 +6092,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListSSHPublicKeysRequestMarshaller().marshall(super.beforeMarshalling(listSSHPublicKeysRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6246,7 +6157,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListServerCertificatesRequestMarshaller().marshall(super.beforeMarshalling(listServerCertificatesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6310,7 +6220,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListServiceSpecificCredentialsRequestMarshaller().marshall(super.beforeMarshalling(listServiceSpecificCredentialsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6374,7 +6283,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListSigningCertificatesRequestMarshaller().marshall(super.beforeMarshalling(listSigningCertificatesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6443,7 +6351,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListUserPoliciesRequestMarshaller().marshall(super.beforeMarshalling(listUserPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6498,7 +6405,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListUsersRequestMarshaller().marshall(super.beforeMarshalling(listUsersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6556,7 +6462,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ListVirtualMFADevicesRequestMarshaller().marshall(super.beforeMarshalling(listVirtualMFADevicesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6640,7 +6545,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new PutGroupPolicyRequestMarshaller().marshall(super.beforeMarshalling(putGroupPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6730,7 +6634,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new PutRolePolicyRequestMarshaller().marshall(super.beforeMarshalling(putRolePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6808,7 +6711,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new PutUserPolicyRequestMarshaller().marshall(super.beforeMarshalling(putUserPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6870,7 +6772,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(removeClientIDFromOpenIDConnectProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6944,7 +6845,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new RemoveRoleFromInstanceProfileRequestMarshaller().marshall(super.beforeMarshalling(removeRoleFromInstanceProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7001,7 +6901,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new RemoveUserFromGroupRequestMarshaller().marshall(super.beforeMarshalling(removeUserFromGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7055,7 +6954,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ResetServiceSpecificCredentialRequestMarshaller().marshall(super.beforeMarshalling(resetServiceSpecificCredentialRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7120,7 +7018,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new ResyncMFADeviceRequestMarshaller().marshall(super.beforeMarshalling(resyncMFADeviceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7188,7 +7085,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new SetDefaultPolicyVersionRequestMarshaller().marshall(super.beforeMarshalling(setDefaultPolicyVersionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7261,7 +7157,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new SimulateCustomPolicyRequestMarshaller().marshall(super.beforeMarshalling(simulateCustomPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7347,7 +7242,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new SimulatePrincipalPolicyRequestMarshaller().marshall(super.beforeMarshalling(simulatePrincipalPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7415,7 +7309,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateAccessKeyRequestMarshaller().marshall(super.beforeMarshalling(updateAccessKeyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7487,7 +7380,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateAccountPasswordPolicyRequestMarshaller().marshall(super.beforeMarshalling(updateAccountPasswordPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7554,7 +7446,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateAssumeRolePolicyRequestMarshaller().marshall(super.beforeMarshalling(updateAssumeRolePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7627,7 +7518,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateGroupRequestMarshaller().marshall(super.beforeMarshalling(updateGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7695,7 +7585,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateLoginProfileRequestMarshaller().marshall(super.beforeMarshalling(updateLoginProfileRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7770,7 +7659,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                         .beforeMarshalling(updateOpenIDConnectProviderThumbprintRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7828,7 +7716,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateRoleDescriptionRequestMarshaller().marshall(super.beforeMarshalling(updateRoleDescriptionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7893,7 +7780,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateSAMLProviderRequestMarshaller().marshall(super.beforeMarshalling(updateSAMLProviderRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7953,7 +7839,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateSSHPublicKeyRequestMarshaller().marshall(super.beforeMarshalling(updateSSHPublicKeyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8034,7 +7919,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateServerCertificateRequestMarshaller().marshall(super.beforeMarshalling(updateServerCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8089,7 +7973,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateServiceSpecificCredentialRequestMarshaller().marshall(super.beforeMarshalling(updateServiceSpecificCredentialRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8152,7 +8035,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateSigningCertificateRequestMarshaller().marshall(super.beforeMarshalling(updateSigningCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8230,7 +8112,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UpdateUserRequestMarshaller().marshall(super.beforeMarshalling(updateUserRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8296,7 +8177,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UploadSSHPublicKeyRequestMarshaller().marshall(super.beforeMarshalling(uploadSSHPublicKeyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8387,7 +8267,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UploadServerCertificateRequestMarshaller().marshall(super.beforeMarshalling(uploadServerCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8470,7 +8349,6 @@ public class AmazonIdentityManagementClient extends AmazonWebServiceClient imple
                 request = new UploadSigningCertificateRequestMarshaller().marshall(super.beforeMarshalling(uploadSigningCertificateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -19,8 +19,7 @@ import com.amazonaws.protocol.ProtocolMarshaller;
 
 /**
  * <p>
- * Specifies information used to update an existing job. Note that the previous job definition will be completely
- * overwritten by this information.
+ * Specifies information used to update an existing job.
  * </p>
  * 
  * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/JobUpdate" target="_top">AWS API
@@ -43,7 +42,7 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
     private String logUri;
     /**
      * <p>
-     * The name of the IAM role associated with this job (required).
+     * The role associated with this job.
      * </p>
      */
     private String role;
@@ -55,27 +54,13 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
     private ExecutionProperty executionProperty;
     /**
      * <p>
-     * The JobCommand that executes this job (required).
+     * The JobCommand that executes this job.
      * </p>
      */
     private JobCommand command;
     /**
      * <p>
-     * The default arguments for this job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own Job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The default parameters for this job.
      * </p>
      */
     private java.util.Map<String, String> defaultArguments;
@@ -93,10 +78,7 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
     private Integer maxRetries;
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated;
-     * the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity
-     * and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS Glue
-     * pricing page</a>.
+     * The number of capacity units allocated to this job.
      * </p>
      */
     private Integer allocatedCapacity;
@@ -183,11 +165,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the IAM role associated with this job (required).
+     * The role associated with this job.
      * </p>
      * 
      * @param role
-     *        The name of the IAM role associated with this job (required).
+     *        The role associated with this job.
      */
 
     public void setRole(String role) {
@@ -196,10 +178,10 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the IAM role associated with this job (required).
+     * The role associated with this job.
      * </p>
      * 
-     * @return The name of the IAM role associated with this job (required).
+     * @return The role associated with this job.
      */
 
     public String getRole() {
@@ -208,11 +190,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the IAM role associated with this job (required).
+     * The role associated with this job.
      * </p>
      * 
      * @param role
-     *        The name of the IAM role associated with this job (required).
+     *        The role associated with this job.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -263,11 +245,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The JobCommand that executes this job (required).
+     * The JobCommand that executes this job.
      * </p>
      * 
      * @param command
-     *        The JobCommand that executes this job (required).
+     *        The JobCommand that executes this job.
      */
 
     public void setCommand(JobCommand command) {
@@ -276,10 +258,10 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The JobCommand that executes this job (required).
+     * The JobCommand that executes this job.
      * </p>
      * 
-     * @return The JobCommand that executes this job (required).
+     * @return The JobCommand that executes this job.
      */
 
     public JobCommand getCommand() {
@@ -288,11 +270,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The JobCommand that executes this job (required).
+     * The JobCommand that executes this job.
      * </p>
      * 
      * @param command
-     *        The JobCommand that executes this job (required).
+     *        The JobCommand that executes this job.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -303,37 +285,10 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The default arguments for this job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own Job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The default parameters for this job.
      * </p>
      * 
-     * @return The default arguments for this job.</p>
-     *         <p>
-     *         You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS
-     *         Glue itself consumes.
-     *         </p>
-     *         <p>
-     *         For information about how to specify and consume your own Job arguments, see the <a
-     *         href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS
-     *         Glue APIs in Python</a> topic in the developer guide.
-     *         </p>
-     *         <p>
-     *         For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     *         href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     *         Parameters Used by AWS Glue</a> topic in the developer guide.
+     * @return The default parameters for this job.
      */
 
     public java.util.Map<String, String> getDefaultArguments() {
@@ -342,38 +297,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The default arguments for this job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own Job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The default parameters for this job.
      * </p>
      * 
      * @param defaultArguments
-     *        The default arguments for this job.</p>
-     *        <p>
-     *        You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS
-     *        Glue itself consumes.
-     *        </p>
-     *        <p>
-     *        For information about how to specify and consume your own Job arguments, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue
-     *        APIs in Python</a> topic in the developer guide.
-     *        </p>
-     *        <p>
-     *        For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     *        Parameters Used by AWS Glue</a> topic in the developer guide.
+     *        The default parameters for this job.
      */
 
     public void setDefaultArguments(java.util.Map<String, String> defaultArguments) {
@@ -382,38 +310,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The default arguments for this job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own Job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The default parameters for this job.
      * </p>
      * 
      * @param defaultArguments
-     *        The default arguments for this job.</p>
-     *        <p>
-     *        You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS
-     *        Glue itself consumes.
-     *        </p>
-     *        <p>
-     *        For information about how to specify and consume your own Job arguments, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue
-     *        APIs in Python</a> topic in the developer guide.
-     *        </p>
-     *        <p>
-     *        For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     *        Parameters Used by AWS Glue</a> topic in the developer guide.
+     *        The default parameters for this job.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -525,17 +426,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated;
-     * the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity
-     * and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS Glue
-     * pricing page</a>.
+     * The number of capacity units allocated to this job.
      * </p>
      * 
      * @param allocatedCapacity
-     *        The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be
-     *        allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of
-     *        compute capacity and 16 GB of memory. For more information, see the <a
-     *        href="https://aws.amazon.com/glue/pricing/">AWS Glue pricing page</a>.
+     *        The number of capacity units allocated to this job.
      */
 
     public void setAllocatedCapacity(Integer allocatedCapacity) {
@@ -544,16 +439,10 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated;
-     * the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity
-     * and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS Glue
-     * pricing page</a>.
+     * The number of capacity units allocated to this job.
      * </p>
      * 
-     * @return The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be
-     *         allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of
-     *         compute capacity and 16 GB of memory. For more information, see the <a
-     *         href="https://aws.amazon.com/glue/pricing/">AWS Glue pricing page</a>.
+     * @return The number of capacity units allocated to this job.
      */
 
     public Integer getAllocatedCapacity() {
@@ -562,17 +451,11 @@ public class JobUpdate implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated;
-     * the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity
-     * and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS Glue
-     * pricing page</a>.
+     * The number of capacity units allocated to this job.
      * </p>
      * 
      * @param allocatedCapacity
-     *        The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be
-     *        allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of
-     *        compute capacity and 16 GB of memory. For more information, see the <a
-     *        href="https://aws.amazon.com/glue/pricing/">AWS Glue pricing page</a>.
+     *        The number of capacity units allocated to this job.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

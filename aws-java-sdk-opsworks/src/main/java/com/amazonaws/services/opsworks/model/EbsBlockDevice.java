@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -52,13 +52,7 @@ public class EbsBlockDevice implements Serializable, Cloneable, StructuredPojo {
     /**
      * <p>
      * The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS (SSD)
-     * volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold HDD,and
-     * <code>standard</code> for Magnetic volumes.
-     * </p>
-     * <p>
-     * If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     * attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the default
-     * volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     * volumes, and <code>standard</code> for Magnetic volumes.
      * </p>
      */
     private String volumeType;
@@ -204,23 +198,12 @@ public class EbsBlockDevice implements Serializable, Cloneable, StructuredPojo {
     /**
      * <p>
      * The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS (SSD)
-     * volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold HDD,and
-     * <code>standard</code> for Magnetic volumes.
-     * </p>
-     * <p>
-     * If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     * attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the default
-     * volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     * volumes, and <code>standard</code> for Magnetic volumes.
      * </p>
      * 
      * @param volumeType
      *        The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS
-     *        (SSD) volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold
-     *        HDD,and <code>standard</code> for Magnetic volumes.</p>
-     *        <p>
-     *        If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     *        attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the
-     *        default volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     *        (SSD) volumes, and <code>standard</code> for Magnetic volumes.
      * @see VolumeType
      */
 
@@ -231,22 +214,11 @@ public class EbsBlockDevice implements Serializable, Cloneable, StructuredPojo {
     /**
      * <p>
      * The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS (SSD)
-     * volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold HDD,and
-     * <code>standard</code> for Magnetic volumes.
-     * </p>
-     * <p>
-     * If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     * attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the default
-     * volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     * volumes, and <code>standard</code> for Magnetic volumes.
      * </p>
      * 
      * @return The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned
-     *         IOPS (SSD) volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code>
-     *         for Cold HDD,and <code>standard</code> for Magnetic volumes.</p>
-     *         <p>
-     *         If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     *         attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the
-     *         default volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     *         IOPS (SSD) volumes, and <code>standard</code> for Magnetic volumes.
      * @see VolumeType
      */
 
@@ -257,23 +229,12 @@ public class EbsBlockDevice implements Serializable, Cloneable, StructuredPojo {
     /**
      * <p>
      * The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS (SSD)
-     * volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold HDD,and
-     * <code>standard</code> for Magnetic volumes.
-     * </p>
-     * <p>
-     * If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     * attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the default
-     * volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     * volumes, and <code>standard</code> for Magnetic volumes.
      * </p>
      * 
      * @param volumeType
      *        The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS
-     *        (SSD) volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold
-     *        HDD,and <code>standard</code> for Magnetic volumes.</p>
-     *        <p>
-     *        If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     *        attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the
-     *        default volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     *        (SSD) volumes, and <code>standard</code> for Magnetic volumes.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see VolumeType
      */
@@ -286,23 +247,12 @@ public class EbsBlockDevice implements Serializable, Cloneable, StructuredPojo {
     /**
      * <p>
      * The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS (SSD)
-     * volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold HDD,and
-     * <code>standard</code> for Magnetic volumes.
-     * </p>
-     * <p>
-     * If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     * attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the default
-     * volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     * volumes, and <code>standard</code> for Magnetic volumes.
      * </p>
      * 
      * @param volumeType
      *        The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS
-     *        (SSD) volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold
-     *        HDD,and <code>standard</code> for Magnetic volumes.</p>
-     *        <p>
-     *        If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     *        attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the
-     *        default volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     *        (SSD) volumes, and <code>standard</code> for Magnetic volumes.
      * @see VolumeType
      */
 
@@ -313,23 +263,12 @@ public class EbsBlockDevice implements Serializable, Cloneable, StructuredPojo {
     /**
      * <p>
      * The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS (SSD)
-     * volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold HDD,and
-     * <code>standard</code> for Magnetic volumes.
-     * </p>
-     * <p>
-     * If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     * attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the default
-     * volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     * volumes, and <code>standard</code> for Magnetic volumes.
      * </p>
      * 
      * @param volumeType
      *        The volume type. <code>gp2</code> for General Purpose (SSD) volumes, <code>io1</code> for Provisioned IOPS
-     *        (SSD) volumes, <code>st1</code> for Throughput Optimized hard disk drives (HDD), <code>sc1</code> for Cold
-     *        HDD,and <code>standard</code> for Magnetic volumes.</p>
-     *        <p>
-     *        If you specify the <code>io1</code> volume type, you must also specify a value for the <code>Iops</code>
-     *        attribute. The maximum ratio of provisioned IOPS to requested volume size (in GiB) is 50:1. AWS uses the
-     *        default volume size (in GiB) specified in the AMI attributes to set IOPS to 50 x (volume size).
+     *        (SSD) volumes, and <code>standard</code> for Magnetic volumes.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see VolumeType
      */

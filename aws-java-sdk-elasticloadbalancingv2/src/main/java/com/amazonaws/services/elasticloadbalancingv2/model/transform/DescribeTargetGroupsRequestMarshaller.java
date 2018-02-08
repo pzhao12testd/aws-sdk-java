@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -47,8 +47,9 @@ public class DescribeTargetGroupsRequestMarshaller implements Marshaller<Request
             request.addParameter("LoadBalancerArn", StringUtils.fromString(describeTargetGroupsRequest.getLoadBalancerArn()));
         }
 
-        if (describeTargetGroupsRequest.getTargetGroupArns() != null) {
-            java.util.List<String> targetGroupArnsList = describeTargetGroupsRequest.getTargetGroupArns();
+        java.util.List<String> targetGroupArnsList = describeTargetGroupsRequest.getTargetGroupArns();
+
+        if (targetGroupArnsList != null) {
             if (targetGroupArnsList.isEmpty()) {
                 request.addParameter("TargetGroupArns", "");
             } else {
@@ -63,8 +64,9 @@ public class DescribeTargetGroupsRequestMarshaller implements Marshaller<Request
             }
         }
 
-        if (describeTargetGroupsRequest.getNames() != null) {
-            java.util.List<String> namesList = describeTargetGroupsRequest.getNames();
+        java.util.List<String> namesList = describeTargetGroupsRequest.getNames();
+
+        if (namesList != null) {
             if (namesList.isEmpty()) {
                 request.addParameter("Names", "");
             } else {

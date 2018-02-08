@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -177,7 +177,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new CreateChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -237,7 +236,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new CreateInputRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createInputRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -298,7 +296,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                         .beforeMarshalling(createInputSecurityGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -363,7 +360,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new DeleteChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -427,7 +423,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new DeleteInputRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteInputRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -458,8 +453,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
      *         The requester does not have permission to delete this Input Security Group
      * @throws BadGatewayException
      *         Bad Gateway Error
-     * @throws NotFoundException
-     *         Input Security Group not found
      * @throws GatewayTimeoutException
      *         Gateway Timeout Error
      * @throws TooManyRequestsException
@@ -490,7 +483,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                         .beforeMarshalling(deleteInputSecurityGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -553,7 +545,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new DescribeChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -615,7 +606,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new DescribeInputRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeInputRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -678,7 +668,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                         .beforeMarshalling(describeInputSecurityGroupRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -739,7 +728,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new ListChannelsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listChannelsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -800,7 +788,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                         .beforeMarshalling(listInputSecurityGroupsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -861,7 +848,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new ListInputsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listInputsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -925,7 +911,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new StartChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -989,7 +974,6 @@ public class AWSMediaLiveClient extends AmazonWebServiceClient implements AWSMed
                 request = new StopChannelRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(stopChannelRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

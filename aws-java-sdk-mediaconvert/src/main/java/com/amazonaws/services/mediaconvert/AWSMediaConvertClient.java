@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -167,7 +167,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new CancelJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(cancelJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -230,7 +229,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new CreateJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -293,7 +291,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new CreateJobTemplateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createJobTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -356,7 +353,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new CreatePresetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createPresetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -419,7 +415,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new CreateQueueRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createQueueRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -481,7 +476,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new DeleteJobTemplateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteJobTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -543,7 +537,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new DeletePresetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deletePresetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -605,7 +598,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new DeleteQueueRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteQueueRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -665,7 +657,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new DescribeEndpointsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeEndpointsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -727,7 +718,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new GetJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -789,7 +779,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new GetJobTemplateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getJobTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -851,7 +840,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new GetPresetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getPresetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -913,7 +901,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new GetQueueRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getQueueRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -976,7 +963,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new ListJobTemplatesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listJobTemplatesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1040,7 +1026,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new ListJobsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listJobsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1103,7 +1088,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new ListPresetsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listPresetsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1166,7 +1150,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new ListQueuesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listQueuesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1228,7 +1211,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new UpdateJobTemplateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateJobTemplateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1290,7 +1272,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new UpdatePresetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updatePresetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1352,7 +1333,6 @@ public class AWSMediaConvertClient extends AmazonWebServiceClient implements AWS
                 request = new UpdateQueueRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateQueueRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

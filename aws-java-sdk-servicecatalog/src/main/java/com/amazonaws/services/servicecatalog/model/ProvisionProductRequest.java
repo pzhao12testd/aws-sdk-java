@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -82,7 +82,7 @@ public class ProvisionProductRequest extends com.amazonaws.AmazonWebServiceReque
     private java.util.List<ProvisioningParameter> provisioningParameters;
     /**
      * <p>
-     * One or more tags.
+     * The tags to use as provisioning options.
      * </p>
      */
     private java.util.List<Tag> tags;
@@ -483,10 +483,10 @@ public class ProvisionProductRequest extends com.amazonaws.AmazonWebServiceReque
 
     /**
      * <p>
-     * One or more tags.
+     * The tags to use as provisioning options.
      * </p>
      * 
-     * @return One or more tags.
+     * @return The tags to use as provisioning options.
      */
 
     public java.util.List<Tag> getTags() {
@@ -495,11 +495,11 @@ public class ProvisionProductRequest extends com.amazonaws.AmazonWebServiceReque
 
     /**
      * <p>
-     * One or more tags.
+     * The tags to use as provisioning options.
      * </p>
      * 
      * @param tags
-     *        One or more tags.
+     *        The tags to use as provisioning options.
      */
 
     public void setTags(java.util.Collection<Tag> tags) {
@@ -513,7 +513,7 @@ public class ProvisionProductRequest extends com.amazonaws.AmazonWebServiceReque
 
     /**
      * <p>
-     * One or more tags.
+     * The tags to use as provisioning options.
      * </p>
      * <p>
      * <b>NOTE:</b> This method appends the values to the existing list (if any). Use
@@ -522,7 +522,7 @@ public class ProvisionProductRequest extends com.amazonaws.AmazonWebServiceReque
      * </p>
      * 
      * @param tags
-     *        One or more tags.
+     *        The tags to use as provisioning options.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -538,11 +538,11 @@ public class ProvisionProductRequest extends com.amazonaws.AmazonWebServiceReque
 
     /**
      * <p>
-     * One or more tags.
+     * The tags to use as provisioning options.
      * </p>
      * 
      * @param tags
-     *        One or more tags.
+     *        The tags to use as provisioning options.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -333,7 +333,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new CreateReplicationJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createReplicationJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -394,7 +393,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new DeleteReplicationJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteReplicationJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -452,7 +450,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new DeleteServerCatalogRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteServerCatalogRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -510,7 +507,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new DisassociateConnectorRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(disassociateConnectorRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -560,7 +556,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new GetConnectorsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getConnectorsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -615,7 +610,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new GetReplicationJobsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getReplicationJobsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -671,7 +665,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new GetReplicationRunsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getReplicationRunsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -721,7 +714,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new GetServersRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getServersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -783,7 +775,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new ImportServerCatalogRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(importServerCatalogRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -845,7 +836,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                         .beforeMarshalling(startOnDemandReplicationRunRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -910,7 +900,6 @@ public class AWSServerMigrationClient extends AmazonWebServiceClient implements 
                 request = new UpdateReplicationJobRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateReplicationJobRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

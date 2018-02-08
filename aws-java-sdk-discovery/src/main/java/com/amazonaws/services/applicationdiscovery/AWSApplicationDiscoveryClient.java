@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -99,8 +99,9 @@ import com.amazonaws.services.applicationdiscovery.model.transform.*;
  * </important>
  * <p>
  * Your AWS account must be granted access to Application Discovery Service, a process called <i>whitelisting</i>. This
- * is true for AWS partners and customers alike. To request access, <a
- * href="http://aws.amazon.com/application-discovery/how-to-start/"> sign up for AWS Application Discovery Service</a>.
+ * is true for AWS partners and customers alike. To request access, sign up for AWS Application Discovery Service <a
+ * href="http://aws.amazon.com/application-discovery/preview/">here</a>. We send you information about how to get
+ * started.
  * </p>
  * <p>
  * This API reference provides descriptions, syntax, and usage examples for each of the actions and data types for
@@ -378,7 +379,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                         .beforeMarshalling(associateConfigurationItemsToApplicationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -436,7 +436,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new CreateApplicationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createApplicationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -496,7 +495,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new CreateTagsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createTagsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -553,7 +551,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new DeleteApplicationsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteApplicationsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -613,7 +610,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new DeleteTagsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteTagsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -671,7 +667,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new DescribeAgentsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeAgentsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -736,7 +731,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new DescribeConfigurationsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeConfigurationsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -801,7 +795,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                         .beforeMarshalling(describeExportConfigurationsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -859,7 +852,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new DescribeExportTasksRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeExportTasksRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -919,7 +911,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new DescribeTagsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeTagsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -979,7 +970,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                         .beforeMarshalling(disassociateConfigurationItemsFromApplicationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1046,7 +1036,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new ExportConfigurationsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(exportConfigurationsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1103,7 +1092,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new GetDiscoverySummaryRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getDiscoverySummaryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1163,7 +1151,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new ListConfigurationsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listConfigurationsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1220,7 +1207,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new ListServerNeighborsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listServerNeighborsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1278,7 +1264,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                         .beforeMarshalling(startDataCollectionByAgentIdsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1301,13 +1286,13 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
      * Begins the export of discovered data to an S3 bucket.
      * </p>
      * <p>
-     * If you specify <code>agentIds</code> in a filter, the task exports up to 72 hours of detailed data collected by
+     * If you specify <code>agentId</code> in a filter, the task exports up to 72 hours of detailed data collected by
      * the identified Application Discovery Agent, including network, process, and performance details. A time range for
      * exported agent data may be set by using <code>startTime</code> and <code>endTime</code>. Export of detailed agent
      * data is limited to five concurrently running exports.
      * </p>
      * <p>
-     * If you do not include an <code>agentIds</code> filter, summary data is exported that includes both AWS Agentless
+     * If you do not include an <code>agentId</code> filter, summary data is exported that includes both AWS Agentless
      * Discovery Connector data and summary data from AWS Discovery Agents. Export of summary data is limited to two
      * exports per day.
      * </p>
@@ -1349,7 +1334,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new StartExportTaskRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startExportTaskRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1407,7 +1391,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                         .beforeMarshalling(stopDataCollectionByAgentIdsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1465,7 +1448,6 @@ public class AWSApplicationDiscoveryClient extends AmazonWebServiceClient implem
                 request = new UpdateApplicationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateApplicationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

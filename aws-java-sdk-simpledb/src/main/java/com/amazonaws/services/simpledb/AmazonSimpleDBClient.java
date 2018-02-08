@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -321,7 +321,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new BatchDeleteAttributesRequestMarshaller().marshall(super.beforeMarshalling(batchDeleteAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -429,7 +428,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new BatchPutAttributesRequestMarshaller().marshall(super.beforeMarshalling(batchPutAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -492,7 +490,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new CreateDomainRequestMarshaller().marshall(super.beforeMarshalling(createDomainRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -557,7 +554,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteAttributesRequestMarshaller().marshall(super.beforeMarshalling(deleteAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -607,7 +603,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DeleteDomainRequestMarshaller().marshall(super.beforeMarshalling(deleteDomainRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -659,7 +654,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new DomainMetadataRequestMarshaller().marshall(super.beforeMarshalling(domainMetadataRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -717,7 +711,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new GetAttributesRequestMarshaller().marshall(super.beforeMarshalling(getAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -772,7 +765,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new ListDomainsRequestMarshaller().marshall(super.beforeMarshalling(listDomainsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -873,7 +865,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new PutAttributesRequestMarshaller().marshall(super.beforeMarshalling(putAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -949,7 +940,6 @@ public class AmazonSimpleDBClient extends AmazonWebServiceClient implements Amaz
                 request = new SelectRequestMarshaller().marshall(super.beforeMarshalling(selectRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
