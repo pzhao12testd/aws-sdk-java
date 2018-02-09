@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -36,13 +36,13 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
     private String logicalOperator;
     /**
      * <p>
-     * The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+     * The name of the job in question.
      * </p>
      */
     private String jobName;
     /**
      * <p>
-     * The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     * The condition state.
      * </p>
      */
     private String state;
@@ -108,11 +108,11 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+     * The name of the job in question.
      * </p>
      * 
      * @param jobName
-     *        The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+     *        The name of the job in question.
      */
 
     public void setJobName(String jobName) {
@@ -121,10 +121,10 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+     * The name of the job in question.
      * </p>
      * 
-     * @return The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+     * @return The name of the job in question.
      */
 
     public String getJobName() {
@@ -133,11 +133,11 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+     * The name of the job in question.
      * </p>
      * 
      * @param jobName
-     *        The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+     *        The name of the job in question.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -148,11 +148,11 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     * The condition state.
      * </p>
      * 
      * @param state
-     *        The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     *        The condition state.
      * @see JobRunState
      */
 
@@ -162,10 +162,10 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     * The condition state.
      * </p>
      * 
-     * @return The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     * @return The condition state.
      * @see JobRunState
      */
 
@@ -175,11 +175,11 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     * The condition state.
      * </p>
      * 
      * @param state
-     *        The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     *        The condition state.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see JobRunState
      */
@@ -191,11 +191,11 @@ public class Condition implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     * The condition state.
      * </p>
      * 
      * @param state
-     *        The condition state. Currently, the values supported are SUCCEEDED, STOPPED and FAILED.
+     *        The condition state.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see JobRunState
      */

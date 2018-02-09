@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -36,7 +36,7 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
     private String id;
     /**
      * <p>
-     * The Amazon Resource Name (ARN) that Route 53 assigns to the namespace when you create it.
+     * The Amazon Resource Name (ARN) that Amazon Route 53 assigns to the namespace when you create it.
      * </p>
      */
     private String arn;
@@ -72,16 +72,14 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
     private NamespaceProperties properties;
     /**
      * <p>
-     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC). The value
-     * of <code>CreateDate</code> is accurate to milliseconds. For example, the value <code>1516925490.087</code>
-     * represents Friday, January 26, 2018 12:11:30.087 AM.
+     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC).
      * </p>
      */
     private java.util.Date createDate;
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed requests to be retried without the risk of
-     * executing an operation twice.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      */
     private String creatorRequestId;
@@ -128,11 +126,11 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The Amazon Resource Name (ARN) that Route 53 assigns to the namespace when you create it.
+     * The Amazon Resource Name (ARN) that Amazon Route 53 assigns to the namespace when you create it.
      * </p>
      * 
      * @param arn
-     *        The Amazon Resource Name (ARN) that Route 53 assigns to the namespace when you create it.
+     *        The Amazon Resource Name (ARN) that Amazon Route 53 assigns to the namespace when you create it.
      */
 
     public void setArn(String arn) {
@@ -141,10 +139,10 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The Amazon Resource Name (ARN) that Route 53 assigns to the namespace when you create it.
+     * The Amazon Resource Name (ARN) that Amazon Route 53 assigns to the namespace when you create it.
      * </p>
      * 
-     * @return The Amazon Resource Name (ARN) that Route 53 assigns to the namespace when you create it.
+     * @return The Amazon Resource Name (ARN) that Amazon Route 53 assigns to the namespace when you create it.
      */
 
     public String getArn() {
@@ -153,11 +151,11 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The Amazon Resource Name (ARN) that Route 53 assigns to the namespace when you create it.
+     * The Amazon Resource Name (ARN) that Amazon Route 53 assigns to the namespace when you create it.
      * </p>
      * 
      * @param arn
-     *        The Amazon Resource Name (ARN) that Route 53 assigns to the namespace when you create it.
+     *        The Amazon Resource Name (ARN) that Amazon Route 53 assigns to the namespace when you create it.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -387,15 +385,11 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC). The value
-     * of <code>CreateDate</code> is accurate to milliseconds. For example, the value <code>1516925490.087</code>
-     * represents Friday, January 26, 2018 12:11:30.087 AM.
+     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC).
      * </p>
      * 
      * @param createDate
      *        The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC).
-     *        The value of <code>CreateDate</code> is accurate to milliseconds. For example, the value
-     *        <code>1516925490.087</code> represents Friday, January 26, 2018 12:11:30.087 AM.
      */
 
     public void setCreateDate(java.util.Date createDate) {
@@ -404,14 +398,10 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC). The value
-     * of <code>CreateDate</code> is accurate to milliseconds. For example, the value <code>1516925490.087</code>
-     * represents Friday, January 26, 2018 12:11:30.087 AM.
+     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC).
      * </p>
      * 
      * @return The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC).
-     *         The value of <code>CreateDate</code> is accurate to milliseconds. For example, the value
-     *         <code>1516925490.087</code> represents Friday, January 26, 2018 12:11:30.087 AM.
      */
 
     public java.util.Date getCreateDate() {
@@ -420,15 +410,11 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC). The value
-     * of <code>CreateDate</code> is accurate to milliseconds. For example, the value <code>1516925490.087</code>
-     * represents Friday, January 26, 2018 12:11:30.087 AM.
+     * The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC).
      * </p>
      * 
      * @param createDate
      *        The date that the namespace was created, in Unix date/time format and Coordinated Universal Time (UTC).
-     *        The value of <code>CreateDate</code> is accurate to milliseconds. For example, the value
-     *        <code>1516925490.087</code> represents Friday, January 26, 2018 12:11:30.087 AM.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -439,13 +425,13 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed requests to be retried without the risk of
-     * executing an operation twice.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      * 
      * @param creatorRequestId
-     *        A unique string that identifies the request and that allows failed requests to be retried without the risk
-     *        of executing an operation twice.
+     *        An optional parameter that you can use to resolve concurrent creation requests.
+     *        <code>CreatorRequestId</code> helps to determine if a specific client owns the namespace.
      */
 
     public void setCreatorRequestId(String creatorRequestId) {
@@ -454,12 +440,12 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed requests to be retried without the risk of
-     * executing an operation twice.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      * 
-     * @return A unique string that identifies the request and that allows failed requests to be retried without the
-     *         risk of executing an operation twice.
+     * @return An optional parameter that you can use to resolve concurrent creation requests.
+     *         <code>CreatorRequestId</code> helps to determine if a specific client owns the namespace.
      */
 
     public String getCreatorRequestId() {
@@ -468,13 +454,13 @@ public class Namespace implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed requests to be retried without the risk of
-     * executing an operation twice.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      * 
      * @param creatorRequestId
-     *        A unique string that identifies the request and that allows failed requests to be retried without the risk
-     *        of executing an operation twice.
+     *        An optional parameter that you can use to resolve concurrent creation requests.
+     *        <code>CreatorRequestId</code> helps to determine if a specific client owns the namespace.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

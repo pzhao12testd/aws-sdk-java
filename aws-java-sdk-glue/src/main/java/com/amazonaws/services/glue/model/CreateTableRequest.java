@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -34,7 +34,7 @@ public class CreateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
     private String catalogId;
     /**
      * <p>
-     * The catalog database in which to create the new table. For Hive compatibility, this name is entirely lowercase.
+     * The catalog database in which to create the new table.
      * </p>
      */
     private String databaseName;
@@ -93,12 +93,11 @@ public class CreateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The catalog database in which to create the new table. For Hive compatibility, this name is entirely lowercase.
+     * The catalog database in which to create the new table.
      * </p>
      * 
      * @param databaseName
-     *        The catalog database in which to create the new table. For Hive compatibility, this name is entirely
-     *        lowercase.
+     *        The catalog database in which to create the new table.
      */
 
     public void setDatabaseName(String databaseName) {
@@ -107,11 +106,10 @@ public class CreateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The catalog database in which to create the new table. For Hive compatibility, this name is entirely lowercase.
+     * The catalog database in which to create the new table.
      * </p>
      * 
-     * @return The catalog database in which to create the new table. For Hive compatibility, this name is entirely
-     *         lowercase.
+     * @return The catalog database in which to create the new table.
      */
 
     public String getDatabaseName() {
@@ -120,12 +118,11 @@ public class CreateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The catalog database in which to create the new table. For Hive compatibility, this name is entirely lowercase.
+     * The catalog database in which to create the new table.
      * </p>
      * 
      * @param databaseName
-     *        The catalog database in which to create the new table. For Hive compatibility, this name is entirely
-     *        lowercase.
+     *        The catalog database in which to create the new table.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

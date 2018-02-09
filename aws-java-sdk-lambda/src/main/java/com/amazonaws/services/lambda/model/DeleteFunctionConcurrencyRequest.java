@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -27,21 +27,18 @@ public class DeleteFunctionConcurrencyRequest extends com.amazonaws.AmazonWebSer
 
     /**
      * <p>
-     * The name of the function you are removing concurrent execution limits from. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are removing concurrent execution limits from.
      * </p>
      */
     private String functionName;
 
     /**
      * <p>
-     * The name of the function you are removing concurrent execution limits from. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are removing concurrent execution limits from.
      * </p>
      * 
      * @param functionName
-     *        The name of the function you are removing concurrent execution limits from. For more information, see
-     *        <a>concurrent-executions</a>.
+     *        The name of the function you are removing concurrent execution limits from.
      */
 
     public void setFunctionName(String functionName) {
@@ -50,12 +47,10 @@ public class DeleteFunctionConcurrencyRequest extends com.amazonaws.AmazonWebSer
 
     /**
      * <p>
-     * The name of the function you are removing concurrent execution limits from. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are removing concurrent execution limits from.
      * </p>
      * 
-     * @return The name of the function you are removing concurrent execution limits from. For more information, see
-     *         <a>concurrent-executions</a>.
+     * @return The name of the function you are removing concurrent execution limits from.
      */
 
     public String getFunctionName() {
@@ -64,13 +59,11 @@ public class DeleteFunctionConcurrencyRequest extends com.amazonaws.AmazonWebSer
 
     /**
      * <p>
-     * The name of the function you are removing concurrent execution limits from. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are removing concurrent execution limits from.
      * </p>
      * 
      * @param functionName
-     *        The name of the function you are removing concurrent execution limits from. For more information, see
-     *        <a>concurrent-executions</a>.
+     *        The name of the function you are removing concurrent execution limits from.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

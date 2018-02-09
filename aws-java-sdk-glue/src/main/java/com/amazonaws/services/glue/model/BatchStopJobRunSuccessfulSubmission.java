@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -19,7 +19,7 @@ import com.amazonaws.protocol.ProtocolMarshaller;
 
 /**
  * <p>
- * Records a successful request to stop a specified JobRun.
+ * Details about the job run which is submitted successfully for stopping.
  * </p>
  * 
  * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/BatchStopJobRunSuccessfulSubmission"
@@ -30,24 +30,24 @@ public class BatchStopJobRunSuccessfulSubmission implements Serializable, Clonea
 
     /**
      * <p>
-     * The Name of the Job in question.
+     * The name of the job.
      * </p>
      */
     private String jobName;
     /**
      * <p>
-     * The JobRunId of the JobRun in question.
+     * The job run Id.
      * </p>
      */
     private String jobRunId;
 
     /**
      * <p>
-     * The Name of the Job in question.
+     * The name of the job.
      * </p>
      * 
      * @param jobName
-     *        The Name of the Job in question.
+     *        The name of the job.
      */
 
     public void setJobName(String jobName) {
@@ -56,10 +56,10 @@ public class BatchStopJobRunSuccessfulSubmission implements Serializable, Clonea
 
     /**
      * <p>
-     * The Name of the Job in question.
+     * The name of the job.
      * </p>
      * 
-     * @return The Name of the Job in question.
+     * @return The name of the job.
      */
 
     public String getJobName() {
@@ -68,11 +68,11 @@ public class BatchStopJobRunSuccessfulSubmission implements Serializable, Clonea
 
     /**
      * <p>
-     * The Name of the Job in question.
+     * The name of the job.
      * </p>
      * 
      * @param jobName
-     *        The Name of the Job in question.
+     *        The name of the job.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -83,11 +83,11 @@ public class BatchStopJobRunSuccessfulSubmission implements Serializable, Clonea
 
     /**
      * <p>
-     * The JobRunId of the JobRun in question.
+     * The job run Id.
      * </p>
      * 
      * @param jobRunId
-     *        The JobRunId of the JobRun in question.
+     *        The job run Id.
      */
 
     public void setJobRunId(String jobRunId) {
@@ -96,10 +96,10 @@ public class BatchStopJobRunSuccessfulSubmission implements Serializable, Clonea
 
     /**
      * <p>
-     * The JobRunId of the JobRun in question.
+     * The job run Id.
      * </p>
      * 
-     * @return The JobRunId of the JobRun in question.
+     * @return The job run Id.
      */
 
     public String getJobRunId() {
@@ -108,11 +108,11 @@ public class BatchStopJobRunSuccessfulSubmission implements Serializable, Clonea
 
     /**
      * <p>
-     * The JobRunId of the JobRun in question.
+     * The job run Id.
      * </p>
      * 
      * @param jobRunId
-     *        The JobRunId of the JobRun in question.
+     *        The job run Id.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

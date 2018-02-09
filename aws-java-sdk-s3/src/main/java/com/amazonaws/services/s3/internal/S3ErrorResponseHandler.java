@@ -22,7 +22,6 @@ import com.amazonaws.services.s3.Headers;
 import com.amazonaws.services.s3.model.AmazonS3Exception;
 import com.amazonaws.util.IOUtils;
 
-import com.amazonaws.util.XmlUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -54,7 +53,11 @@ public class S3ErrorResponseHandler implements
     private static final Log log = LogFactory
             .getLog(S3ErrorResponseHandler.class);
 
-    private enum S3ErrorTags {
+    /** Shared factory for creating XML event readers */
+    private static final XMLInputFactory xmlInputFactory = XMLInputFactory
+            .newInstance();
+
+    private static enum S3ErrorTags {
         Error, Message, Code, RequestId, HostId
     };
 
@@ -89,8 +92,17 @@ public class S3ErrorResponseHandler implements
             return createExceptionFromHeaders(httpResponse, null);
         }
 
-        XMLStreamReader reader
-            = XmlUtils.getXmlInputFactory().createXMLStreamReader(new ByteArrayInputStream(content.getBytes(UTF8)));
+        /*
+         * XMLInputFactory is not thread safe and hence it is synchronized.
+         * Reference :
+         * http://itdoc.hitachi.co.jp/manuals/3020/30203Y2210e/EY220140.HTM
+         */
+        XMLStreamReader reader;
+        synchronized (xmlInputFactory) {
+            reader = xmlInputFactory
+                    .createXMLStreamReader(new ByteArrayInputStream(content
+                            .getBytes(UTF8)));
+        }
 
         try {
             /*

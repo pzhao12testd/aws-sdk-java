@@ -15,35 +15,35 @@
 
 package com.amazonaws.http;
 
-import static com.amazonaws.http.HttpResponseHandler.X_AMZN_REQUEST_ID_HEADER;
-import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
-import static com.github.tomakehurst.wiremock.client.WireMock.get;
-import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
-import static com.github.tomakehurst.wiremock.client.WireMock.urlPathEqualTo;
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.hasItem;
-import static org.hamcrest.Matchers.hasProperty;
-import static org.junit.Assert.assertThat;
-
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.ClientConfiguration;
 import com.amazonaws.transform.Unmarshaller;
 import com.amazonaws.util.LogCaptor;
-import java.util.ArrayList;
-import java.util.List;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.spi.LoggingEvent;
-import org.hamcrest.Matcher;
 import org.junit.Before;
 import org.junit.Test;
 import org.w3c.dom.Node;
 import utils.http.WireMockTestBase;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.amazonaws.http.HttpResponseHandler.X_AMZN_REQUEST_ID_HEADER;
+import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
+import static com.github.tomakehurst.wiremock.client.WireMock.get;
+import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
+import static com.github.tomakehurst.wiremock.client.WireMock.urlPathEqualTo;
+import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.hasProperty;
+import static org.junit.Assert.assertThat;
+
 public class DefaultErrorResponseHandlerIntegrationTest extends WireMockTestBase {
 
     private static final String RESOURCE = "/some-path";
-    private LogCaptor logCaptor = new LogCaptor.DefaultLogCaptor(Level.DEBUG);
+    private LogCaptor logCaptor = new LogCaptor.DefaultLogCaptor(Level.INFO);
     private final AmazonHttpClient client = new AmazonHttpClient(new ClientConfiguration());
     private final DefaultErrorResponseHandler sut = new DefaultErrorResponseHandler(new ArrayList<Unmarshaller<AmazonServiceException, Node>>());
 
@@ -58,31 +58,28 @@ public class DefaultErrorResponseHandlerIntegrationTest extends WireMockTestBase
 
         executeRequest();
 
-        Matcher<Iterable<? super LoggingEvent>> matcher = hasItem(hasEventWithContent("Invocation Id"));
-        assertThat(debugEvents(), matcher);
+        assertThat(infoEvents(), hasEventWithContent("Invocation Id"));
     }
 
     @Test
-    public void invalidXmlLogsXmlContentToDebug() throws Exception {
+    public void invalidXmlLogsXmlContentToInfo() throws Exception {
         String content = RandomStringUtils.randomAlphanumeric(10);
         stubFor(get(urlPathEqualTo(RESOURCE)).willReturn(aResponse().withStatus(418).withBody(content)));
 
         executeRequest();
 
-        Matcher<Iterable<? super LoggingEvent>> matcher = hasItem(hasEventWithContent(content));
-        assertThat(debugEvents(), matcher);
+        assertThat(infoEvents(), hasEventWithContent(content));
     }
 
     @Test
-    public void requestIdIsLoggedWithDebugIfInTheHeader() throws Exception {
+    public void requestIdIsLoggedWithInfoIfInTheHeader() throws Exception {
         String requestId = RandomStringUtils.randomAlphanumeric(10);
 
         stubFor(get(urlPathEqualTo(RESOURCE)).willReturn(aResponse().withStatus(418).withHeader(X_AMZN_REQUEST_ID_HEADER, requestId)));
 
         executeRequest();
 
-        Matcher<Iterable<? super LoggingEvent>> matcher = hasItem(hasEventWithContent(requestId));
-        assertThat(debugEvents(), matcher);
+        assertThat(infoEvents(), hasEventWithContent(requestId));
     }
 
     private void executeRequest() {
@@ -103,19 +100,18 @@ public class DefaultErrorResponseHandlerIntegrationTest extends WireMockTestBase
         }
     }
 
-    private List<LoggingEvent> debugEvents() {
-        List<LoggingEvent> events = new ArrayList<LoggingEvent>();
+    private List<LoggingEvent> infoEvents() {
+        List<LoggingEvent> info = new ArrayList<LoggingEvent>();
         List<LoggingEvent> loggingEvents = logCaptor.loggedEvents();
         for (LoggingEvent le : loggingEvents) {
-            if (le.getLevel().equals(Level.DEBUG)) {
-                events.add(le);
+            if (le.getLevel().equals(Level.INFO)) {
+                info.add(le);
             }
         }
-        return events;
+        return info;
     }
 
-    private org.hamcrest.Matcher<? super LoggingEvent> hasEventWithContent(String content) {
-        return hasProperty("message", containsString(content));
+    private org.hamcrest.Matcher<Iterable<? extends LoggingEvent>> hasEventWithContent(String content) {
+        return contains(hasProperty("message", containsString(content)));
     }
 }
-

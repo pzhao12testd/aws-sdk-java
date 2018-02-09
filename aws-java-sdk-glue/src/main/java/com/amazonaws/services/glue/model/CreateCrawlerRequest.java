@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -92,11 +92,7 @@ public class CreateCrawlerRequest extends com.amazonaws.AmazonWebServiceRequest 
      * <p>
      * You can use this field to force partitions to inherit metadata such as classification, input format, output
      * format, serde information, and schema from their parent table, rather than detect this information separately for
-     * each partition. Use the following JSON string to specify that behavior:
-     * </p>
-     * <p>
-     * Example:
-     * <code>'{ "Version": 1.0, "CrawlerOutput": { "Partitions": { "AddOrUpdateBehavior": "InheritFromTable" } } }'</code>
+     * each partition.
      * </p>
      */
     private String configuration;
@@ -532,11 +528,7 @@ public class CreateCrawlerRequest extends com.amazonaws.AmazonWebServiceRequest 
      * <p>
      * You can use this field to force partitions to inherit metadata such as classification, input format, output
      * format, serde information, and schema from their parent table, rather than detect this information separately for
-     * each partition. Use the following JSON string to specify that behavior:
-     * </p>
-     * <p>
-     * Example:
-     * <code>'{ "Version": 1.0, "CrawlerOutput": { "Partitions": { "AddOrUpdateBehavior": "InheritFromTable" } } }'</code>
+     * each partition.
      * </p>
      * 
      * @param configuration
@@ -545,11 +537,7 @@ public class CreateCrawlerRequest extends com.amazonaws.AmazonWebServiceRequest 
      *        <p>
      *        You can use this field to force partitions to inherit metadata such as classification, input format,
      *        output format, serde information, and schema from their parent table, rather than detect this information
-     *        separately for each partition. Use the following JSON string to specify that behavior:
-     *        </p>
-     *        <p>
-     *        Example:
-     *        <code>'{ "Version": 1.0, "CrawlerOutput": { "Partitions": { "AddOrUpdateBehavior": "InheritFromTable" } } }'</code>
+     *        separately for each partition.
      */
 
     public void setConfiguration(String configuration) {
@@ -564,11 +552,7 @@ public class CreateCrawlerRequest extends com.amazonaws.AmazonWebServiceRequest 
      * <p>
      * You can use this field to force partitions to inherit metadata such as classification, input format, output
      * format, serde information, and schema from their parent table, rather than detect this information separately for
-     * each partition. Use the following JSON string to specify that behavior:
-     * </p>
-     * <p>
-     * Example:
-     * <code>'{ "Version": 1.0, "CrawlerOutput": { "Partitions": { "AddOrUpdateBehavior": "InheritFromTable" } } }'</code>
+     * each partition.
      * </p>
      * 
      * @return Crawler configuration information. This versioned JSON string allows users to specify aspects of a
@@ -576,11 +560,7 @@ public class CreateCrawlerRequest extends com.amazonaws.AmazonWebServiceRequest 
      *         <p>
      *         You can use this field to force partitions to inherit metadata such as classification, input format,
      *         output format, serde information, and schema from their parent table, rather than detect this information
-     *         separately for each partition. Use the following JSON string to specify that behavior:
-     *         </p>
-     *         <p>
-     *         Example:
-     *         <code>'{ "Version": 1.0, "CrawlerOutput": { "Partitions": { "AddOrUpdateBehavior": "InheritFromTable" } } }'</code>
+     *         separately for each partition.
      */
 
     public String getConfiguration() {
@@ -595,11 +575,7 @@ public class CreateCrawlerRequest extends com.amazonaws.AmazonWebServiceRequest 
      * <p>
      * You can use this field to force partitions to inherit metadata such as classification, input format, output
      * format, serde information, and schema from their parent table, rather than detect this information separately for
-     * each partition. Use the following JSON string to specify that behavior:
-     * </p>
-     * <p>
-     * Example:
-     * <code>'{ "Version": 1.0, "CrawlerOutput": { "Partitions": { "AddOrUpdateBehavior": "InheritFromTable" } } }'</code>
+     * each partition.
      * </p>
      * 
      * @param configuration
@@ -608,11 +584,7 @@ public class CreateCrawlerRequest extends com.amazonaws.AmazonWebServiceRequest 
      *        <p>
      *        You can use this field to force partitions to inherit metadata such as classification, input format,
      *        output format, serde information, and schema from their parent table, rather than detect this information
-     *        separately for each partition. Use the following JSON string to specify that behavior:
-     *        </p>
-     *        <p>
-     *        Example:
-     *        <code>'{ "Version": 1.0, "CrawlerOutput": { "Partitions": { "AddOrUpdateBehavior": "InheritFromTable" } } }'</code>
+     *        separately for each partition.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

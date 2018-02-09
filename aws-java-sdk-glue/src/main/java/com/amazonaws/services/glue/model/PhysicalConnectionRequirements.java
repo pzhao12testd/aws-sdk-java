@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -42,7 +42,7 @@ public class PhysicalConnectionRequirements implements Serializable, Cloneable, 
     private java.util.List<String> securityGroupIdList;
     /**
      * <p>
-     * The connection's availability zone. This field is deprecated and has no effect.
+     * The connection's availability zone.
      * </p>
      */
     private String availabilityZone;
@@ -159,11 +159,11 @@ public class PhysicalConnectionRequirements implements Serializable, Cloneable, 
 
     /**
      * <p>
-     * The connection's availability zone. This field is deprecated and has no effect.
+     * The connection's availability zone.
      * </p>
      * 
      * @param availabilityZone
-     *        The connection's availability zone. This field is deprecated and has no effect.
+     *        The connection's availability zone.
      */
 
     public void setAvailabilityZone(String availabilityZone) {
@@ -172,10 +172,10 @@ public class PhysicalConnectionRequirements implements Serializable, Cloneable, 
 
     /**
      * <p>
-     * The connection's availability zone. This field is deprecated and has no effect.
+     * The connection's availability zone.
      * </p>
      * 
-     * @return The connection's availability zone. This field is deprecated and has no effect.
+     * @return The connection's availability zone.
      */
 
     public String getAvailabilityZone() {
@@ -184,11 +184,11 @@ public class PhysicalConnectionRequirements implements Serializable, Cloneable, 
 
     /**
      * <p>
-     * The connection's availability zone. This field is deprecated and has no effect.
+     * The connection's availability zone.
      * </p>
      * 
      * @param availabilityZone
-     *        The connection's availability zone. This field is deprecated and has no effect.
+     *        The connection's availability zone.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

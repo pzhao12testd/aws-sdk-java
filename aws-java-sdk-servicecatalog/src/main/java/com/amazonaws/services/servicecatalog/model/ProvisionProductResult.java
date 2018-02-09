@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -25,18 +25,18 @@ public class ProvisionProductResult extends com.amazonaws.AmazonWebServiceResult
 
     /**
      * <p>
-     * Information about the result of provisioning the product.
+     * Information about the result of <a>ProvisionProduct</a>.
      * </p>
      */
     private RecordDetail recordDetail;
 
     /**
      * <p>
-     * Information about the result of provisioning the product.
+     * Information about the result of <a>ProvisionProduct</a>.
      * </p>
      * 
      * @param recordDetail
-     *        Information about the result of provisioning the product.
+     *        Information about the result of <a>ProvisionProduct</a>.
      */
 
     public void setRecordDetail(RecordDetail recordDetail) {
@@ -45,10 +45,10 @@ public class ProvisionProductResult extends com.amazonaws.AmazonWebServiceResult
 
     /**
      * <p>
-     * Information about the result of provisioning the product.
+     * Information about the result of <a>ProvisionProduct</a>.
      * </p>
      * 
-     * @return Information about the result of provisioning the product.
+     * @return Information about the result of <a>ProvisionProduct</a>.
      */
 
     public RecordDetail getRecordDetail() {
@@ -57,11 +57,11 @@ public class ProvisionProductResult extends com.amazonaws.AmazonWebServiceResult
 
     /**
      * <p>
-     * Information about the result of provisioning the product.
+     * Information about the result of <a>ProvisionProduct</a>.
      * </p>
      * 
      * @param recordDetail
-     *        Information about the result of provisioning the product.
+     *        Information about the result of <a>ProvisionProduct</a>.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

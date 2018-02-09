@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -35,7 +35,7 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
     private String name;
     /**
      * <p>
-     * Reserved for future use.
+     * The trigger ID.
      * </p>
      */
     private String id;
@@ -74,7 +74,7 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
     private java.util.List<Action> actions;
     /**
      * <p>
-     * The predicate of this trigger, which defines when it will fire.
+     * The predicate of this trigger.
      * </p>
      */
     private Predicate predicate;
@@ -121,11 +121,11 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Reserved for future use.
+     * The trigger ID.
      * </p>
      * 
      * @param id
-     *        Reserved for future use.
+     *        The trigger ID.
      */
 
     public void setId(String id) {
@@ -134,10 +134,10 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Reserved for future use.
+     * The trigger ID.
      * </p>
      * 
-     * @return Reserved for future use.
+     * @return The trigger ID.
      */
 
     public String getId() {
@@ -146,11 +146,11 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * Reserved for future use.
+     * The trigger ID.
      * </p>
      * 
      * @param id
-     *        Reserved for future use.
+     *        The trigger ID.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -447,11 +447,11 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The predicate of this trigger, which defines when it will fire.
+     * The predicate of this trigger.
      * </p>
      * 
      * @param predicate
-     *        The predicate of this trigger, which defines when it will fire.
+     *        The predicate of this trigger.
      */
 
     public void setPredicate(Predicate predicate) {
@@ -460,10 +460,10 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The predicate of this trigger, which defines when it will fire.
+     * The predicate of this trigger.
      * </p>
      * 
-     * @return The predicate of this trigger, which defines when it will fire.
+     * @return The predicate of this trigger.
      */
 
     public Predicate getPredicate() {
@@ -472,11 +472,11 @@ public class Trigger implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The predicate of this trigger, which defines when it will fire.
+     * The predicate of this trigger.
      * </p>
      * 
      * @param predicate
-     *        The predicate of this trigger, which defines when it will fire.
+     *        The predicate of this trigger.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -321,7 +321,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new AcceptPortfolioShareRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(acceptPortfolioShareRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -379,7 +378,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(associatePrincipalWithPortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -437,7 +435,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(associateProductWithPortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -504,7 +501,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(associateTagOptionWithResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -566,7 +562,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new CopyProductRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(copyProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -624,7 +619,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new CreateConstraintRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createConstraintRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -682,7 +676,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new CreatePortfolioRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createPortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -738,7 +731,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new CreatePortfolioShareRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createPortfolioShareRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -796,80 +788,12 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new CreateProductRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
 
             HttpResponseHandler<AmazonWebServiceResponse<CreateProductResult>> responseHandler = protocolFactory.createResponseHandler(
                     new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false), new CreateProductResultJsonUnmarshaller());
-            response = invoke(request, responseHandler, executionContext);
-
-            return response.getAwsResponse();
-
-        } finally {
-
-            endClientExecution(awsRequestMetrics, request, response);
-        }
-    }
-
-    /**
-     * <p>
-     * Creates a plan. A plan includes the list of resources that will be created (when provisioning a new product) or
-     * modified (when updating a provisioned product) when the plan is executed.
-     * </p>
-     * <p>
-     * You can create one plan per provisioned product. To create a plan for an existing provisioned product, it's
-     * status must be AVAILBLE or TAINTED.
-     * </p>
-     * <p>
-     * To view the resource changes in the change set, use <a>DescribeProvisionedProductPlan</a>. To create or modify
-     * the provisioned product, use <a>ExecuteProvisionedProductPlan</a>.
-     * </p>
-     * 
-     * @param createProvisionedProductPlanRequest
-     * @return Result of the CreateProvisionedProductPlan operation returned by the service.
-     * @throws InvalidParametersException
-     *         One or more parameters provided to the operation are not valid.
-     * @throws ResourceNotFoundException
-     *         The specified resource was not found.
-     * @throws InvalidStateException
-     *         An attempt was made to modify a resource that is in a state that is not valid. Check your resources to
-     *         ensure that they are in valid states before retrying the operation.
-     * @sample AWSServiceCatalog.CreateProvisionedProductPlan
-     * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/servicecatalog-2015-12-10/CreateProvisionedProductPlan"
-     *      target="_top">AWS API Documentation</a>
-     */
-    @Override
-    public CreateProvisionedProductPlanResult createProvisionedProductPlan(CreateProvisionedProductPlanRequest request) {
-        request = beforeClientExecution(request);
-        return executeCreateProvisionedProductPlan(request);
-    }
-
-    @SdkInternalApi
-    final CreateProvisionedProductPlanResult executeCreateProvisionedProductPlan(CreateProvisionedProductPlanRequest createProvisionedProductPlanRequest) {
-
-        ExecutionContext executionContext = createExecutionContext(createProvisionedProductPlanRequest);
-        AWSRequestMetrics awsRequestMetrics = executionContext.getAwsRequestMetrics();
-        awsRequestMetrics.startEvent(Field.ClientExecuteTime);
-        Request<CreateProvisionedProductPlanRequest> request = null;
-        Response<CreateProvisionedProductPlanResult> response = null;
-
-        try {
-            awsRequestMetrics.startEvent(Field.RequestMarshallTime);
-            try {
-                request = new CreateProvisionedProductPlanRequestProtocolMarshaller(protocolFactory).marshall(super
-                        .beforeMarshalling(createProvisionedProductPlanRequest));
-                // Binds the request metrics to the current request.
-                request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
-            } finally {
-                awsRequestMetrics.endEvent(Field.RequestMarshallTime);
-            }
-
-            HttpResponseHandler<AmazonWebServiceResponse<CreateProvisionedProductPlanResult>> responseHandler = protocolFactory.createResponseHandler(
-                    new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
-                    new CreateProvisionedProductPlanResultJsonUnmarshaller());
             response = invoke(request, responseHandler, executionContext);
 
             return response.getAwsResponse();
@@ -923,7 +847,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(createProvisioningArtifactRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -982,7 +905,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new CreateTagOptionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createTagOptionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1035,7 +957,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DeleteConstraintRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteConstraintRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1068,7 +989,7 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
      * @throws InvalidParametersException
      *         One or more parameters provided to the operation are not valid.
      * @throws ResourceInUseException
-     *         A resource that is currently in use. Ensure that the resource is not in use and retry the operation.
+     *         A resource that is currently in use. Ensure the resource is not in use and retry the operation.
      * @throws TagOptionNotMigratedException
      *         An operation requiring TagOptions failed because the TagOptions migration process has not been performed
      *         for this account. Please use the AWS console to perform the migration process before retrying the
@@ -1098,7 +1019,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DeletePortfolioRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deletePortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1149,7 +1069,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DeletePortfolioShareRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deletePortfolioShareRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1179,7 +1098,7 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
      * @throws ResourceNotFoundException
      *         The specified resource was not found.
      * @throws ResourceInUseException
-     *         A resource that is currently in use. Ensure that the resource is not in use and retry the operation.
+     *         A resource that is currently in use. Ensure the resource is not in use and retry the operation.
      * @throws InvalidParametersException
      *         One or more parameters provided to the operation are not valid.
      * @throws TagOptionNotMigratedException
@@ -1211,68 +1130,12 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DeleteProductRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
 
             HttpResponseHandler<AmazonWebServiceResponse<DeleteProductResult>> responseHandler = protocolFactory.createResponseHandler(
                     new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false), new DeleteProductResultJsonUnmarshaller());
-            response = invoke(request, responseHandler, executionContext);
-
-            return response.getAwsResponse();
-
-        } finally {
-
-            endClientExecution(awsRequestMetrics, request, response);
-        }
-    }
-
-    /**
-     * <p>
-     * Deletes the specified plan.
-     * </p>
-     * 
-     * @param deleteProvisionedProductPlanRequest
-     * @return Result of the DeleteProvisionedProductPlan operation returned by the service.
-     * @throws InvalidParametersException
-     *         One or more parameters provided to the operation are not valid.
-     * @throws ResourceNotFoundException
-     *         The specified resource was not found.
-     * @sample AWSServiceCatalog.DeleteProvisionedProductPlan
-     * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/servicecatalog-2015-12-10/DeleteProvisionedProductPlan"
-     *      target="_top">AWS API Documentation</a>
-     */
-    @Override
-    public DeleteProvisionedProductPlanResult deleteProvisionedProductPlan(DeleteProvisionedProductPlanRequest request) {
-        request = beforeClientExecution(request);
-        return executeDeleteProvisionedProductPlan(request);
-    }
-
-    @SdkInternalApi
-    final DeleteProvisionedProductPlanResult executeDeleteProvisionedProductPlan(DeleteProvisionedProductPlanRequest deleteProvisionedProductPlanRequest) {
-
-        ExecutionContext executionContext = createExecutionContext(deleteProvisionedProductPlanRequest);
-        AWSRequestMetrics awsRequestMetrics = executionContext.getAwsRequestMetrics();
-        awsRequestMetrics.startEvent(Field.ClientExecuteTime);
-        Request<DeleteProvisionedProductPlanRequest> request = null;
-        Response<DeleteProvisionedProductPlanResult> response = null;
-
-        try {
-            awsRequestMetrics.startEvent(Field.RequestMarshallTime);
-            try {
-                request = new DeleteProvisionedProductPlanRequestProtocolMarshaller(protocolFactory).marshall(super
-                        .beforeMarshalling(deleteProvisionedProductPlanRequest));
-                // Binds the request metrics to the current request.
-                request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
-            } finally {
-                awsRequestMetrics.endEvent(Field.RequestMarshallTime);
-            }
-
-            HttpResponseHandler<AmazonWebServiceResponse<DeleteProvisionedProductPlanResult>> responseHandler = protocolFactory.createResponseHandler(
-                    new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
-                    new DeleteProvisionedProductPlanResultJsonUnmarshaller());
             response = invoke(request, responseHandler, executionContext);
 
             return response.getAwsResponse();
@@ -1297,7 +1160,7 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
      * @throws ResourceNotFoundException
      *         The specified resource was not found.
      * @throws ResourceInUseException
-     *         A resource that is currently in use. Ensure that the resource is not in use and retry the operation.
+     *         A resource that is currently in use. Ensure the resource is not in use and retry the operation.
      * @throws InvalidParametersException
      *         One or more parameters provided to the operation are not valid.
      * @sample AWSServiceCatalog.DeleteProvisioningArtifact
@@ -1326,7 +1189,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(deleteProvisioningArtifactRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1378,7 +1240,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DescribeConstraintRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeConstraintRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1430,7 +1291,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(describeCopyProductStatusRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1482,7 +1342,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DescribePortfolioRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describePortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1535,7 +1394,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DescribeProductRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1586,7 +1444,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DescribeProductAsAdminRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeProductAsAdminRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1640,7 +1497,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DescribeProductViewRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeProductViewRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1692,7 +1548,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(describeProvisionedProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1700,61 +1555,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
             HttpResponseHandler<AmazonWebServiceResponse<DescribeProvisionedProductResult>> responseHandler = protocolFactory.createResponseHandler(
                     new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
                     new DescribeProvisionedProductResultJsonUnmarshaller());
-            response = invoke(request, responseHandler, executionContext);
-
-            return response.getAwsResponse();
-
-        } finally {
-
-            endClientExecution(awsRequestMetrics, request, response);
-        }
-    }
-
-    /**
-     * <p>
-     * Gets information about the resource changes for the specified plan.
-     * </p>
-     * 
-     * @param describeProvisionedProductPlanRequest
-     * @return Result of the DescribeProvisionedProductPlan operation returned by the service.
-     * @throws ResourceNotFoundException
-     *         The specified resource was not found.
-     * @throws InvalidParametersException
-     *         One or more parameters provided to the operation are not valid.
-     * @sample AWSServiceCatalog.DescribeProvisionedProductPlan
-     * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/servicecatalog-2015-12-10/DescribeProvisionedProductPlan"
-     *      target="_top">AWS API Documentation</a>
-     */
-    @Override
-    public DescribeProvisionedProductPlanResult describeProvisionedProductPlan(DescribeProvisionedProductPlanRequest request) {
-        request = beforeClientExecution(request);
-        return executeDescribeProvisionedProductPlan(request);
-    }
-
-    @SdkInternalApi
-    final DescribeProvisionedProductPlanResult executeDescribeProvisionedProductPlan(DescribeProvisionedProductPlanRequest describeProvisionedProductPlanRequest) {
-
-        ExecutionContext executionContext = createExecutionContext(describeProvisionedProductPlanRequest);
-        AWSRequestMetrics awsRequestMetrics = executionContext.getAwsRequestMetrics();
-        awsRequestMetrics.startEvent(Field.ClientExecuteTime);
-        Request<DescribeProvisionedProductPlanRequest> request = null;
-        Response<DescribeProvisionedProductPlanResult> response = null;
-
-        try {
-            awsRequestMetrics.startEvent(Field.RequestMarshallTime);
-            try {
-                request = new DescribeProvisionedProductPlanRequestProtocolMarshaller(protocolFactory).marshall(super
-                        .beforeMarshalling(describeProvisionedProductPlanRequest));
-                // Binds the request metrics to the current request.
-                request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
-            } finally {
-                awsRequestMetrics.endEvent(Field.RequestMarshallTime);
-            }
-
-            HttpResponseHandler<AmazonWebServiceResponse<DescribeProvisionedProductPlanResult>> responseHandler = protocolFactory.createResponseHandler(
-                    new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
-                    new DescribeProvisionedProductPlanResultJsonUnmarshaller());
             response = invoke(request, responseHandler, executionContext);
 
             return response.getAwsResponse();
@@ -1800,7 +1600,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(describeProvisioningArtifactRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1826,8 +1625,8 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
      * <p>
      * If the output contains a TagOption key with an empty list of values, there is a TagOption conflict for that key.
      * The end user cannot take action to fix the conflict, and launch is not blocked. In subsequent calls to
-     * <a>ProvisionProduct</a>, do not include conflicted TagOption keys as tags, or this causes the error
-     * "Parameter validation failed: Missing required parameter in Tags[<i>N</i>]:<i>Value</i>". Tag the provisioned
+     * <a>ProvisionProduct</a>, do not include conflicted TagOption keys as tags, or this will cause the error
+     * "Parameter validation failed: Missing required parameter in Tags[<i>N</i>]:<i>Value</i>" and tag the provisioned
      * product with the value <code>sc-tagoption-conflict-portfolioId-productId</code>.
      * </p>
      * 
@@ -1863,7 +1662,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(describeProvisioningParametersRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1919,7 +1717,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DescribeRecordRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeRecordRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1974,7 +1771,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new DescribeTagOptionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeTagOptionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2030,7 +1826,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(disassociatePrincipalFromPortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2058,7 +1853,7 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
      * @throws ResourceNotFoundException
      *         The specified resource was not found.
      * @throws ResourceInUseException
-     *         A resource that is currently in use. Ensure that the resource is not in use and retry the operation.
+     *         A resource that is currently in use. Ensure the resource is not in use and retry the operation.
      * @throws InvalidParametersException
      *         One or more parameters provided to the operation are not valid.
      * @sample AWSServiceCatalog.DisassociateProductFromPortfolio
@@ -2088,7 +1883,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(disassociateProductFromPortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2146,7 +1940,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(disassociateTagOptionFromResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2154,64 +1947,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
             HttpResponseHandler<AmazonWebServiceResponse<DisassociateTagOptionFromResourceResult>> responseHandler = protocolFactory.createResponseHandler(
                     new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
                     new DisassociateTagOptionFromResourceResultJsonUnmarshaller());
-            response = invoke(request, responseHandler, executionContext);
-
-            return response.getAwsResponse();
-
-        } finally {
-
-            endClientExecution(awsRequestMetrics, request, response);
-        }
-    }
-
-    /**
-     * <p>
-     * Provisions or modifies a product based on the resource changes for the specified plan.
-     * </p>
-     * 
-     * @param executeProvisionedProductPlanRequest
-     * @return Result of the ExecuteProvisionedProductPlan operation returned by the service.
-     * @throws InvalidParametersException
-     *         One or more parameters provided to the operation are not valid.
-     * @throws ResourceNotFoundException
-     *         The specified resource was not found.
-     * @throws InvalidStateException
-     *         An attempt was made to modify a resource that is in a state that is not valid. Check your resources to
-     *         ensure that they are in valid states before retrying the operation.
-     * @sample AWSServiceCatalog.ExecuteProvisionedProductPlan
-     * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/servicecatalog-2015-12-10/ExecuteProvisionedProductPlan"
-     *      target="_top">AWS API Documentation</a>
-     */
-    @Override
-    public ExecuteProvisionedProductPlanResult executeProvisionedProductPlan(ExecuteProvisionedProductPlanRequest request) {
-        request = beforeClientExecution(request);
-        return executeExecuteProvisionedProductPlan(request);
-    }
-
-    @SdkInternalApi
-    final ExecuteProvisionedProductPlanResult executeExecuteProvisionedProductPlan(ExecuteProvisionedProductPlanRequest executeProvisionedProductPlanRequest) {
-
-        ExecutionContext executionContext = createExecutionContext(executeProvisionedProductPlanRequest);
-        AWSRequestMetrics awsRequestMetrics = executionContext.getAwsRequestMetrics();
-        awsRequestMetrics.startEvent(Field.ClientExecuteTime);
-        Request<ExecuteProvisionedProductPlanRequest> request = null;
-        Response<ExecuteProvisionedProductPlanResult> response = null;
-
-        try {
-            awsRequestMetrics.startEvent(Field.RequestMarshallTime);
-            try {
-                request = new ExecuteProvisionedProductPlanRequestProtocolMarshaller(protocolFactory).marshall(super
-                        .beforeMarshalling(executeProvisionedProductPlanRequest));
-                // Binds the request metrics to the current request.
-                request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
-            } finally {
-                awsRequestMetrics.endEvent(Field.RequestMarshallTime);
-            }
-
-            HttpResponseHandler<AmazonWebServiceResponse<ExecuteProvisionedProductPlanResult>> responseHandler = protocolFactory.createResponseHandler(
-                    new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
-                    new ExecuteProvisionedProductPlanResultJsonUnmarshaller());
             response = invoke(request, responseHandler, executionContext);
 
             return response.getAwsResponse();
@@ -2257,7 +1992,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(listAcceptedPortfolioSharesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2312,7 +2046,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(listConstraintsForPortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2367,7 +2100,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new ListLaunchPathsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listLaunchPathsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2418,7 +2150,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new ListPortfolioAccessRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listPortfolioAccessRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2469,7 +2200,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new ListPortfoliosRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listPortfoliosRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2523,7 +2253,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(listPortfoliosForProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2578,7 +2307,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(listPrincipalsForPortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2586,61 +2314,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
             HttpResponseHandler<AmazonWebServiceResponse<ListPrincipalsForPortfolioResult>> responseHandler = protocolFactory.createResponseHandler(
                     new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
                     new ListPrincipalsForPortfolioResultJsonUnmarshaller());
-            response = invoke(request, responseHandler, executionContext);
-
-            return response.getAwsResponse();
-
-        } finally {
-
-            endClientExecution(awsRequestMetrics, request, response);
-        }
-    }
-
-    /**
-     * <p>
-     * Lists the plans for the specified provisioned product or all plans the user has access to.
-     * </p>
-     * 
-     * @param listProvisionedProductPlansRequest
-     * @return Result of the ListProvisionedProductPlans operation returned by the service.
-     * @throws ResourceNotFoundException
-     *         The specified resource was not found.
-     * @throws InvalidParametersException
-     *         One or more parameters provided to the operation are not valid.
-     * @sample AWSServiceCatalog.ListProvisionedProductPlans
-     * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/servicecatalog-2015-12-10/ListProvisionedProductPlans"
-     *      target="_top">AWS API Documentation</a>
-     */
-    @Override
-    public ListProvisionedProductPlansResult listProvisionedProductPlans(ListProvisionedProductPlansRequest request) {
-        request = beforeClientExecution(request);
-        return executeListProvisionedProductPlans(request);
-    }
-
-    @SdkInternalApi
-    final ListProvisionedProductPlansResult executeListProvisionedProductPlans(ListProvisionedProductPlansRequest listProvisionedProductPlansRequest) {
-
-        ExecutionContext executionContext = createExecutionContext(listProvisionedProductPlansRequest);
-        AWSRequestMetrics awsRequestMetrics = executionContext.getAwsRequestMetrics();
-        awsRequestMetrics.startEvent(Field.ClientExecuteTime);
-        Request<ListProvisionedProductPlansRequest> request = null;
-        Response<ListProvisionedProductPlansResult> response = null;
-
-        try {
-            awsRequestMetrics.startEvent(Field.RequestMarshallTime);
-            try {
-                request = new ListProvisionedProductPlansRequestProtocolMarshaller(protocolFactory).marshall(super
-                        .beforeMarshalling(listProvisionedProductPlansRequest));
-                // Binds the request metrics to the current request.
-                request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
-            } finally {
-                awsRequestMetrics.endEvent(Field.RequestMarshallTime);
-            }
-
-            HttpResponseHandler<AmazonWebServiceResponse<ListProvisionedProductPlansResult>> responseHandler = protocolFactory.createResponseHandler(
-                    new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
-                    new ListProvisionedProductPlansResultJsonUnmarshaller());
             response = invoke(request, responseHandler, executionContext);
 
             return response.getAwsResponse();
@@ -2688,7 +2361,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(listProvisioningArtifactsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2740,7 +2412,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new ListRecordHistoryRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listRecordHistoryRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2798,7 +2469,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(listResourcesForTagOptionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2854,7 +2524,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new ListTagOptionsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTagOptionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2882,7 +2551,7 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
      * </p>
      * <p>
      * If the request contains a tag key with an empty list of values, there is a tag conflict for that key. Do not
-     * include conflicted keys as tags, or this causes the error
+     * include conflicted keys as tags, or this will cause the error
      * "Parameter validation failed: Missing required parameter in Tags[<i>N</i>]:<i>Value</i>".
      * </p>
      * 
@@ -2919,7 +2588,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new ProvisionProductRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(provisionProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2970,7 +2638,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new RejectPortfolioShareRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(rejectPortfolioShareRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2990,9 +2657,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
     /**
      * <p>
      * Lists the provisioned products that are available (not terminated).
-     * </p>
-     * <p>
-     * To use additional filtering, see <a>SearchProvisionedProducts</a>.
      * </p>
      * 
      * @param scanProvisionedProductsRequest
@@ -3025,7 +2689,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(scanProvisionedProductsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3077,7 +2740,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new SearchProductsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchProductsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3130,7 +2792,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new SearchProductsAsAdminRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchProductsAsAdminRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3138,59 +2799,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
             HttpResponseHandler<AmazonWebServiceResponse<SearchProductsAsAdminResult>> responseHandler = protocolFactory
                     .createResponseHandler(new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
                             new SearchProductsAsAdminResultJsonUnmarshaller());
-            response = invoke(request, responseHandler, executionContext);
-
-            return response.getAwsResponse();
-
-        } finally {
-
-            endClientExecution(awsRequestMetrics, request, response);
-        }
-    }
-
-    /**
-     * <p>
-     * Gets information about the provisioned products that meet the specified criteria.
-     * </p>
-     * 
-     * @param searchProvisionedProductsRequest
-     * @return Result of the SearchProvisionedProducts operation returned by the service.
-     * @throws InvalidParametersException
-     *         One or more parameters provided to the operation are not valid.
-     * @sample AWSServiceCatalog.SearchProvisionedProducts
-     * @see <a href="http://docs.aws.amazon.com/goto/WebAPI/servicecatalog-2015-12-10/SearchProvisionedProducts"
-     *      target="_top">AWS API Documentation</a>
-     */
-    @Override
-    public SearchProvisionedProductsResult searchProvisionedProducts(SearchProvisionedProductsRequest request) {
-        request = beforeClientExecution(request);
-        return executeSearchProvisionedProducts(request);
-    }
-
-    @SdkInternalApi
-    final SearchProvisionedProductsResult executeSearchProvisionedProducts(SearchProvisionedProductsRequest searchProvisionedProductsRequest) {
-
-        ExecutionContext executionContext = createExecutionContext(searchProvisionedProductsRequest);
-        AWSRequestMetrics awsRequestMetrics = executionContext.getAwsRequestMetrics();
-        awsRequestMetrics.startEvent(Field.ClientExecuteTime);
-        Request<SearchProvisionedProductsRequest> request = null;
-        Response<SearchProvisionedProductsResult> response = null;
-
-        try {
-            awsRequestMetrics.startEvent(Field.RequestMarshallTime);
-            try {
-                request = new SearchProvisionedProductsRequestProtocolMarshaller(protocolFactory).marshall(super
-                        .beforeMarshalling(searchProvisionedProductsRequest));
-                // Binds the request metrics to the current request.
-                request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
-            } finally {
-                awsRequestMetrics.endEvent(Field.RequestMarshallTime);
-            }
-
-            HttpResponseHandler<AmazonWebServiceResponse<SearchProvisionedProductsResult>> responseHandler = protocolFactory.createResponseHandler(
-                    new JsonOperationMetadata().withPayloadJson(true).withHasStreamingSuccessResponse(false),
-                    new SearchProvisionedProductsResultJsonUnmarshaller());
             response = invoke(request, responseHandler, executionContext);
 
             return response.getAwsResponse();
@@ -3242,7 +2850,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(terminateProvisionedProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3296,7 +2903,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new UpdateConstraintRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateConstraintRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3359,7 +2965,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new UpdatePortfolioRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updatePortfolioRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3416,7 +3021,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new UpdateProductRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3478,7 +3082,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(updateProvisionedProductRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3536,7 +3139,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(updateProvisioningArtifactRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3596,7 +3198,6 @@ public class AWSServiceCatalogClient extends AmazonWebServiceClient implements A
                 request = new UpdateTagOptionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateTagOptionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

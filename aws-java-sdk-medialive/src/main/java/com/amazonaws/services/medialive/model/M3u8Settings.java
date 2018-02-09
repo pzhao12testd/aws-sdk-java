@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -33,7 +33,11 @@ public class M3u8Settings implements Serializable, Cloneable, StructuredPojo {
      * and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values.
      */
     private String audioPids;
-    /** This parameter is unused and deprecated. */
+    /**
+     * ThePlatform-protected transport streams using 'microsoft' as Target Client include an ECM stream. This ECM stream
+     * contains the size, IV, and PTS of every sample in the transport stream. This stream PID is specified here. This
+     * PID has no effect on non ThePlatform-protected streams.
+     */
     private String ecmPid;
     /**
      * The number of milliseconds between instances of this table in the output transport stream. A value of \"0\"
@@ -160,10 +164,14 @@ public class M3u8Settings implements Serializable, Cloneable, StructuredPojo {
     }
 
     /**
-     * This parameter is unused and deprecated.
+     * ThePlatform-protected transport streams using 'microsoft' as Target Client include an ECM stream. This ECM stream
+     * contains the size, IV, and PTS of every sample in the transport stream. This stream PID is specified here. This
+     * PID has no effect on non ThePlatform-protected streams.
      * 
      * @param ecmPid
-     *        This parameter is unused and deprecated.
+     *        ThePlatform-protected transport streams using 'microsoft' as Target Client include an ECM stream. This ECM
+     *        stream contains the size, IV, and PTS of every sample in the transport stream. This stream PID is
+     *        specified here. This PID has no effect on non ThePlatform-protected streams.
      */
 
     public void setEcmPid(String ecmPid) {
@@ -171,9 +179,13 @@ public class M3u8Settings implements Serializable, Cloneable, StructuredPojo {
     }
 
     /**
-     * This parameter is unused and deprecated.
+     * ThePlatform-protected transport streams using 'microsoft' as Target Client include an ECM stream. This ECM stream
+     * contains the size, IV, and PTS of every sample in the transport stream. This stream PID is specified here. This
+     * PID has no effect on non ThePlatform-protected streams.
      * 
-     * @return This parameter is unused and deprecated.
+     * @return ThePlatform-protected transport streams using 'microsoft' as Target Client include an ECM stream. This
+     *         ECM stream contains the size, IV, and PTS of every sample in the transport stream. This stream PID is
+     *         specified here. This PID has no effect on non ThePlatform-protected streams.
      */
 
     public String getEcmPid() {
@@ -181,10 +193,14 @@ public class M3u8Settings implements Serializable, Cloneable, StructuredPojo {
     }
 
     /**
-     * This parameter is unused and deprecated.
+     * ThePlatform-protected transport streams using 'microsoft' as Target Client include an ECM stream. This ECM stream
+     * contains the size, IV, and PTS of every sample in the transport stream. This stream PID is specified here. This
+     * PID has no effect on non ThePlatform-protected streams.
      * 
      * @param ecmPid
-     *        This parameter is unused and deprecated.
+     *        ThePlatform-protected transport streams using 'microsoft' as Target Client include an ECM stream. This ECM
+     *        stream contains the size, IV, and PTS of every sample in the transport stream. This stream PID is
+     *        specified here. This PID has no effect on non ThePlatform-protected streams.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

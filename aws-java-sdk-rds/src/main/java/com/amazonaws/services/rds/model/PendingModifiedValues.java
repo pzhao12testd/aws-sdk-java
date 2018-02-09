@@ -112,8 +112,6 @@ public class PendingModifiedValues implements Serializable, Cloneable {
      */
     private String dBSubnetGroupName;
 
-    private PendingCloudwatchLogsExports pendingCloudwatchLogsExports;
-
     /**
      * <p>
      * Contains the new <code>DBInstanceClass</code> for the DB instance that will be applied or is currently being
@@ -689,32 +687,6 @@ public class PendingModifiedValues implements Serializable, Cloneable {
     }
 
     /**
-     * @param pendingCloudwatchLogsExports
-     */
-
-    public void setPendingCloudwatchLogsExports(PendingCloudwatchLogsExports pendingCloudwatchLogsExports) {
-        this.pendingCloudwatchLogsExports = pendingCloudwatchLogsExports;
-    }
-
-    /**
-     * @return
-     */
-
-    public PendingCloudwatchLogsExports getPendingCloudwatchLogsExports() {
-        return this.pendingCloudwatchLogsExports;
-    }
-
-    /**
-     * @param pendingCloudwatchLogsExports
-     * @return Returns a reference to this object so that method calls can be chained together.
-     */
-
-    public PendingModifiedValues withPendingCloudwatchLogsExports(PendingCloudwatchLogsExports pendingCloudwatchLogsExports) {
-        setPendingCloudwatchLogsExports(pendingCloudwatchLogsExports);
-        return this;
-    }
-
-    /**
      * Returns a string representation of this object; useful for testing and debugging.
      *
      * @return A string representation of this object.
@@ -750,9 +722,7 @@ public class PendingModifiedValues implements Serializable, Cloneable {
         if (getCACertificateIdentifier() != null)
             sb.append("CACertificateIdentifier: ").append(getCACertificateIdentifier()).append(",");
         if (getDBSubnetGroupName() != null)
-            sb.append("DBSubnetGroupName: ").append(getDBSubnetGroupName()).append(",");
-        if (getPendingCloudwatchLogsExports() != null)
-            sb.append("PendingCloudwatchLogsExports: ").append(getPendingCloudwatchLogsExports());
+            sb.append("DBSubnetGroupName: ").append(getDBSubnetGroupName());
         sb.append("}");
         return sb.toString();
     }
@@ -819,10 +789,6 @@ public class PendingModifiedValues implements Serializable, Cloneable {
             return false;
         if (other.getDBSubnetGroupName() != null && other.getDBSubnetGroupName().equals(this.getDBSubnetGroupName()) == false)
             return false;
-        if (other.getPendingCloudwatchLogsExports() == null ^ this.getPendingCloudwatchLogsExports() == null)
-            return false;
-        if (other.getPendingCloudwatchLogsExports() != null && other.getPendingCloudwatchLogsExports().equals(this.getPendingCloudwatchLogsExports()) == false)
-            return false;
         return true;
     }
 
@@ -844,7 +810,6 @@ public class PendingModifiedValues implements Serializable, Cloneable {
         hashCode = prime * hashCode + ((getStorageType() == null) ? 0 : getStorageType().hashCode());
         hashCode = prime * hashCode + ((getCACertificateIdentifier() == null) ? 0 : getCACertificateIdentifier().hashCode());
         hashCode = prime * hashCode + ((getDBSubnetGroupName() == null) ? 0 : getDBSubnetGroupName().hashCode());
-        hashCode = prime * hashCode + ((getPendingCloudwatchLogsExports() == null) ? 0 : getPendingCloudwatchLogsExports().hashCode());
         return hashCode;
     }
 

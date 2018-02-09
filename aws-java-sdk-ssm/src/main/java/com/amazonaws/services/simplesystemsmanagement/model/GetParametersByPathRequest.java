@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -28,8 +28,7 @@ public class GetParametersByPathRequest extends com.amazonaws.AmazonWebServiceRe
     /**
      * <p>
      * The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter name. A
-     * hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy:
-     * <code>/Finance/Prod/IAD/WinServ2016/license33</code>
+     * hierarchy can have a maximum of five levels. For example: <code>/Finance/Prod/IAD/WinServ2016/license15</code>
      * </p>
      */
     private String path;
@@ -68,14 +67,13 @@ public class GetParametersByPathRequest extends com.amazonaws.AmazonWebServiceRe
     /**
      * <p>
      * The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter name. A
-     * hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy:
-     * <code>/Finance/Prod/IAD/WinServ2016/license33</code>
+     * hierarchy can have a maximum of five levels. For example: <code>/Finance/Prod/IAD/WinServ2016/license15</code>
      * </p>
      * 
      * @param path
      *        The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter
-     *        name. A hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy:
-     *        <code>/Finance/Prod/IAD/WinServ2016/license33</code>
+     *        name. A hierarchy can have a maximum of five levels. For example:
+     *        <code>/Finance/Prod/IAD/WinServ2016/license15</code>
      */
 
     public void setPath(String path) {
@@ -85,13 +83,12 @@ public class GetParametersByPathRequest extends com.amazonaws.AmazonWebServiceRe
     /**
      * <p>
      * The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter name. A
-     * hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy:
-     * <code>/Finance/Prod/IAD/WinServ2016/license33</code>
+     * hierarchy can have a maximum of five levels. For example: <code>/Finance/Prod/IAD/WinServ2016/license15</code>
      * </p>
      * 
      * @return The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter
-     *         name. A hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy:
-     *         <code>/Finance/Prod/IAD/WinServ2016/license33</code>
+     *         name. A hierarchy can have a maximum of five levels. For example:
+     *         <code>/Finance/Prod/IAD/WinServ2016/license15</code>
      */
 
     public String getPath() {
@@ -101,14 +98,13 @@ public class GetParametersByPathRequest extends com.amazonaws.AmazonWebServiceRe
     /**
      * <p>
      * The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter name. A
-     * hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy:
-     * <code>/Finance/Prod/IAD/WinServ2016/license33</code>
+     * hierarchy can have a maximum of five levels. For example: <code>/Finance/Prod/IAD/WinServ2016/license15</code>
      * </p>
      * 
      * @param path
      *        The hierarchy for the parameter. Hierarchies start with a forward slash (/) and end with the parameter
-     *        name. A hierarchy can have a maximum of 15 levels. Here is an example of a hierarchy:
-     *        <code>/Finance/Prod/IAD/WinServ2016/license33</code>
+     *        name. A hierarchy can have a maximum of five levels. For example:
+     *        <code>/Finance/Prod/IAD/WinServ2016/license15</code>
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
