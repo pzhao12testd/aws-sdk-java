@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -34,9 +34,8 @@ public class CreatePrivateDnsNamespaceRequest extends com.amazonaws.AmazonWebSer
     private String name;
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed <code>CreatePrivateDnsNamespace</code>
-     * requests to be retried without the risk of executing the operation twice. <code>CreatorRequestId</code> can be
-     * any unique string, for example, a date/time stamp.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      */
     private String creatorRequestId;
@@ -101,15 +100,13 @@ public class CreatePrivateDnsNamespaceRequest extends com.amazonaws.AmazonWebSer
 
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed <code>CreatePrivateDnsNamespace</code>
-     * requests to be retried without the risk of executing the operation twice. <code>CreatorRequestId</code> can be
-     * any unique string, for example, a date/time stamp.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      * 
      * @param creatorRequestId
-     *        A unique string that identifies the request and that allows failed <code>CreatePrivateDnsNamespace</code>
-     *        requests to be retried without the risk of executing the operation twice. <code>CreatorRequestId</code>
-     *        can be any unique string, for example, a date/time stamp.
+     *        An optional parameter that you can use to resolve concurrent creation requests.
+     *        <code>CreatorRequestId</code> helps to determine if a specific client owns the namespace.
      */
 
     public void setCreatorRequestId(String creatorRequestId) {
@@ -118,14 +115,12 @@ public class CreatePrivateDnsNamespaceRequest extends com.amazonaws.AmazonWebSer
 
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed <code>CreatePrivateDnsNamespace</code>
-     * requests to be retried without the risk of executing the operation twice. <code>CreatorRequestId</code> can be
-     * any unique string, for example, a date/time stamp.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      * 
-     * @return A unique string that identifies the request and that allows failed <code>CreatePrivateDnsNamespace</code>
-     *         requests to be retried without the risk of executing the operation twice. <code>CreatorRequestId</code>
-     *         can be any unique string, for example, a date/time stamp.
+     * @return An optional parameter that you can use to resolve concurrent creation requests.
+     *         <code>CreatorRequestId</code> helps to determine if a specific client owns the namespace.
      */
 
     public String getCreatorRequestId() {
@@ -134,15 +129,13 @@ public class CreatePrivateDnsNamespaceRequest extends com.amazonaws.AmazonWebSer
 
     /**
      * <p>
-     * A unique string that identifies the request and that allows failed <code>CreatePrivateDnsNamespace</code>
-     * requests to be retried without the risk of executing the operation twice. <code>CreatorRequestId</code> can be
-     * any unique string, for example, a date/time stamp.
+     * An optional parameter that you can use to resolve concurrent creation requests. <code>CreatorRequestId</code>
+     * helps to determine if a specific client owns the namespace.
      * </p>
      * 
      * @param creatorRequestId
-     *        A unique string that identifies the request and that allows failed <code>CreatePrivateDnsNamespace</code>
-     *        requests to be retried without the risk of executing the operation twice. <code>CreatorRequestId</code>
-     *        can be any unique string, for example, a date/time stamp.
+     *        An optional parameter that you can use to resolve concurrent creation requests.
+     *        <code>CreatorRequestId</code> helps to determine if a specific client owns the namespace.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -397,7 +397,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new CompareFacesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(compareFacesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -470,7 +469,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new CreateCollectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createCollectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -546,7 +544,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new CreateStreamProcessorRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createStreamProcessorRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -611,7 +608,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new DeleteCollectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteCollectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -675,7 +671,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new DeleteFacesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteFacesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -738,7 +733,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new DeleteStreamProcessorRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteStreamProcessorRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -802,7 +796,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(describeStreamProcessorRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -893,7 +886,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new DetectFacesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectFacesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1019,7 +1011,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new DetectLabelsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectLabelsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1094,7 +1085,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new DetectModerationLabelsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectModerationLabelsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1192,7 +1182,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new DetectTextRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detectTextRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1257,7 +1246,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new GetCelebrityInfoRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getCelebrityInfoRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1353,7 +1341,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(getCelebrityRecognitionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1445,7 +1432,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new GetContentModerationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getContentModerationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1526,7 +1512,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new GetFaceDetectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getFaceDetectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1609,7 +1594,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new GetFaceSearchRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getFaceSearchRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1695,7 +1679,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new GetLabelDetectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getLabelDetectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1783,7 +1766,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new GetPersonTrackingRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getPersonTrackingRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1884,7 +1866,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new IndexFacesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(indexFacesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1953,7 +1934,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new ListCollectionsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listCollectionsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2020,7 +2000,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new ListFacesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listFacesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2080,7 +2059,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new ListStreamProcessorsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listStreamProcessorsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2174,7 +2152,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new RecognizeCelebritiesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(recognizeCelebritiesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2253,7 +2230,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new SearchFacesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchFacesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2348,7 +2324,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new SearchFacesByImageRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(searchFacesByImageRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2426,7 +2401,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                         .beforeMarshalling(startCelebrityRecognitionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2506,7 +2480,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new StartContentModerationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startContentModerationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2584,7 +2557,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new StartFaceDetectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startFaceDetectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2663,7 +2635,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new StartFaceSearchRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startFaceSearchRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2747,7 +2718,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new StartLabelDetectionRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startLabelDetectionRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2826,7 +2796,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new StartPersonTrackingRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startPersonTrackingRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2889,7 +2858,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new StartStreamProcessorRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(startStreamProcessorRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2950,7 +2918,6 @@ public class AmazonRekognitionClient extends AmazonWebServiceClient implements A
                 request = new StopStreamProcessorRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(stopStreamProcessorRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

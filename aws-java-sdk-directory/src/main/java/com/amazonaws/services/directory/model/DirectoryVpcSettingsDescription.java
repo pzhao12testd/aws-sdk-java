@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -42,7 +42,9 @@ public class DirectoryVpcSettingsDescription implements Serializable, Cloneable,
     private com.amazonaws.internal.SdkInternalList<String> subnetIds;
     /**
      * <p>
-     * The domain controller security group identifier for the directory.
+     * The security group identifier for the directory. If the directory was created before 8/1/2014, this is the
+     * identifier of the directory members security group that was created when the directory was created. If the
+     * directory was created after this date, this value is null.
      * </p>
      */
     private String securityGroupId;
@@ -168,11 +170,15 @@ public class DirectoryVpcSettingsDescription implements Serializable, Cloneable,
 
     /**
      * <p>
-     * The domain controller security group identifier for the directory.
+     * The security group identifier for the directory. If the directory was created before 8/1/2014, this is the
+     * identifier of the directory members security group that was created when the directory was created. If the
+     * directory was created after this date, this value is null.
      * </p>
      * 
      * @param securityGroupId
-     *        The domain controller security group identifier for the directory.
+     *        The security group identifier for the directory. If the directory was created before 8/1/2014, this is the
+     *        identifier of the directory members security group that was created when the directory was created. If the
+     *        directory was created after this date, this value is null.
      */
 
     public void setSecurityGroupId(String securityGroupId) {
@@ -181,10 +187,14 @@ public class DirectoryVpcSettingsDescription implements Serializable, Cloneable,
 
     /**
      * <p>
-     * The domain controller security group identifier for the directory.
+     * The security group identifier for the directory. If the directory was created before 8/1/2014, this is the
+     * identifier of the directory members security group that was created when the directory was created. If the
+     * directory was created after this date, this value is null.
      * </p>
      * 
-     * @return The domain controller security group identifier for the directory.
+     * @return The security group identifier for the directory. If the directory was created before 8/1/2014, this is
+     *         the identifier of the directory members security group that was created when the directory was created.
+     *         If the directory was created after this date, this value is null.
      */
 
     public String getSecurityGroupId() {
@@ -193,11 +203,15 @@ public class DirectoryVpcSettingsDescription implements Serializable, Cloneable,
 
     /**
      * <p>
-     * The domain controller security group identifier for the directory.
+     * The security group identifier for the directory. If the directory was created before 8/1/2014, this is the
+     * identifier of the directory members security group that was created when the directory was created. If the
+     * directory was created after this date, this value is null.
      * </p>
      * 
      * @param securityGroupId
-     *        The domain controller security group identifier for the directory.
+     *        The security group identifier for the directory. If the directory was created before 8/1/2014, this is the
+     *        identifier of the directory members security group that was created when the directory was created. If the
+     *        directory was created after this date, this value is null.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

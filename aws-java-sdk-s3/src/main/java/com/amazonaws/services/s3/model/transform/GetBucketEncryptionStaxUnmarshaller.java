@@ -19,7 +19,6 @@ import com.amazonaws.services.s3.model.ServerSideEncryptionConfiguration;
 import com.amazonaws.services.s3.model.ServerSideEncryptionRule;
 import com.amazonaws.transform.StaxUnmarshallerContext;
 import com.amazonaws.transform.Unmarshaller;
-import com.amazonaws.util.XmlUtils;
 import java.io.InputStream;
 import java.util.ArrayList;
 import javax.xml.stream.XMLInputFactory;
@@ -36,13 +35,17 @@ public class GetBucketEncryptionStaxUnmarshaller implements Unmarshaller<GetBuck
         return instance;
     }
 
+    private final XMLInputFactory inputFactory = XMLInputFactory.newInstance();
+
     private GetBucketEncryptionStaxUnmarshaller() {
     }
 
     @Override
     public GetBucketEncryptionResult unmarshall(InputStream inputStream) throws Exception {
-        StaxUnmarshallerContext context
-            = new StaxUnmarshallerContext(XmlUtils.getXmlInputFactory().createXMLEventReader(inputStream));
+        StaxUnmarshallerContext context;
+        synchronized (inputFactory) {
+            context = new StaxUnmarshallerContext(inputFactory.createXMLEventReader(inputStream));
+        }
         int originalDepth = context.getCurrentDepth();
         int targetDepth = originalDepth + 1;
 

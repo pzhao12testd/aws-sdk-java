@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -199,7 +199,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(associateCreatedArtifactRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -273,7 +272,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(associateDiscoveredResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -344,7 +342,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(createProgressUpdateStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -449,7 +446,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(deleteProgressUpdateStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -517,7 +513,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(describeApplicationStateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -581,7 +576,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                 request = new DescribeMigrationTaskRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeMigrationTaskRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -672,7 +666,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(disassociateCreatedArtifactRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -743,7 +736,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(disassociateDiscoveredResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -818,7 +810,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                 request = new ImportMigrationTaskRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(importMigrationTaskRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -900,7 +891,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                 request = new ListCreatedArtifactsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listCreatedArtifactsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -964,7 +954,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(listDiscoveredResourcesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1049,7 +1038,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                 request = new ListMigrationTasksRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listMigrationTasksRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1110,7 +1098,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(listProgressUpdateStreamsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1185,7 +1172,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                 request = new NotifyApplicationStateRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(notifyApplicationStateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1274,7 +1260,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                         .beforeMarshalling(notifyMigrationTaskStateRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1358,7 +1343,6 @@ public class AWSMigrationHubClient extends AmazonWebServiceClient implements AWS
                 request = new PutResourceAttributesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(putResourceAttributesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -27,28 +27,24 @@ public class PutFunctionConcurrencyRequest extends com.amazonaws.AmazonWebServic
 
     /**
      * <p>
-     * The name of the function you are setting concurrent execution limits on. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are setting concurrent execution limits on.
      * </p>
      */
     private String functionName;
     /**
      * <p>
-     * The concurrent execution limit reserved for this function. For more information, see
-     * <a>concurrent-executions</a>.
+     * The concurrent execution limit reserved for this function.
      * </p>
      */
     private Integer reservedConcurrentExecutions;
 
     /**
      * <p>
-     * The name of the function you are setting concurrent execution limits on. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are setting concurrent execution limits on.
      * </p>
      * 
      * @param functionName
-     *        The name of the function you are setting concurrent execution limits on. For more information, see
-     *        <a>concurrent-executions</a>.
+     *        The name of the function you are setting concurrent execution limits on.
      */
 
     public void setFunctionName(String functionName) {
@@ -57,12 +53,10 @@ public class PutFunctionConcurrencyRequest extends com.amazonaws.AmazonWebServic
 
     /**
      * <p>
-     * The name of the function you are setting concurrent execution limits on. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are setting concurrent execution limits on.
      * </p>
      * 
-     * @return The name of the function you are setting concurrent execution limits on. For more information, see
-     *         <a>concurrent-executions</a>.
+     * @return The name of the function you are setting concurrent execution limits on.
      */
 
     public String getFunctionName() {
@@ -71,13 +65,11 @@ public class PutFunctionConcurrencyRequest extends com.amazonaws.AmazonWebServic
 
     /**
      * <p>
-     * The name of the function you are setting concurrent execution limits on. For more information, see
-     * <a>concurrent-executions</a>.
+     * The name of the function you are setting concurrent execution limits on.
      * </p>
      * 
      * @param functionName
-     *        The name of the function you are setting concurrent execution limits on. For more information, see
-     *        <a>concurrent-executions</a>.
+     *        The name of the function you are setting concurrent execution limits on.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -88,13 +80,11 @@ public class PutFunctionConcurrencyRequest extends com.amazonaws.AmazonWebServic
 
     /**
      * <p>
-     * The concurrent execution limit reserved for this function. For more information, see
-     * <a>concurrent-executions</a>.
+     * The concurrent execution limit reserved for this function.
      * </p>
      * 
      * @param reservedConcurrentExecutions
-     *        The concurrent execution limit reserved for this function. For more information, see
-     *        <a>concurrent-executions</a>.
+     *        The concurrent execution limit reserved for this function.
      */
 
     public void setReservedConcurrentExecutions(Integer reservedConcurrentExecutions) {
@@ -103,12 +93,10 @@ public class PutFunctionConcurrencyRequest extends com.amazonaws.AmazonWebServic
 
     /**
      * <p>
-     * The concurrent execution limit reserved for this function. For more information, see
-     * <a>concurrent-executions</a>.
+     * The concurrent execution limit reserved for this function.
      * </p>
      * 
-     * @return The concurrent execution limit reserved for this function. For more information, see
-     *         <a>concurrent-executions</a>.
+     * @return The concurrent execution limit reserved for this function.
      */
 
     public Integer getReservedConcurrentExecutions() {
@@ -117,13 +105,11 @@ public class PutFunctionConcurrencyRequest extends com.amazonaws.AmazonWebServic
 
     /**
      * <p>
-     * The concurrent execution limit reserved for this function. For more information, see
-     * <a>concurrent-executions</a>.
+     * The concurrent execution limit reserved for this function.
      * </p>
      * 
      * @param reservedConcurrentExecutions
-     *        The concurrent execution limit reserved for this function. For more information, see
-     *        <a>concurrent-executions</a>.
+     *        The concurrent execution limit reserved for this function.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

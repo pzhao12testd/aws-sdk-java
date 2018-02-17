@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -33,8 +33,7 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
     private String catalogId;
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      */
     private String databaseName;
@@ -44,13 +43,6 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
      * </p>
      */
     private TableInput tableInput;
-    /**
-     * <p>
-     * By default, <code>UpdateTable</code> always creates an archived version of the table before updating it. If
-     * <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the archived version.
-     * </p>
-     */
-    private Boolean skipArchive;
 
     /**
      * <p>
@@ -97,13 +89,11 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      * 
      * @param databaseName
-     *        The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     *        lowercase.
+     *        The name of the catalog database in which the table resides.
      */
 
     public void setDatabaseName(String databaseName) {
@@ -112,12 +102,10 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      * 
-     * @return The name of the catalog database in which the table resides. For Hive compatibility, this name is
-     *         entirely lowercase.
+     * @return The name of the catalog database in which the table resides.
      */
 
     public String getDatabaseName() {
@@ -126,13 +114,11 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
 
     /**
      * <p>
-     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     * lowercase.
+     * The name of the catalog database in which the table resides.
      * </p>
      * 
      * @param databaseName
-     *        The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely
-     *        lowercase.
+     *        The name of the catalog database in which the table resides.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -182,70 +168,6 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
     }
 
     /**
-     * <p>
-     * By default, <code>UpdateTable</code> always creates an archived version of the table before updating it. If
-     * <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the archived version.
-     * </p>
-     * 
-     * @param skipArchive
-     *        By default, <code>UpdateTable</code> always creates an archived version of the table before updating it.
-     *        If <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the archived
-     *        version.
-     */
-
-    public void setSkipArchive(Boolean skipArchive) {
-        this.skipArchive = skipArchive;
-    }
-
-    /**
-     * <p>
-     * By default, <code>UpdateTable</code> always creates an archived version of the table before updating it. If
-     * <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the archived version.
-     * </p>
-     * 
-     * @return By default, <code>UpdateTable</code> always creates an archived version of the table before updating it.
-     *         If <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the
-     *         archived version.
-     */
-
-    public Boolean getSkipArchive() {
-        return this.skipArchive;
-    }
-
-    /**
-     * <p>
-     * By default, <code>UpdateTable</code> always creates an archived version of the table before updating it. If
-     * <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the archived version.
-     * </p>
-     * 
-     * @param skipArchive
-     *        By default, <code>UpdateTable</code> always creates an archived version of the table before updating it.
-     *        If <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the archived
-     *        version.
-     * @return Returns a reference to this object so that method calls can be chained together.
-     */
-
-    public UpdateTableRequest withSkipArchive(Boolean skipArchive) {
-        setSkipArchive(skipArchive);
-        return this;
-    }
-
-    /**
-     * <p>
-     * By default, <code>UpdateTable</code> always creates an archived version of the table before updating it. If
-     * <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the archived version.
-     * </p>
-     * 
-     * @return By default, <code>UpdateTable</code> always creates an archived version of the table before updating it.
-     *         If <code>skipArchive</code> is set to true, however, <code>UpdateTable</code> does not create the
-     *         archived version.
-     */
-
-    public Boolean isSkipArchive() {
-        return this.skipArchive;
-    }
-
-    /**
      * Returns a string representation of this object; useful for testing and debugging.
      *
      * @return A string representation of this object.
@@ -261,9 +183,7 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
         if (getDatabaseName() != null)
             sb.append("DatabaseName: ").append(getDatabaseName()).append(",");
         if (getTableInput() != null)
-            sb.append("TableInput: ").append(getTableInput()).append(",");
-        if (getSkipArchive() != null)
-            sb.append("SkipArchive: ").append(getSkipArchive());
+            sb.append("TableInput: ").append(getTableInput());
         sb.append("}");
         return sb.toString();
     }
@@ -290,10 +210,6 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
             return false;
         if (other.getTableInput() != null && other.getTableInput().equals(this.getTableInput()) == false)
             return false;
-        if (other.getSkipArchive() == null ^ this.getSkipArchive() == null)
-            return false;
-        if (other.getSkipArchive() != null && other.getSkipArchive().equals(this.getSkipArchive()) == false)
-            return false;
         return true;
     }
 
@@ -305,7 +221,6 @@ public class UpdateTableRequest extends com.amazonaws.AmazonWebServiceRequest im
         hashCode = prime * hashCode + ((getCatalogId() == null) ? 0 : getCatalogId().hashCode());
         hashCode = prime * hashCode + ((getDatabaseName() == null) ? 0 : getDatabaseName().hashCode());
         hashCode = prime * hashCode + ((getTableInput() == null) ? 0 : getTableInput().hashCode());
-        hashCode = prime * hashCode + ((getSkipArchive() == null) ? 0 : getSkipArchive().hashCode());
         return hashCode;
     }
 

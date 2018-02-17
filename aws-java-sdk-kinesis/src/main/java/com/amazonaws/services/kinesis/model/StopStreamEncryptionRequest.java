@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -39,10 +39,9 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
     private String encryptionType;
     /**
      * <p>
-     * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique
-     * identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name prefixed
-     * by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias
-     * <code>aws/kinesis</code>.
+     * The GUID for the customer-managed KMS key to use for encryption. This value can be a globally unique identifier,
+     * a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You can also use a
+     * master key owned by Kinesis Streams by specifying the alias <code>aws/kinesis</code>.
      * </p>
      * <ul>
      * <li>
@@ -67,7 +66,7 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
      * </li>
      * <li>
      * <p>
-     * Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code>
+     * Master key owned by Kinesis Streams: <code>alias/aws/kinesis</code>
      * </p>
      * </li>
      * </ul>
@@ -189,10 +188,9 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
 
     /**
      * <p>
-     * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique
-     * identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name prefixed
-     * by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias
-     * <code>aws/kinesis</code>.
+     * The GUID for the customer-managed KMS key to use for encryption. This value can be a globally unique identifier,
+     * a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You can also use a
+     * master key owned by Kinesis Streams by specifying the alias <code>aws/kinesis</code>.
      * </p>
      * <ul>
      * <li>
@@ -217,16 +215,15 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
      * </li>
      * <li>
      * <p>
-     * Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code>
+     * Master key owned by Kinesis Streams: <code>alias/aws/kinesis</code>
      * </p>
      * </li>
      * </ul>
      * 
      * @param keyId
-     *        The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique
-     *        identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name
-     *        prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias
-     *        <code>aws/kinesis</code>.</p>
+     *        The GUID for the customer-managed KMS key to use for encryption. This value can be a globally unique
+     *        identifier, a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You
+     *        can also use a master key owned by Kinesis Streams by specifying the alias <code>aws/kinesis</code>.</p>
      *        <ul>
      *        <li>
      *        <p>
@@ -250,7 +247,7 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
      *        </li>
      *        <li>
      *        <p>
-     *        Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code>
+     *        Master key owned by Kinesis Streams: <code>alias/aws/kinesis</code>
      *        </p>
      *        </li>
      */
@@ -261,10 +258,9 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
 
     /**
      * <p>
-     * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique
-     * identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name prefixed
-     * by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias
-     * <code>aws/kinesis</code>.
+     * The GUID for the customer-managed KMS key to use for encryption. This value can be a globally unique identifier,
+     * a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You can also use a
+     * master key owned by Kinesis Streams by specifying the alias <code>aws/kinesis</code>.
      * </p>
      * <ul>
      * <li>
@@ -289,15 +285,14 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
      * </li>
      * <li>
      * <p>
-     * Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code>
+     * Master key owned by Kinesis Streams: <code>alias/aws/kinesis</code>
      * </p>
      * </li>
      * </ul>
      * 
-     * @return The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique
-     *         identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name
-     *         prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias
-     *         <code>aws/kinesis</code>.</p>
+     * @return The GUID for the customer-managed KMS key to use for encryption. This value can be a globally unique
+     *         identifier, a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You
+     *         can also use a master key owned by Kinesis Streams by specifying the alias <code>aws/kinesis</code>.</p>
      *         <ul>
      *         <li>
      *         <p>
@@ -321,7 +316,7 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
      *         </li>
      *         <li>
      *         <p>
-     *         Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code>
+     *         Master key owned by Kinesis Streams: <code>alias/aws/kinesis</code>
      *         </p>
      *         </li>
      */
@@ -332,10 +327,9 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
 
     /**
      * <p>
-     * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique
-     * identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name prefixed
-     * by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias
-     * <code>aws/kinesis</code>.
+     * The GUID for the customer-managed KMS key to use for encryption. This value can be a globally unique identifier,
+     * a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You can also use a
+     * master key owned by Kinesis Streams by specifying the alias <code>aws/kinesis</code>.
      * </p>
      * <ul>
      * <li>
@@ -360,16 +354,15 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
      * </li>
      * <li>
      * <p>
-     * Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code>
+     * Master key owned by Kinesis Streams: <code>alias/aws/kinesis</code>
      * </p>
      * </li>
      * </ul>
      * 
      * @param keyId
-     *        The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique
-     *        identifier, a fully specified Amazon Resource Name (ARN) to either an alias or a key, or an alias name
-     *        prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias
-     *        <code>aws/kinesis</code>.</p>
+     *        The GUID for the customer-managed KMS key to use for encryption. This value can be a globally unique
+     *        identifier, a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You
+     *        can also use a master key owned by Kinesis Streams by specifying the alias <code>aws/kinesis</code>.</p>
      *        <ul>
      *        <li>
      *        <p>
@@ -393,7 +386,7 @@ public class StopStreamEncryptionRequest extends com.amazonaws.AmazonWebServiceR
      *        </li>
      *        <li>
      *        <p>
-     *        Master key owned by Kinesis Data Streams: <code>alias/aws/kinesis</code>
+     *        Master key owned by Kinesis Streams: <code>alias/aws/kinesis</code>
      *        </p>
      *        </li>
      * @return Returns a reference to this object so that method calls can be chained together.

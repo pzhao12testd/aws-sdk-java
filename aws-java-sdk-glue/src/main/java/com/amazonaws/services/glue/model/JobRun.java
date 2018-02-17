@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -35,19 +35,19 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
     private String id;
     /**
      * <p>
-     * The number of the attempt to run this job.
+     * The number or the attempt to run this job.
      * </p>
      */
     private Integer attempt;
     /**
      * <p>
-     * The ID of the previous run of this job. For example, the JobRunId specified in the StartJobRun action.
+     * The ID of the previous run of this job.
      * </p>
      */
     private String previousRunId;
     /**
      * <p>
-     * The name of the trigger that started this job run.
+     * The name of the trigger for this job run.
      * </p>
      */
     private String triggerName;
@@ -83,21 +83,7 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
     private String jobRunState;
     /**
      * <p>
-     * The job arguments associated with this run. These override equivalent default arguments set for the job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The job arguments associated with this run.
      * </p>
      */
     private java.util.Map<String, String> arguments;
@@ -115,10 +101,7 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
     private java.util.List<Predecessor> predecessorRuns;
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be
-     * allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute
-     * capacity and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS
-     * Glue pricing page</a>.
+     * The amount of infrastructure capacity allocated to this job run.
      * </p>
      */
     private Integer allocatedCapacity;
@@ -165,11 +148,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of the attempt to run this job.
+     * The number or the attempt to run this job.
      * </p>
      * 
      * @param attempt
-     *        The number of the attempt to run this job.
+     *        The number or the attempt to run this job.
      */
 
     public void setAttempt(Integer attempt) {
@@ -178,10 +161,10 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of the attempt to run this job.
+     * The number or the attempt to run this job.
      * </p>
      * 
-     * @return The number of the attempt to run this job.
+     * @return The number or the attempt to run this job.
      */
 
     public Integer getAttempt() {
@@ -190,11 +173,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of the attempt to run this job.
+     * The number or the attempt to run this job.
      * </p>
      * 
      * @param attempt
-     *        The number of the attempt to run this job.
+     *        The number or the attempt to run this job.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -205,11 +188,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The ID of the previous run of this job. For example, the JobRunId specified in the StartJobRun action.
+     * The ID of the previous run of this job.
      * </p>
      * 
      * @param previousRunId
-     *        The ID of the previous run of this job. For example, the JobRunId specified in the StartJobRun action.
+     *        The ID of the previous run of this job.
      */
 
     public void setPreviousRunId(String previousRunId) {
@@ -218,10 +201,10 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The ID of the previous run of this job. For example, the JobRunId specified in the StartJobRun action.
+     * The ID of the previous run of this job.
      * </p>
      * 
-     * @return The ID of the previous run of this job. For example, the JobRunId specified in the StartJobRun action.
+     * @return The ID of the previous run of this job.
      */
 
     public String getPreviousRunId() {
@@ -230,11 +213,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The ID of the previous run of this job. For example, the JobRunId specified in the StartJobRun action.
+     * The ID of the previous run of this job.
      * </p>
      * 
      * @param previousRunId
-     *        The ID of the previous run of this job. For example, the JobRunId specified in the StartJobRun action.
+     *        The ID of the previous run of this job.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -245,11 +228,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the trigger that started this job run.
+     * The name of the trigger for this job run.
      * </p>
      * 
      * @param triggerName
-     *        The name of the trigger that started this job run.
+     *        The name of the trigger for this job run.
      */
 
     public void setTriggerName(String triggerName) {
@@ -258,10 +241,10 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the trigger that started this job run.
+     * The name of the trigger for this job run.
      * </p>
      * 
-     * @return The name of the trigger that started this job run.
+     * @return The name of the trigger for this job run.
      */
 
     public String getTriggerName() {
@@ -270,11 +253,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The name of the trigger that started this job run.
+     * The name of the trigger for this job run.
      * </p>
      * 
      * @param triggerName
-     *        The name of the trigger that started this job run.
+     *        The name of the trigger for this job run.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -504,38 +487,10 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The job arguments associated with this run. These override equivalent default arguments set for the job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The job arguments associated with this run.
      * </p>
      * 
-     * @return The job arguments associated with this run. These override equivalent default arguments set for the
-     *         job.</p>
-     *         <p>
-     *         You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS
-     *         Glue itself consumes.
-     *         </p>
-     *         <p>
-     *         For information about how to specify and consume your own job arguments, see the <a
-     *         href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS
-     *         Glue APIs in Python</a> topic in the developer guide.
-     *         </p>
-     *         <p>
-     *         For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     *         href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     *         Parameters Used by AWS Glue</a> topic in the developer guide.
+     * @return The job arguments associated with this run.
      */
 
     public java.util.Map<String, String> getArguments() {
@@ -544,39 +499,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The job arguments associated with this run. These override equivalent default arguments set for the job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The job arguments associated with this run.
      * </p>
      * 
      * @param arguments
-     *        The job arguments associated with this run. These override equivalent default arguments set for the
-     *        job.</p>
-     *        <p>
-     *        You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS
-     *        Glue itself consumes.
-     *        </p>
-     *        <p>
-     *        For information about how to specify and consume your own job arguments, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue
-     *        APIs in Python</a> topic in the developer guide.
-     *        </p>
-     *        <p>
-     *        For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     *        Parameters Used by AWS Glue</a> topic in the developer guide.
+     *        The job arguments associated with this run.
      */
 
     public void setArguments(java.util.Map<String, String> arguments) {
@@ -585,39 +512,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The job arguments associated with this run. These override equivalent default arguments set for the job.
-     * </p>
-     * <p>
-     * You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue
-     * itself consumes.
-     * </p>
-     * <p>
-     * For information about how to specify and consume your own job arguments, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue APIs
-     * in Python</a> topic in the developer guide.
-     * </p>
-     * <p>
-     * For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     * href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     * Parameters Used by AWS Glue</a> topic in the developer guide.
+     * The job arguments associated with this run.
      * </p>
      * 
      * @param arguments
-     *        The job arguments associated with this run. These override equivalent default arguments set for the
-     *        job.</p>
-     *        <p>
-     *        You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS
-     *        Glue itself consumes.
-     *        </p>
-     *        <p>
-     *        For information about how to specify and consume your own job arguments, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html">Calling AWS Glue
-     *        APIs in Python</a> topic in the developer guide.
-     *        </p>
-     *        <p>
-     *        For information about the key-value pairs that AWS Glue consumes to set up your job, see the <a
-     *        href="http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html">Special
-     *        Parameters Used by AWS Glue</a> topic in the developer guide.
+     *        The job arguments associated with this run.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -759,17 +658,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be
-     * allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute
-     * capacity and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS
-     * Glue pricing page</a>.
+     * The amount of infrastructure capacity allocated to this job run.
      * </p>
      * 
      * @param allocatedCapacity
-     *        The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be
-     *        allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of
-     *        compute capacity and 16 GB of memory. For more information, see the <a
-     *        href="https://aws.amazon.com/glue/pricing/">AWS Glue pricing page</a>.
+     *        The amount of infrastructure capacity allocated to this job run.
      */
 
     public void setAllocatedCapacity(Integer allocatedCapacity) {
@@ -778,16 +671,10 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be
-     * allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute
-     * capacity and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS
-     * Glue pricing page</a>.
+     * The amount of infrastructure capacity allocated to this job run.
      * </p>
      * 
-     * @return The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be
-     *         allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of
-     *         compute capacity and 16 GB of memory. For more information, see the <a
-     *         href="https://aws.amazon.com/glue/pricing/">AWS Glue pricing page</a>.
+     * @return The amount of infrastructure capacity allocated to this job run.
      */
 
     public Integer getAllocatedCapacity() {
@@ -796,17 +683,11 @@ public class JobRun implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be
-     * allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute
-     * capacity and 16 GB of memory. For more information, see the <a href="https://aws.amazon.com/glue/pricing/">AWS
-     * Glue pricing page</a>.
+     * The amount of infrastructure capacity allocated to this job run.
      * </p>
      * 
      * @param allocatedCapacity
-     *        The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be
-     *        allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of
-     *        compute capacity and 16 GB of memory. For more information, see the <a
-     *        href="https://aws.amazon.com/glue/pricing/">AWS Glue pricing page</a>.
+     *        The amount of infrastructure capacity allocated to this job run.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

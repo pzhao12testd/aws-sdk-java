@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -54,8 +54,7 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
     private Integer size;
     /**
      * <p>
-     * The volume type. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html"> Amazon EBS Volume Types</a>.
+     * The volume type:
      * </p>
      * <ul>
      * <li>
@@ -73,16 +72,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      * <code>gp2</code> - General Purpose (SSD)
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>st1</code> - Throughput Optimized hard disk drive (HDD)
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * <code>sc1</code> - Cold HDD
-     * </p>
-     * </li>
      * </ul>
      */
     private String volumeType;
@@ -92,13 +81,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      * </p>
      */
     private Integer iops;
-    /**
-     * <p>
-     * Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     * </p>
-     */
-    private Boolean encrypted;
 
     /**
      * <p>
@@ -262,8 +244,7 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
 
     /**
      * <p>
-     * The volume type. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html"> Amazon EBS Volume Types</a>.
+     * The volume type:
      * </p>
      * <ul>
      * <li>
@@ -281,22 +262,10 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      * <code>gp2</code> - General Purpose (SSD)
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>st1</code> - Throughput Optimized hard disk drive (HDD)
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * <code>sc1</code> - Cold HDD
-     * </p>
-     * </li>
      * </ul>
      * 
      * @param volumeType
-     *        The volume type. For more information, see <a
-     *        href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html"> Amazon EBS Volume
-     *        Types</a>.</p>
+     *        The volume type:</p>
      *        <ul>
      *        <li>
      *        <p>
@@ -313,16 +282,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      *        <code>gp2</code> - General Purpose (SSD)
      *        </p>
      *        </li>
-     *        <li>
-     *        <p>
-     *        <code>st1</code> - Throughput Optimized hard disk drive (HDD)
-     *        </p>
-     *        </li>
-     *        <li>
-     *        <p>
-     *        <code>sc1</code> - Cold HDD
-     *        </p>
-     *        </li>
      */
 
     public void setVolumeType(String volumeType) {
@@ -331,8 +290,7 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
 
     /**
      * <p>
-     * The volume type. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html"> Amazon EBS Volume Types</a>.
+     * The volume type:
      * </p>
      * <ul>
      * <li>
@@ -350,21 +308,9 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      * <code>gp2</code> - General Purpose (SSD)
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>st1</code> - Throughput Optimized hard disk drive (HDD)
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * <code>sc1</code> - Cold HDD
-     * </p>
-     * </li>
      * </ul>
      * 
-     * @return The volume type. For more information, see <a
-     *         href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html"> Amazon EBS Volume
-     *         Types</a>.</p>
+     * @return The volume type:</p>
      *         <ul>
      *         <li>
      *         <p>
@@ -381,16 +327,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      *         <code>gp2</code> - General Purpose (SSD)
      *         </p>
      *         </li>
-     *         <li>
-     *         <p>
-     *         <code>st1</code> - Throughput Optimized hard disk drive (HDD)
-     *         </p>
-     *         </li>
-     *         <li>
-     *         <p>
-     *         <code>sc1</code> - Cold HDD
-     *         </p>
-     *         </li>
      */
 
     public String getVolumeType() {
@@ -399,8 +335,7 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
 
     /**
      * <p>
-     * The volume type. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html"> Amazon EBS Volume Types</a>.
+     * The volume type:
      * </p>
      * <ul>
      * <li>
@@ -418,22 +353,10 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      * <code>gp2</code> - General Purpose (SSD)
      * </p>
      * </li>
-     * <li>
-     * <p>
-     * <code>st1</code> - Throughput Optimized hard disk drive (HDD)
-     * </p>
-     * </li>
-     * <li>
-     * <p>
-     * <code>sc1</code> - Cold HDD
-     * </p>
-     * </li>
      * </ul>
      * 
      * @param volumeType
-     *        The volume type. For more information, see <a
-     *        href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html"> Amazon EBS Volume
-     *        Types</a>.</p>
+     *        The volume type:</p>
      *        <ul>
      *        <li>
      *        <p>
@@ -448,16 +371,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
      *        <li>
      *        <p>
      *        <code>gp2</code> - General Purpose (SSD)
-     *        </p>
-     *        </li>
-     *        <li>
-     *        <p>
-     *        <code>st1</code> - Throughput Optimized hard disk drive (HDD)
-     *        </p>
-     *        </li>
-     *        <li>
-     *        <p>
-     *        <code>sc1</code> - Cold HDD
      *        </p>
      *        </li>
      * @return Returns a reference to this object so that method calls can be chained together.
@@ -509,66 +422,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
     }
 
     /**
-     * <p>
-     * Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     * </p>
-     * 
-     * @param encrypted
-     *        Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     *        href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     */
-
-    public void setEncrypted(Boolean encrypted) {
-        this.encrypted = encrypted;
-    }
-
-    /**
-     * <p>
-     * Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     * </p>
-     * 
-     * @return Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     *         href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     */
-
-    public Boolean getEncrypted() {
-        return this.encrypted;
-    }
-
-    /**
-     * <p>
-     * Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     * </p>
-     * 
-     * @param encrypted
-     *        Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     *        href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     * @return Returns a reference to this object so that method calls can be chained together.
-     */
-
-    public VolumeConfiguration withEncrypted(Boolean encrypted) {
-        setEncrypted(encrypted);
-        return this;
-    }
-
-    /**
-     * <p>
-     * Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     * href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     * </p>
-     * 
-     * @return Specifies whether an Amazon EBS volume is encrypted. For more information, see <a
-     *         href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html">Amazon EBS Encryption</a>.
-     */
-
-    public Boolean isEncrypted() {
-        return this.encrypted;
-    }
-
-    /**
      * Returns a string representation of this object; useful for testing and debugging.
      *
      * @return A string representation of this object.
@@ -590,9 +443,7 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
         if (getVolumeType() != null)
             sb.append("VolumeType: ").append(getVolumeType()).append(",");
         if (getIops() != null)
-            sb.append("Iops: ").append(getIops()).append(",");
-        if (getEncrypted() != null)
-            sb.append("Encrypted: ").append(getEncrypted());
+            sb.append("Iops: ").append(getIops());
         sb.append("}");
         return sb.toString();
     }
@@ -631,10 +482,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
             return false;
         if (other.getIops() != null && other.getIops().equals(this.getIops()) == false)
             return false;
-        if (other.getEncrypted() == null ^ this.getEncrypted() == null)
-            return false;
-        if (other.getEncrypted() != null && other.getEncrypted().equals(this.getEncrypted()) == false)
-            return false;
         return true;
     }
 
@@ -649,7 +496,6 @@ public class VolumeConfiguration implements Serializable, Cloneable, StructuredP
         hashCode = prime * hashCode + ((getSize() == null) ? 0 : getSize().hashCode());
         hashCode = prime * hashCode + ((getVolumeType() == null) ? 0 : getVolumeType().hashCode());
         hashCode = prime * hashCode + ((getIops() == null) ? 0 : getIops().hashCode());
-        hashCode = prime * hashCode + ((getEncrypted() == null) ? 0 : getEncrypted().hashCode());
         return hashCode;
     }
 

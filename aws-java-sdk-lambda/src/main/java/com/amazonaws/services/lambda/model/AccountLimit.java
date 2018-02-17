@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -59,8 +59,7 @@ public class AccountLimit implements Serializable, Cloneable, StructuredPojo {
     private Integer concurrentExecutions;
     /**
      * <p>
-     * The number of concurrent executions available to functions that do not have concurrency limits set. For more
-     * information, see <a>concurrent-executions</a>.
+     * The number of concurrent executions available to functions that do not have concurrency limits set.
      * </p>
      */
     private Integer unreservedConcurrentExecutions;
@@ -257,13 +256,11 @@ public class AccountLimit implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of concurrent executions available to functions that do not have concurrency limits set. For more
-     * information, see <a>concurrent-executions</a>.
+     * The number of concurrent executions available to functions that do not have concurrency limits set.
      * </p>
      * 
      * @param unreservedConcurrentExecutions
-     *        The number of concurrent executions available to functions that do not have concurrency limits set. For
-     *        more information, see <a>concurrent-executions</a>.
+     *        The number of concurrent executions available to functions that do not have concurrency limits set.
      */
 
     public void setUnreservedConcurrentExecutions(Integer unreservedConcurrentExecutions) {
@@ -272,12 +269,10 @@ public class AccountLimit implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of concurrent executions available to functions that do not have concurrency limits set. For more
-     * information, see <a>concurrent-executions</a>.
+     * The number of concurrent executions available to functions that do not have concurrency limits set.
      * </p>
      * 
-     * @return The number of concurrent executions available to functions that do not have concurrency limits set. For
-     *         more information, see <a>concurrent-executions</a>.
+     * @return The number of concurrent executions available to functions that do not have concurrency limits set.
      */
 
     public Integer getUnreservedConcurrentExecutions() {
@@ -286,13 +281,11 @@ public class AccountLimit implements Serializable, Cloneable, StructuredPojo {
 
     /**
      * <p>
-     * The number of concurrent executions available to functions that do not have concurrency limits set. For more
-     * information, see <a>concurrent-executions</a>.
+     * The number of concurrent executions available to functions that do not have concurrency limits set.
      * </p>
      * 
      * @param unreservedConcurrentExecutions
-     *        The number of concurrent executions available to functions that do not have concurrency limits set. For
-     *        more information, see <a>concurrent-executions</a>.
+     *        The number of concurrent executions available to functions that do not have concurrency limits set.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

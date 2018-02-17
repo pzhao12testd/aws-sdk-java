@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -326,7 +326,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new AddTagsToResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(addTagsToResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -395,7 +394,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new CreateHapgRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createHapgRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -475,7 +473,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new CreateHsmRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createHsmRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -543,7 +540,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new CreateLunaClientRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createLunaClientRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -611,7 +607,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new DeleteHapgRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteHapgRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -679,7 +674,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new DeleteHsmRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteHsmRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -746,7 +740,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new DeleteLunaClientRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteLunaClientRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -814,7 +807,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new DescribeHapgRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeHapgRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -882,7 +874,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new DescribeHsmRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeHsmRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -954,7 +945,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new DescribeLunaClientRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeLunaClientRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1027,7 +1017,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new GetConfigRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(getConfigRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1095,7 +1084,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ListAvailableZonesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listAvailableZonesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1172,7 +1160,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ListHapgsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listHapgsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1249,7 +1236,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ListHsmsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listHsmsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1326,7 +1312,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ListLunaClientsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listLunaClientsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1398,7 +1383,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ListTagsForResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTagsForResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1465,7 +1449,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ModifyHapgRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(modifyHapgRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1540,7 +1523,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ModifyHsmRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(modifyHsmRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1606,7 +1588,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new ModifyLunaClientRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(modifyLunaClientRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1677,7 +1658,6 @@ public class AWSCloudHSMClient extends AmazonWebServiceClient implements AWSClou
                 request = new RemoveTagsFromResourceRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(removeTagsFromResourceRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

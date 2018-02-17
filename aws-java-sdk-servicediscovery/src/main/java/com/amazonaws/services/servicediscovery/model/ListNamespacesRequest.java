@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -30,24 +30,17 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * For the first <code>ListNamespaces</code> request, omit this value.
      * </p>
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      */
     private String nextToken;
     /**
      * <p>
      * The maximum number of namespaces that you want Amazon Route 53 to return in the response to a
-     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Route 53 returns
-     * up to 100 namespaces.
+     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Amazon Route 53
+     * returns up to 100 namespaces.
      * </p>
      */
     private Integer maxResults;
@@ -56,8 +49,7 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * A complex type that contains specifications for the namespaces that you want to list.
      * </p>
      * <p>
-     * If you specify more than one filter, a namespace must match all filters to be returned by
-     * <code>ListNamespaces</code>.
+     * If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      * </p>
      */
     private java.util.List<NamespaceFilter> filters;
@@ -67,32 +59,17 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * For the first <code>ListNamespaces</code> request, omit this value.
      * </p>
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      * 
      * @param nextToken
      *        For the first <code>ListNamespaces</code> request, omit this value.</p>
      *        <p>
-     *        If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get
-     *        the next group of results. Specify the value of <code>NextToken</code> from the previous response in the
-     *        next request.
-     *        </p>
-     *        <note>
-     *        <p>
-     *        Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria.
-     *        It's possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified
-     *        criteria but that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match
-     *        the criteria.
-     *        </p>
+     *        If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     *        <code>ListNamespaces</code> request to get the next group of results. Specify the value of
+     *        <code>NextToken</code> from the previous response in the next request.
      */
 
     public void setNextToken(String nextToken) {
@@ -104,31 +81,16 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * For the first <code>ListNamespaces</code> request, omit this value.
      * </p>
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      * 
      * @return For the first <code>ListNamespaces</code> request, omit this value.</p>
      *         <p>
-     *         If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to
-     *         get the next group of results. Specify the value of <code>NextToken</code> from the previous response in
-     *         the next request.
-     *         </p>
-     *         <note>
-     *         <p>
-     *         Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria.
-     *         It's possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified
-     *         criteria but that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that
-     *         match the criteria.
-     *         </p>
+     *         If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     *         <code>ListNamespaces</code> request to get the next group of results. Specify the value of
+     *         <code>NextToken</code> from the previous response in the next request.
      */
 
     public String getNextToken() {
@@ -140,32 +102,17 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * For the first <code>ListNamespaces</code> request, omit this value.
      * </p>
      * <p>
-     * If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get the
-     * next group of results. Specify the value of <code>NextToken</code> from the previous response in the next
-     * request.
+     * If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     * <code>ListNamespaces</code> request to get the next group of results. Specify the value of <code>NextToken</code>
+     * from the previous response in the next request.
      * </p>
-     * <note>
-     * <p>
-     * Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria. It's
-     * possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified criteria but
-     * that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match the criteria.
-     * </p>
-     * </note>
      * 
      * @param nextToken
      *        For the first <code>ListNamespaces</code> request, omit this value.</p>
      *        <p>
-     *        If the response contains <code>NextToken</code>, submit another <code>ListNamespaces</code> request to get
-     *        the next group of results. Specify the value of <code>NextToken</code> from the previous response in the
-     *        next request.
-     *        </p>
-     *        <note>
-     *        <p>
-     *        Route 53 gets <code>MaxResults</code> namespaces and then filters them based on the specified criteria.
-     *        It's possible that no namespaces in the first <code>MaxResults</code> namespaces matched the specified
-     *        criteria but that subsequent groups of <code>MaxResults</code> namespaces do contain namespaces that match
-     *        the criteria.
-     *        </p>
+     *        If more than <code>MaxResults</code> namespaces match the specified criteria, you can submit another
+     *        <code>ListNamespaces</code> request to get the next group of results. Specify the value of
+     *        <code>NextToken</code> from the previous response in the next request.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -177,14 +124,14 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
     /**
      * <p>
      * The maximum number of namespaces that you want Amazon Route 53 to return in the response to a
-     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Route 53 returns
-     * up to 100 namespaces.
+     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Amazon Route 53
+     * returns up to 100 namespaces.
      * </p>
      * 
      * @param maxResults
      *        The maximum number of namespaces that you want Amazon Route 53 to return in the response to a
-     *        <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Route 53
-     *        returns up to 100 namespaces.
+     *        <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Amazon
+     *        Route 53 returns up to 100 namespaces.
      */
 
     public void setMaxResults(Integer maxResults) {
@@ -194,13 +141,13 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
     /**
      * <p>
      * The maximum number of namespaces that you want Amazon Route 53 to return in the response to a
-     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Route 53 returns
-     * up to 100 namespaces.
+     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Amazon Route 53
+     * returns up to 100 namespaces.
      * </p>
      * 
      * @return The maximum number of namespaces that you want Amazon Route 53 to return in the response to a
-     *         <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Route 53
-     *         returns up to 100 namespaces.
+     *         <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Amazon
+     *         Route 53 returns up to 100 namespaces.
      */
 
     public Integer getMaxResults() {
@@ -210,14 +157,14 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
     /**
      * <p>
      * The maximum number of namespaces that you want Amazon Route 53 to return in the response to a
-     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Route 53 returns
-     * up to 100 namespaces.
+     * <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Amazon Route 53
+     * returns up to 100 namespaces.
      * </p>
      * 
      * @param maxResults
      *        The maximum number of namespaces that you want Amazon Route 53 to return in the response to a
-     *        <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Route 53
-     *        returns up to 100 namespaces.
+     *        <code>ListNamespaces</code> request. If you don't specify a value for <code>MaxResults</code>, Amazon
+     *        Route 53 returns up to 100 namespaces.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -231,14 +178,13 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * A complex type that contains specifications for the namespaces that you want to list.
      * </p>
      * <p>
-     * If you specify more than one filter, a namespace must match all filters to be returned by
-     * <code>ListNamespaces</code>.
+     * If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      * </p>
      * 
      * @return A complex type that contains specifications for the namespaces that you want to list.</p>
      *         <p>
-     *         If you specify more than one filter, a namespace must match all filters to be returned by
-     *         <code>ListNamespaces</code>.
+     *         If you specify more than one filter, an operation must match all filters to be returned by
+     *         ListNamespaces.
      */
 
     public java.util.List<NamespaceFilter> getFilters() {
@@ -250,15 +196,13 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * A complex type that contains specifications for the namespaces that you want to list.
      * </p>
      * <p>
-     * If you specify more than one filter, a namespace must match all filters to be returned by
-     * <code>ListNamespaces</code>.
+     * If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      * </p>
      * 
      * @param filters
      *        A complex type that contains specifications for the namespaces that you want to list.</p>
      *        <p>
-     *        If you specify more than one filter, a namespace must match all filters to be returned by
-     *        <code>ListNamespaces</code>.
+     *        If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      */
 
     public void setFilters(java.util.Collection<NamespaceFilter> filters) {
@@ -275,8 +219,7 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * A complex type that contains specifications for the namespaces that you want to list.
      * </p>
      * <p>
-     * If you specify more than one filter, a namespace must match all filters to be returned by
-     * <code>ListNamespaces</code>.
+     * If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      * </p>
      * <p>
      * <b>NOTE:</b> This method appends the values to the existing list (if any). Use
@@ -287,8 +230,7 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * @param filters
      *        A complex type that contains specifications for the namespaces that you want to list.</p>
      *        <p>
-     *        If you specify more than one filter, a namespace must match all filters to be returned by
-     *        <code>ListNamespaces</code>.
+     *        If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -307,15 +249,13 @@ public class ListNamespacesRequest extends com.amazonaws.AmazonWebServiceRequest
      * A complex type that contains specifications for the namespaces that you want to list.
      * </p>
      * <p>
-     * If you specify more than one filter, a namespace must match all filters to be returned by
-     * <code>ListNamespaces</code>.
+     * If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      * </p>
      * 
      * @param filters
      *        A complex type that contains specifications for the namespaces that you want to list.</p>
      *        <p>
-     *        If you specify more than one filter, a namespace must match all filters to be returned by
-     *        <code>ListNamespaces</code>.
+     *        If you specify more than one filter, an operation must match all filters to be returned by ListNamespaces.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

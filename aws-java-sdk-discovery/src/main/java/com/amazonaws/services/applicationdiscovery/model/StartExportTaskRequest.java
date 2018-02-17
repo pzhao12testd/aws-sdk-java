@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -22,8 +22,7 @@ public class StartExportTaskRequest extends com.amazonaws.AmazonWebServiceReques
 
     /**
      * <p>
-     * The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     * <code>GRAPHML</code> <i>option has been deprecated.</i>
+     * The file format for the returned export data. Default value is <code>CSV</code>.
      * </p>
      */
     private java.util.List<String> exportDataFormat;
@@ -53,12 +52,10 @@ public class StartExportTaskRequest extends com.amazonaws.AmazonWebServiceReques
 
     /**
      * <p>
-     * The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     * <code>GRAPHML</code> <i>option has been deprecated.</i>
+     * The file format for the returned export data. Default value is <code>CSV</code>.
      * </p>
      * 
-     * @return The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     *         <code>GRAPHML</code> <i>option has been deprecated.</i>
+     * @return The file format for the returned export data. Default value is <code>CSV</code>.
      * @see ExportDataFormat
      */
 
@@ -68,13 +65,11 @@ public class StartExportTaskRequest extends com.amazonaws.AmazonWebServiceReques
 
     /**
      * <p>
-     * The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     * <code>GRAPHML</code> <i>option has been deprecated.</i>
+     * The file format for the returned export data. Default value is <code>CSV</code>.
      * </p>
      * 
      * @param exportDataFormat
-     *        The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     *        <code>GRAPHML</code> <i>option has been deprecated.</i>
+     *        The file format for the returned export data. Default value is <code>CSV</code>.
      * @see ExportDataFormat
      */
 
@@ -89,8 +84,7 @@ public class StartExportTaskRequest extends com.amazonaws.AmazonWebServiceReques
 
     /**
      * <p>
-     * The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     * <code>GRAPHML</code> <i>option has been deprecated.</i>
+     * The file format for the returned export data. Default value is <code>CSV</code>.
      * </p>
      * <p>
      * <b>NOTE:</b> This method appends the values to the existing list (if any). Use
@@ -99,8 +93,7 @@ public class StartExportTaskRequest extends com.amazonaws.AmazonWebServiceReques
      * </p>
      * 
      * @param exportDataFormat
-     *        The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     *        <code>GRAPHML</code> <i>option has been deprecated.</i>
+     *        The file format for the returned export data. Default value is <code>CSV</code>.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see ExportDataFormat
      */
@@ -117,13 +110,11 @@ public class StartExportTaskRequest extends com.amazonaws.AmazonWebServiceReques
 
     /**
      * <p>
-     * The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     * <code>GRAPHML</code> <i>option has been deprecated.</i>
+     * The file format for the returned export data. Default value is <code>CSV</code>.
      * </p>
      * 
      * @param exportDataFormat
-     *        The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     *        <code>GRAPHML</code> <i>option has been deprecated.</i>
+     *        The file format for the returned export data. Default value is <code>CSV</code>.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see ExportDataFormat
      */
@@ -135,13 +126,11 @@ public class StartExportTaskRequest extends com.amazonaws.AmazonWebServiceReques
 
     /**
      * <p>
-     * The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     * <code>GRAPHML</code> <i>option has been deprecated.</i>
+     * The file format for the returned export data. Default value is <code>CSV</code>.
      * </p>
      * 
      * @param exportDataFormat
-     *        The file format for the returned export data. Default value is <code>CSV</code>. <b>Note:</b> <i>The</i>
-     *        <code>GRAPHML</code> <i>option has been deprecated.</i>
+     *        The file format for the returned export data. Default value is <code>CSV</code>.
      * @return Returns a reference to this object so that method calls can be chained together.
      * @see ExportDataFormat
      */

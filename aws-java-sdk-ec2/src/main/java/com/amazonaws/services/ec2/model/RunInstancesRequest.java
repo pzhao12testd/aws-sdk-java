@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -37,8 +37,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
     private com.amazonaws.internal.SdkInternalList<BlockDeviceMapping> blockDeviceMappings;
     /**
      * <p>
-     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an instance
-     * and must be specified here or in a launch template.
+     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      * </p>
      */
     private String imageId;
@@ -307,8 +306,7 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
      * initialize any additional object members.
      * 
      * @param imageId
-     *        The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an
-     *        instance and must be specified here or in a launch template.
+     *        The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      * @param minCount
      *        The minimum number of instances to launch. If you specify a minimum that is more instances than Amazon EC2
      *        can launch in the target Availability Zone, Amazon EC2 launches no instances.</p>
@@ -425,13 +423,11 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
 
     /**
      * <p>
-     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an instance
-     * and must be specified here or in a launch template.
+     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      * </p>
      * 
      * @param imageId
-     *        The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an
-     *        instance and must be specified here or in a launch template.
+     *        The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      */
 
     public void setImageId(String imageId) {
@@ -440,12 +436,10 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
 
     /**
      * <p>
-     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an instance
-     * and must be specified here or in a launch template.
+     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      * </p>
      * 
-     * @return The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an
-     *         instance and must be specified here or in a launch template.
+     * @return The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      */
 
     public String getImageId() {
@@ -454,13 +448,11 @@ public class RunInstancesRequest extends AmazonWebServiceRequest implements Seri
 
     /**
      * <p>
-     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an instance
-     * and must be specified here or in a launch template.
+     * The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      * </p>
      * 
      * @param imageId
-     *        The ID of the AMI, which you can get by calling <a>DescribeImages</a>. An AMI is required to launch an
-     *        instance and must be specified here or in a launch template.
+     *        The ID of the AMI, which you can get by calling <a>DescribeImages</a>.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

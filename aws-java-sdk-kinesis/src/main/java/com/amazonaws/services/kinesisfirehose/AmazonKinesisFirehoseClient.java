@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -376,7 +376,6 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
                 request = new CreateDeliveryStreamRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createDeliveryStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -442,7 +441,6 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
                 request = new DeleteDeliveryStreamRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteDeliveryStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -495,7 +493,6 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
                 request = new DescribeDeliveryStreamRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeDeliveryStreamRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -552,7 +549,6 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
                 request = new ListDeliveryStreamsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listDeliveryStreamsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -642,7 +638,6 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
                 request = new PutRecordRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(putRecordRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -753,7 +748,6 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
                 request = new PutRecordBatchRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(putRecordBatchRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -840,7 +834,6 @@ public class AmazonKinesisFirehoseClient extends AmazonWebServiceClient implemen
                 request = new UpdateDestinationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updateDestinationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

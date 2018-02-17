@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -44,7 +44,7 @@ public class SearchDevicesRequest extends com.amazonaws.AmazonWebServiceRequest 
     /**
      * <p>
      * The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     * DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     * RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      * </p>
      */
     private java.util.List<Filter> filters;
@@ -163,11 +163,11 @@ public class SearchDevicesRequest extends com.amazonaws.AmazonWebServiceRequest 
     /**
      * <p>
      * The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     * DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     * RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      * </p>
      * 
      * @return The filters to use to list a specified set of devices. Supported filter keys are DeviceName,
-     *         DeviceStatus, DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     *         DeviceStatus, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      */
 
     public java.util.List<Filter> getFilters() {
@@ -177,12 +177,12 @@ public class SearchDevicesRequest extends com.amazonaws.AmazonWebServiceRequest 
     /**
      * <p>
      * The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     * DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     * RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      * </p>
      * 
      * @param filters
      *        The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     *        DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     *        RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      */
 
     public void setFilters(java.util.Collection<Filter> filters) {
@@ -197,7 +197,7 @@ public class SearchDevicesRequest extends com.amazonaws.AmazonWebServiceRequest 
     /**
      * <p>
      * The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     * DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     * RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      * </p>
      * <p>
      * <b>NOTE:</b> This method appends the values to the existing list (if any). Use
@@ -207,7 +207,7 @@ public class SearchDevicesRequest extends com.amazonaws.AmazonWebServiceRequest 
      * 
      * @param filters
      *        The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     *        DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     *        RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -224,12 +224,12 @@ public class SearchDevicesRequest extends com.amazonaws.AmazonWebServiceRequest 
     /**
      * <p>
      * The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     * DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     * RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      * </p>
      * 
      * @param filters
      *        The filters to use to list a specified set of devices. Supported filter keys are DeviceName, DeviceStatus,
-     *        DeviceStatusDetailCode, RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
+     *        RoomName, DeviceType, DeviceSerialNumber, and UnassociatedOnly.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 

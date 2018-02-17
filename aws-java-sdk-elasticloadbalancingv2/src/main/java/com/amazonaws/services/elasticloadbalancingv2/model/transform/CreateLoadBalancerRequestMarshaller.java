@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -46,8 +46,9 @@ public class CreateLoadBalancerRequestMarshaller implements Marshaller<Request<C
             request.addParameter("Name", StringUtils.fromString(createLoadBalancerRequest.getName()));
         }
 
-        if (createLoadBalancerRequest.getSubnets() != null) {
-            java.util.List<String> subnetsList = createLoadBalancerRequest.getSubnets();
+        java.util.List<String> subnetsList = createLoadBalancerRequest.getSubnets();
+
+        if (subnetsList != null) {
             if (subnetsList.isEmpty()) {
                 request.addParameter("Subnets", "");
             } else {
@@ -62,8 +63,9 @@ public class CreateLoadBalancerRequestMarshaller implements Marshaller<Request<C
             }
         }
 
-        if (createLoadBalancerRequest.getSubnetMappings() != null) {
-            java.util.List<SubnetMapping> subnetMappingsList = createLoadBalancerRequest.getSubnetMappings();
+        java.util.List<SubnetMapping> subnetMappingsList = createLoadBalancerRequest.getSubnetMappings();
+
+        if (subnetMappingsList != null) {
             if (subnetMappingsList.isEmpty()) {
                 request.addParameter("SubnetMappings", "");
             } else {
@@ -85,8 +87,9 @@ public class CreateLoadBalancerRequestMarshaller implements Marshaller<Request<C
             }
         }
 
-        if (createLoadBalancerRequest.getSecurityGroups() != null) {
-            java.util.List<String> securityGroupsList = createLoadBalancerRequest.getSecurityGroups();
+        java.util.List<String> securityGroupsList = createLoadBalancerRequest.getSecurityGroups();
+
+        if (securityGroupsList != null) {
             if (securityGroupsList.isEmpty()) {
                 request.addParameter("SecurityGroups", "");
             } else {
@@ -105,8 +108,9 @@ public class CreateLoadBalancerRequestMarshaller implements Marshaller<Request<C
             request.addParameter("Scheme", StringUtils.fromString(createLoadBalancerRequest.getScheme()));
         }
 
-        if (createLoadBalancerRequest.getTags() != null) {
-            java.util.List<Tag> tagsList = createLoadBalancerRequest.getTags();
+        java.util.List<Tag> tagsList = createLoadBalancerRequest.getTags();
+
+        if (tagsList != null) {
             if (tagsList.isEmpty()) {
                 request.addParameter("Tags", "");
             } else {

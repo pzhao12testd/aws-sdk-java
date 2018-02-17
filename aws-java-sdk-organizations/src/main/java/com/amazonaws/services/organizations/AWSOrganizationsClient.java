@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -752,7 +752,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new AcceptHandshakeRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(acceptHandshakeRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1101,7 +1100,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new AttachPolicyRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(attachPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1275,7 +1273,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new CancelHandshakeRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(cancelHandshakeRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1621,7 +1618,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new CreateAccountRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createAccountRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -1925,7 +1921,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new CreateOrganizationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2228,7 +2223,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(createOrganizationalUnitRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2538,7 +2532,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new CreatePolicyRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(createPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2713,7 +2706,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DeclineHandshakeRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(declineHandshakeRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -2877,7 +2869,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DeleteOrganizationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deleteOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3047,7 +3038,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(deleteOrganizationalUnitRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3217,7 +3207,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DeletePolicyRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(deletePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3381,7 +3370,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DescribeAccountRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeAccountRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3545,7 +3533,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(describeCreateAccountStatusRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3713,7 +3700,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DescribeHandshakeRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeHandshakeRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3780,7 +3766,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DescribeOrganizationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describeOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -3944,7 +3929,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(describeOrganizationalUnitRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4108,7 +4092,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DescribePolicyRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(describePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4418,7 +4401,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DetachPolicyRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(detachPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -4735,7 +4717,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(disableAWSServiceAccessRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5037,7 +5018,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new DisablePolicyTypeRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(disablePolicyTypeRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5348,7 +5328,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new EnableAWSServiceAccessRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(enableAWSServiceAccessRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5599,7 +5578,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new EnableAllFeaturesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(enableAllFeaturesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -5900,7 +5878,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new EnablePolicyTypeRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(enablePolicyTypeRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6154,7 +6131,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(inviteAccountToOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6487,7 +6463,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new LeaveOrganizationRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(leaveOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6786,7 +6761,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(listAWSServiceAccessForOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -6949,7 +6923,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListAccountsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listAccountsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7115,7 +7088,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListAccountsForParentRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listAccountsForParentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7280,7 +7252,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListChildrenRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listChildrenRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7443,7 +7414,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(listCreateAccountStatusRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7609,7 +7579,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(listHandshakesForAccountRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7780,7 +7749,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(listHandshakesForOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -7946,7 +7914,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(listOrganizationalUnitsForParentRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8117,7 +8084,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListParentsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listParentsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8278,7 +8244,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListPoliciesRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listPoliciesRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8442,7 +8407,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListPoliciesForTargetRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listPoliciesForTargetRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8604,7 +8568,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListRootsRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listRootsRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8767,7 +8730,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new ListTargetsForPolicyRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(listTargetsForPolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -8939,7 +8901,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new MoveAccountRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(moveAccountRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -9270,7 +9231,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(removeAccountFromOrganizationRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -9440,7 +9400,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                         .beforeMarshalling(updateOrganizationalUnitRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }
@@ -9741,7 +9700,6 @@ public class AWSOrganizationsClient extends AmazonWebServiceClient implements AW
                 request = new UpdatePolicyRequestProtocolMarshaller(protocolFactory).marshall(super.beforeMarshalling(updatePolicyRequest));
                 // Binds the request metrics to the current request.
                 request.setAWSRequestMetrics(awsRequestMetrics);
-                request.addHandlerContext(HandlerContextKey.SIGNING_REGION, getSigningRegion());
             } finally {
                 awsRequestMetrics.endEvent(Field.RequestMarshallTime);
             }

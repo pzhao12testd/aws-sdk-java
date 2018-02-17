@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
  * the License. A copy of the License is located at
@@ -722,7 +722,7 @@ public interface AWSDeviceFarm {
 
     /**
      * <p>
-     * Gets information about jobs for a given test run.
+     * Gets information about jobs.
      * </p>
      * 
      * @param listJobsRequest
@@ -935,7 +935,7 @@ public interface AWSDeviceFarm {
 
     /**
      * <p>
-     * Gets information about test suites for a given job.
+     * Gets information about suites.
      * </p>
      * 
      * @param listSuitesRequest
@@ -957,7 +957,7 @@ public interface AWSDeviceFarm {
 
     /**
      * <p>
-     * Gets information about tests in a given test suite.
+     * Gets information about tests.
      * </p>
      * 
      * @param listTestsRequest
